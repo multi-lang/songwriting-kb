@@ -75,6 +75,8 @@ STYLE PROMPT:
 LYRICS:
 ───────────────────────────────────────
 
+[Title: Song Title]
+
 [Intro]
 
 [Verse 1]
