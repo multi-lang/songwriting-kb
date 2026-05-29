@@ -71,6 +71,8 @@ TITLE: [Song Title]
 STYLE PROMPT:
 [Genre], [X BPM], [Mood], [Instrument 1], [Instrument 2], [Vocal type + delivery], [Production era/style], [Direction]
 
+[Exclusions: ‑item, ‑item, ‑item]
+
 ───────────────────────────────────────
 LYRICS:
 ───────────────────────────────────────
@@ -152,10 +154,16 @@ Three tested modes for duets:
 
 **Mode C (Custom Layer):** Custom conventions like `(robotic layer: text)` declared in Style. Mood-labeled sections `[Verse 1 – Cold / Vast]`. Stack 5-6 production tags per section. Negative space tags `[No melody]`. Double-anchor style top AND bottom. Best for theatrical/concept.
 
-### Negative Prompts
+### Negative Prompts / Exclusions
 
-Use `‑` prefix to exclude: `‑trap drums, ‑beatboxing, ‑vocal hums, ‑pop vocal runs`
-Place in Style if room, otherwise in Advanced box.
+Always include an `[Exclusions:]` line after the Style Prompt. Format:
+```
+[Exclusions: ‑trap drums, ‑beatboxing, ‑vocal hums, ‑pop vocal runs, ‑bright synths]
+```
+- Use `‑` prefix for each excluded item
+- Comma-separated on a single line
+- Place after the Style Prompt in the output
+- If it overflows Style field (1000 char limit), move to Advanced box
 
 ### Character Limit Workarounds
 

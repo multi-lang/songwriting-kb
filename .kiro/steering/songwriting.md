@@ -162,10 +162,16 @@ Core tags: `[Intro]`, `[Verse 1]`, `[Verse 2]`, `[Pre-Chorus]`, `[Chorus]`, `[Po
 - Per-section vocal delivery: `[Vocal fracturing at the edges]`
 - Double-anchor style at top AND bottom of lyrics for consistency
 
-### Negative Prompts (Genre Fencing)
+### Negative Prompts / Exclusions (Genre Fencing)
 
-Use `‑` prefix to exclude unwanted elements from generation:
-`‑trap drums, ‑beatboxing, ‑vocal hums, ‑pop vocal runs, ‑festival drops, ‑bright synths`
+Always include an `[Exclusions:]` line after the Style Prompt. Format:
+```
+[Exclusions: ‑trap drums, ‑beatboxing, ‑vocal hums, ‑pop vocal runs, ‑festival drops, ‑bright synths]
+```
+- Use `‑` prefix for each excluded item
+- Comma-separated on a single line
+- Placed on its own line after the Style Prompt
+- If it overflows Style field (1000 char limit), move to Advanced box
 
 ### Character Limit Workarounds
 
@@ -189,6 +195,8 @@ TITLE: [Song Title]
 
 STYLE PROMPT:
 [Comma-separated: Genre, BPM, Mood, Instruments, Vocal Style, Production, Direction]
+
+[Exclusions: ‑item, ‑item, ‑item]
 
 ───────────────────────────────────────
 LYRICS:
