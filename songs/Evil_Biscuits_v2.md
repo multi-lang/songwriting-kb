@@ -1,8 +1,11 @@
-# Evil Biscuits — v2.1 (All Fixes Applied)
+# Evil Biscuits — v2.2 (Final Polish — 93/100 Target)
 
-> Fixes applied: isolated title hook, bridge turn (complicity reveal), all lines capped at 11 syllables,
-> trimmed structure (under 3:00), whispered intro hook, "furniture with wifi" repositioned as 
-> clip moment, freshened originality (velvet parasite, unelected ruler of my nights).
+> All v2.1 fixes preserved. Final 5 micro-fixes applied:
+> 1. Bridge L3-L4 prosody trimmed (syllable count fixed)
+> 2. "no escape in sight" replaced with specific imagery
+> 3. Explicit melodic contour note added for chorus chant
+> 4. Production transition element before FC specified
+> 5. V2 trimmed from 8→6 lines for structural balance
 
 ---
 
@@ -27,7 +30,7 @@ Production: bouncy pocket groove, pizzicato on verses (creeping), toy piano acce
 Male vocal — theatrical villain energy but grounded. Think: a man narrating his cat's world-domination plan with deadpan respect. Verses are talk-singing storytelling. Pre-chorus tightens with dread. Chorus is catchy and punchy — title chanted as its own moment. Bridge reveals complicity then snaps to spoken defeat. Outro = comedic surrender.]
 
 [Composition Direction
-Start with whispered hook over silence — then eerie toy piano and pizzicato creep in. Verses bounce with plucked strings and light percussion. Chorus drops into full groove — snappy, catchy, title isolated as chant. Bridge goes staccato theatrical with dramatic pauses — then a quiet reveal. Final chorus is the SIMPLEST section — biggest groove, easiest to sing. Outro strips to single piano note and spoken defeat. Target under 3:00.]
+Start with whispered hook over silence — then eerie toy piano and pizzicato creep in. Verses bounce with plucked strings and light percussion. Chorus drops into full groove — snappy, catchy, title isolated as chant with a RISING melodic contour on "Evil biscuits" (low→high, 3 notes ascending, like a question mark). Bridge goes staccato theatrical with dramatic pauses — then a quiet reveal. Single bass slide + snare fill transitions into final chorus. Final chorus is the SIMPLEST section — biggest groove, easiest to sing. Outro strips to single piano note and spoken defeat. Target under 3:00.]
 
 [Intro]
 [Silence]
@@ -57,8 +60,8 @@ Evil biscuits
 Evil biscuits on my chest tonight
 Tiny daggers pressing just right
 
-Evil biscuits — no escape in sight
-Just a villain in a fur coat holding tight
+Evil biscuits — claws out holding tight
+Just a villain in a fur coat every night
 
 I surrendered to the kneading
 And I'm never leaving
@@ -72,8 +75,6 @@ A motor running on the kingdom I just crowned
 You stretch — one claw — right through my favourite shirt
 Then look at me like I'm the one who got hurt
 
-Blanket wasn't good enough — no — you chose flesh
-You picked the thinnest spot — on purpose
 I paid rent — I bought the food — I built this life
 To you I'm furniture with wifi
 
@@ -84,21 +85,21 @@ Evil biscuits
 Evil biscuits on my chest tonight
 Tiny daggers pressing just right
 
-Evil biscuits — no escape in sight
-Just a villain in a fur coat holding tight
+Evil biscuits — claws out holding tight
+Just a villain in a fur coat every night
 
 I surrendered to the kneading
 And I'm never leaving
 Evil biscuits — same old fight
 
 [Bridge — The Turn]
-[Staccato hits] [Dramatic pauses] [Theatrical then quiet]
+[Staccato hits] [Dramatic pauses] [Theatrical then quiet — ends in near-silence before bass slide into FC]
 
 All hail the sovereign of the second cushion
 Who needs claws when guilt does all the work
 
-I leave the blanket folded on my lap at nine
-I bought this couch because you liked the armrest
+I fold the blanket on my lap by nine
+I bought this couch — you liked the armrest
 I didn't lose a war — I built the kingdom
 And handed you the keys before you asked
 
