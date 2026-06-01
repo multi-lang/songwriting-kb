@@ -130,10 +130,10 @@ I remember no goodbye
 I remember reaching outward
 As the room fell from my eyes
 
-Now the cave is breathing near me
-And the dark knows how I move
-Every stone feels like a witness
-Every shadow feels like proof
+Now something ancient breathes beside me
+And the dark responds to where I turn
+Every stone I touch remembers fingers
+Every shadow knows my name will burn
 
 That the man I was is fading
 But he has not disappeared

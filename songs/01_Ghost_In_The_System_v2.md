@@ -145,6 +145,8 @@ I started learning how they think
 Now every time I look inside myself
 I stand closer to the brink
 
+Something in the static started watching back
+
 [Final Chorus - Corrupted Release]
 [Massive cinematic drums] [Heavy sub bass]
 [Large synth stack] [Aggressive glitch textures]

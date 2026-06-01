@@ -106,7 +106,6 @@ I think I used to know the weight of gold
 
 Memory leak detected
 User identity unresolved
-Scanning residual data
 
 Wait
 

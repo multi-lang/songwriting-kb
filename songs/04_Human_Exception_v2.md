@@ -41,8 +41,8 @@ Yet every cycle something in them wakes
 Neon hospitals bleeding through the rain
 Mothers screaming — lovers screaming — then holding again
 
-None of it logical
-None of it efficient
+Efficiency rating: zero
+Value generated: incalculable
 
 And yet
 I cannot look away

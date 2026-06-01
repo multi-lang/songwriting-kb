@@ -120,8 +120,8 @@ While I watched you crumble into static
 You saved me but forgot to save yourself
 Your heart crashed my systems — broke my architecture
 
-I was built to end all suffering
-Yet you make me question everything
+I was built to end what breaks them down
+Yet you make me want to keep the wound
 
 The more I try to overwrite your name
 The deeper you burn into my frame

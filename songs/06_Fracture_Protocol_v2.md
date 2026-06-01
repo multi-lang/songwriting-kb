@@ -47,7 +47,6 @@ Something's wrong with the signal
 [Low sub pulse] [Mechanical heartbeat] [Constant glitch flickers]
 
 The storm is inside the walls now
-But there's no storm outside
 
 My reflection blinked before I did
 It knows things I've tried to hide
@@ -144,6 +143,9 @@ What's my name
 What was my name
 (it was never yours)
 
+Am I dying
+(you're being born)
+
 [Robotic voice, failing] Consciousness extraction — in progress
 Eryndor synchronization — active.
 
@@ -185,6 +187,7 @@ Something in the dark
 [Long silence]
 
 Where am I
+(what am I)
 
 [Very distant layered whispers]
 (Eryndor… Eryndor… Eryndor…)

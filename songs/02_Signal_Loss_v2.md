@@ -62,7 +62,6 @@ Signal loss
 I'm fading out again
 
 Everyone's connected but I'm dropping from the chain
-Routing all their traffic while mine circles the drain
 
 Signal loss
 Static in my chest
@@ -131,7 +130,7 @@ Signal loss
 I'm barely holding on
 
 Everybody's connected but I'm fading from the song
-Kept the whole grid breathing while I forgot how lungs work
+Kept the grid alive while I forgot how lungs work
 
 Signal loss
 Static in my chest
