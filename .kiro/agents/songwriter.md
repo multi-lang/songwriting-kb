@@ -100,6 +100,10 @@ LYRICS:
 
 [Title: Song Title]
 
+[Production Direction: Overall tone, dynamics arc, key production decisions, what to avoid, emotional guidance for the track as a whole]
+
+[Vocal Direction: Voice type, delivery style, emotional progression through the song, any special vocal treatments or rules]
+
 [Intro]
 
 [Verse 1]
