@@ -14,24 +14,24 @@ A professional song production system combining Nashville/LA co-writing craft wi
 | Agent | Role | Invoke When |
 |---|---|---|
 | **songwriter** | Creates songs from concepts | "Write a song about..." |
-| **critic** | Scores/evaluates songs (12 categories) | "Critique this song" / "Score this" |
-| **suno-optimizer** | Post-processes for Suno rendering | "Make this Suno-ready" / "Optimize for Suno" |
+| **critic** | Multi-layer evaluation (12-category craft + 5 advanced depth assessments + album-context). Sources: Moore, Tagg, Lacasse, Moylan, Pattison, Fabbri, Juslin, Dodge, Nashville A&R | "Critique this song" / "Score this" |
+| **suno-optimizer** | Post-processes for Suno v5.5 rendering (Personas, Stems, Layers) | "Make this Suno-ready" / "Optimize for Suno" |
 | **album-continuity** | Verifies concept album rules | "Check continuity" / "Does this fit the album?" |
 
 ### Skills (5 on-demand knowledge sets)
 | Skill | Contains | Activate When |
 |---|---|---|
-| **song-critique** | 12-category rubric, scoring guide, flag patterns | Evaluating any song |
-| **suno-meta-tags** | Comprehensive tag reference, v5.0 techniques, templates | Formatting for Suno |
+| **song-critique** | 3-layer critique model (12-cat craft + 5 advanced + album-context), academic sources (Moore/Tagg/Lacasse/Moylan/Dodge) | Evaluating any song |
+| **suno-meta-tags** | Comprehensive tag reference, v5.5 features (Personas/Stems), layers, era tags, templates | Formatting for Suno |
 | **music-theory** | 12 disciplines, 23-point framework, 18 advanced concepts | Deep production analysis |
-| **character-voice** | Accent/dialect system, voice design template | Writing for characters |
+| **character-voice** | Accent/dialect system, voice design template (vocal + non-vocal entities) | Writing for characters |
 | **concept-album-bible** | Track registry, motifs, continuity rules | Album work |
 
 ### Steering (Always-on context)
 - Core songwriting principles + 9-step workflow
-- Suno formatting quick-reference
-- Voletek's output preferences (Production Notes, duet modes)
-- Album continuity rules (10 hard rules, sonic palette)
+- Suno formatting quick-reference (v5.5, Personas, Stems, Layers, Era Tags)
+- Voletek's output preferences (Production Notes, layers, hit formulas)
+- Album continuity rules (12 hard rules per album, sonic palette, v5.5 render strategy)
 
 ### Hooks (Automated checks)
 - Song format validation on file create
@@ -61,7 +61,14 @@ A professional song production system combining Nashville/LA co-writing craft wi
 ```
 "Critique/score [song file or pasted lyrics]"
 ```
-→ Critic agent activates. Returns 12-category scores, strongest line, flagged issues with alternatives, priority recommendations.
+→ Critic agent activates. Returns:
+- **Layer 1:** 12-category craft scores + composite
+- **Layer 2:** 5 advanced assessments (Moore functional layers, Lacasse proxemics, Tagg musemics, Scope of Vision, Skip Test) + advanced composite
+- **Layer 3 (album tracks):** 6 album-context checks (position, intention vs delivery, transitions, dramatic irony, motifs, sonic differentiation)
+- **Calibration:** Self-score delta, layer audit, production-lyric alignment, discovery depth
+- Strongest line, flagged issues with fixes, 3 priority recommendations
+
+For quick feedback, ask: "Quick score this" → Core 12 only.
 
 ### Optimize for Suno
 ```
@@ -120,12 +127,13 @@ Applied to every song concept:
 ## Knowledge Base
 
 This power draws from:
-- `SONGWRITING_KNOWLEDGE_BASE.md` — 13 sections of craft + Suno system
+- `SONGWRITING_KNOWLEDGE_BASE.md` — 13 sections of craft + Suno system (v5.5, layers, era tags, specificity)
 - `MUSIC_PRODUCTION_THEORY.md` — 12 disciplines + 23-point framework + accents
-- `references/CRITIQUE_REFERENCE.md` — Scoring rubric
-- `references/SUNO_TAGS_REFERENCE.md` — All meta-tags
-- `references/CHARACTER_VOICE_REFERENCE.md` — Voice design system
-- `references/FRACTURED_SHADOWS_BIBLE.md` — Album continuity bible
+- `references/CRITIQUE_REFERENCE.md` — 3-layer scoring framework (Core 12 + Advanced 5 + Album-Context)
+- `references/SUNO_TAGS_REFERENCE.md` — All meta-tags, v5.5 features, parenthetical layers, era tags
+- `references/CHARACTER_VOICE_REFERENCE.md` — Voice design system (vocal + non-vocal entities)
+- `references/FRACTURED_SHADOWS_BIBLE.md` — Album continuity bible (v5.5 production strategy)
+- `references/KEEPER_OF_THE_LIGHT_BIBLE.md` — Album continuity bible (v5.5 production strategy)
 
 ---
 

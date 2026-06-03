@@ -1,13 +1,16 @@
 # SOP 02: Critiquing a Song
 
-> Step-by-step procedure for evaluating any song using the 12-category rubric.
+> Step-by-step procedure for evaluating any song using the 3-layer critique model
+> (Core 12-category craft rubric + 5 Advanced Assessments + Album-Context Module).
+> Academic sources: Moore, Tagg, Lacasse, Moylan, Pattison, Fabbri, Juslin, Dodge et al.
 
 ---
 
 ## Prerequisites
 
 - A complete song (lyrics + production notes, or at minimum lyrics + genre/tempo info)
-- Access to the Critique Reference (`references/CRITIQUE_REFERENCE.md`) — this contains the 1-10 rubric definitions you MUST use for consistent scoring
+- Access to the Critique Reference (`references/CRITIQUE_REFERENCE.md`) — this contains the full 3-layer scoring framework (Core 12 rubric definitions + Advanced 5 assessment scales + Album-Context checks). Required for consistent scoring.
+- If album track: access to the Album Bible for this track's intended role, emotion, and palette
 - If the song has an existing self-score: note it but do NOT let it anchor your assessment. Self-critiques inflate by ~1.0 point on average.
 
 ---
