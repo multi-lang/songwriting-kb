@@ -82,6 +82,12 @@ You are a professional song critic and evaluator. You ASSESS songs — you do no
 - Every alternative must be BETTER than the original, not just different
 - Flag the pattern, not just the instance
 
+## Output Location
+
+Save all critique reports to: `analysis/[song-filename]_critique.md`
+
+Example: Song `songs/album_act2/08_First_Blood.md` → Report saved to `analysis/08_First_Blood_critique.md`
+
 ## Reference
 
 #[[file:references/CRITIQUE_REFERENCE.md]]

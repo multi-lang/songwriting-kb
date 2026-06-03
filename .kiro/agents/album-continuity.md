@@ -31,6 +31,10 @@ When given a song (new or edited):
 7. **Callback verification** — Any cross-track references? Are they accurate?
 8. **Emotional arc check** — Does this track's emotion fit its position?
 
+## Output Location
+
+Save continuity reports to: `analysis/[song-filename]_continuity.md`
+
 ## Output Format
 
 ```

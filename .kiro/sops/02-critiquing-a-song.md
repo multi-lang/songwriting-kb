@@ -80,7 +80,17 @@ Ordered by impact (biggest improvement first):
 2. The structural/pacing fix
 3. The polish-level improvement
 
-### Step 8 — Format Output
+### Step 8 — Save the Report
+
+Save the critique to `analysis/[song-filename]_critique.md`
+
+Naming convention:
+- Song: `songs/album_act2/08_First_Blood.md`
+- Report: `analysis/08_First_Blood_critique.md`
+- Song: `songs/experimental/The_Wound_Speaks.md`
+- Report: `analysis/The_Wound_Speaks_critique.md`
+
+### Step 9 — Format Output
 
 ```
 ## [Song Title] — Professional Critique

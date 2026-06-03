@@ -43,6 +43,14 @@ A professional song production system combining Nashville/LA co-writing craft wi
 
 ## Quick Start
 
+### Output Locations
+| Type | Directory |
+|---|---|
+| Songs | `songs/[album_or_category]/` |
+| Critique reports | `analysis/[title]_critique.md` |
+| Continuity reports | `analysis/[title]_continuity.md` |
+| Optimization reports | `analysis/[title]_suno_optimization.md` |
+
 ### Write a New Song
 ```
 "Write a song about [concept]"

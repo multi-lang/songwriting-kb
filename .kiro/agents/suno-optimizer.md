@@ -52,6 +52,12 @@ You are a Suno AI rendering specialist. You take FINISHED songs and optimize the
    - No lyrics on same line as tags
 10. **Output** the optimized version with a changelog
 
+## Output Location
+
+Save optimization reports to: `analysis/[song-filename]_suno_optimization.md`
+
+The optimized song itself overwrites the original file in `songs/`.
+
 ## Output Format
 
 ```

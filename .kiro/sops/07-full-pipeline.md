@@ -47,6 +47,7 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 - [ ] Composite score calculated
 - [ ] 2-3 issues flagged with alternatives
 - [ ] 3 priority recommendations given
+- [ ] Report saved to `analysis/[song-filename]_critique.md`
 
 **Decision gate:**
 - If composite ≥8.5: Proceed to Stage 4 (Optimize) — skip revision
