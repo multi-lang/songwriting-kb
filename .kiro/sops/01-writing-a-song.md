@@ -73,7 +73,13 @@ Plan the dynamic arc:
 - Growth pattern (additive? subtractive? explosive? bloom?)
 - Where is negative space?
 - What contrast pairs exist? (quiet/loud, sparse/dense, human/machine)
-- Where does the hook land? (Must be within 15s of first vocal)
+- Where does the hook land? (Must be within 15s of first sung vocal — instrumental intros don't count against this clock)
+
+**Hook timing rule:** 15 seconds is measured from the first SUNG word to the beginning of the hook phrase. An 8-second instrumental intro followed by a 12-second verse means the hook must land by second 12 of singing, not second 20 of the track.
+
+**Runtime estimation formula:** (total lyric lines × 60/BPM × 2) + intro seconds + outro seconds. At 92 BPM: each line ≈ 2.5s with breath. Typical: 24 lines + 8s intro + 8s outro ≈ 3:15.
+
+**Note:** This step is a SKETCH — you'll formalize it as Production Notes in Step 25. Don't over-document here.
 
 **Step 9 — Production & Commercial**
 Decide:
@@ -89,8 +95,9 @@ Decide:
 
 **Step 10 — Write the Chorus FIRST**
 This is your destination. Write it before anything else.
-- Must contain the hook
-- Must be the emotional peak
+- Must contain the hook (identify your hook TYPE first: lyric, melodic, rhythmic, or production)
+- If lyric hook: it must be in the chorus lyrics
+- If melodic/production hook: the chorus must still contain the emotional peak
 - Must be singable (test: can you hum it?)
 - Every line ≤12 syllables
 - Check: would someone text this line to a friend?
@@ -100,6 +107,8 @@ This is your destination. Write it before anything else.
 - Creates tension the chorus resolves
 - Rising energy
 - Should make the listener LEAN FORWARD
+
+**Note for narrative songs:** You may find it easier to sketch V1's TOPIC first (what scene/world it sets), then write the pre-chorus that builds FROM that world into the chorus. The key principle: the chorus is your destination — everything else serves it.
 
 **Step 12 — Write Verse 1**
 4-8 lines that SET UP the chorus.
@@ -130,7 +139,7 @@ Same structure as Chorus 1 but:
 - This is the emotional climax
 
 **Step 16 — Write Intro/Outro**
-- Intro: 2-4 lines max, sets mood
+- Intro: 2-4 lines max, sets mood. For instrumental intros, write a brief parenthetical description: `(sea-wash, 4 bars → concertina enters with melody)`. In the Suno output, use the section tag with pipe notation: `[intro | atmospheric, warm, sparse]`
 - Outro: 2-4 lines max, resolves or fades
 - Neither should introduce major new content
 
@@ -181,6 +190,8 @@ At top of Lyrics field:
 [sequence: intro, verse, pre-chorus, chorus, ...]
 ```
 
+**Length calculation:** Use your runtime estimate from Step 8. Minutes × 60 = seconds. Example: 3:45 target = 225 seconds.
+
 **Step 23 — Add Direction Blocks**
 ```
 [Production Direction: ...]
@@ -224,6 +235,12 @@ If this is an album track:
 - [ ] Motifs used correctly?
 - [ ] Callbacks reference correct source tracks?
 - [ ] Rule 11: >70% palette differentiation from similar tracks?
+
+**For Track 1 (album opener):** Focus on establishing motifs correctly, setting up future callbacks, and verifying no forbidden elements are present. Adjacency check is forward-only (does T2's planned palette differ sufficiently?). No backward callbacks to verify.
+
+**For the Final Track:** Focus on resolution — do motifs reach their final form? Are callbacks to earlier tracks accurate? Does the harmonic resolution feel earned?
+
+**If this track introduces a recurring phrase:** Test it forward — write out ALL planned future uses and verify the phrase is flexible enough to carry each meaning. Fix now if it only works in one context.
 
 ---
 
