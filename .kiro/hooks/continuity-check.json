@@ -1,0 +1,13 @@
+{
+  "name": "Album Continuity Check",
+  "version": "1.0.0",
+  "description": "Verifies album continuity rules when song files in the album directories are saved — checks sonic palette, key relationships, and forbidden elements",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["songs/album_act2/*.md", "songs/album_act3/*.md"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run a continuity check on this saved file against the Fractured Shadows 12 hard rules. Check for: 1) Electronic/industrial elements after Track 8, 2) Major key usage outside T16/T17, 3) Key changes outside T17, 4) AI/robotic voice elements after Track 7, 5) Album title phrase outside T17. Report violations with 🚨 or pass with ✅."
+  }
+}

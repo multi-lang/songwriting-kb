@@ -1,0 +1,13 @@
+{
+  "name": "Keeper Continuity Check",
+  "version": "1.0.0",
+  "description": "Verifies Keeper of the Light album continuity rules when song files are saved — checks sonic palette, phrase protections, key rules, and character voice constraints",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["songs/keeper_of_the_light/*.md"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run a continuity check on this saved file against the Keeper of the Light 12 hard rules. Check for: 1) Electronic/distortion in T1-T2, 2) Concertina outside T1/T2/T8, 3) Missing sea/ocean sound, 4) 'The light keeps' outside T1/T3/T5/T8, 5) Creature being named, 6) D Mixolydian outside T1/T8, 7) Fm outside T7, 8) Harmony vocals before T7, 9) T6 being loud, 10) Sub-bass before T4. Report violations with 🚨 or pass with ✅."
+  }
+}
