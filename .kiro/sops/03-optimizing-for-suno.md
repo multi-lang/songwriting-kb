@@ -10,6 +10,9 @@
 - A complete song (lyrics + style concept + production notes)
 - Song has been through critique/revision (don't optimize a first draft)
 - Know your target Suno model version (v4.5 or v5.0)
+- Access to `references/SUNO_TAGS_REFERENCE.md` for tag validation
+
+**Note:** If the song was written with SOP 01 (which includes Phase 4 formatting), this SOP functions as a VERIFICATION pass. Run all steps to confirm compliance — document "no changes needed" or list corrections made.
 
 ---
 
@@ -24,9 +27,10 @@
 - If over: move negatives/exclusions to Exclude field first, then trim least essential descriptors
 
 **Measure Lyrics Field:**
-- Count from `[Title:]` through `[end]` (including ALL tags, direction blocks, section tags)
+- Count from `[track:]` through `[end]` (including ALL tags, direction blocks, section tags)
 - Must be ≤5000 characters
 - If over: trim direction blocks (keep essential intent), reduce section production tags, shorten outro
+- If still over after trimming: overflow additional direction to Suno's Advanced Settings box
 
 **Record counts:**
 ```
@@ -36,7 +40,7 @@ Lyrics: ___/5000 chars
 
 ### Step 2 — Add Global Control Tags
 
-If missing, add these at the TOP of Lyrics field (before `[Title:]`):
+If missing, add these at the TOP of Lyrics field (before the first section/content tag):
 
 ```
 [track: genre: [your genre], mood: [your mood], length: [seconds]]
@@ -44,7 +48,7 @@ If missing, add these at the TOP of Lyrics field (before `[Title:]`):
 [sequence: [list all sections in order]]
 ```
 
-**Length calculation:** Target minutes × 60 = seconds (e.g., 4:30 = 270)
+**Length calculation:** Estimate runtime: (total lyric lines × 60/BPM × 2) + intro seconds + outro seconds. Example: 20 lyric lines at 92 BPM ≈ (20 × 1.3) + 8s intro + 10s outro ≈ 44s... more realistically, each sung line takes ~2-3 seconds with breath at moderate tempo. Quick formula: (total lyric lines × 2.5) + intro/outro bars × (60/BPM × 4). Round to nearest 15 seconds.
 
 **Sequence:** List EVERY section tag that appears, in order:
 ```
@@ -53,12 +57,14 @@ If missing, add these at the TOP of Lyrics field (before `[Title:]`):
 
 ### Step 3 — Validate [control] Parameters
 
-Only these values are confirmed valid:
+Only these values are confirmed valid (tested as of v4.5/v5.0 — see `references/SUNO_TAGS_REFERENCE.md` for latest):
 - `no-repeat` ✅
 - `dynamic transitions` ✅
 - `instrumental` ✅
 
 **Invalid** (remove if present): `build across sections`, custom phrases, unconfirmed terms.
+
+**Discovered a new working parameter?** Contribute it via SOP 08.
 
 ### Step 4 — Optimize Section Tags
 
@@ -77,14 +83,18 @@ Only these values are confirmed valid:
 ```
 
 **Validate pipe parameters:**
-- ✅ Valid: adjectives/descriptors (powerful, intimate, wide, dark, stripped, rising)
+- ✅ Valid: adjectives/descriptors (powerful, intimate, wide, dark, stripped, rising, sparse, full, layered, driving)
 - ✅ Valid: vocal delivery (vulnerable vocals, close-mic, whispered, spoken)
-- ❌ Invalid: instrument instructions ("cello enters low", "drums enter soft")
+- ❌ Invalid: instrument instructions ("cello enters low", "drums enter soft", "guitar picks up tempo")
 - ❌ Invalid: custom phrases ("maximum width", "build across sections")
+
+**Practical limit:** Recommend 2-4 pipe parameters per section tag. Beyond 5, Suno may deprioritize later descriptors.
 
 **Move invalid pipe params** to Production Direction block or standalone tags.
 
 ### Step 5 — Add Vocal Delivery Tags
+
+Per-section vocal tags SUPPLEMENT the global Vocal Direction block — they specify WHERE a delivery change happens. The Vocal Direction block sets the baseline; section tags mark departures from it.
 
 Scan each section. Where appropriate, add:
 
@@ -99,18 +109,18 @@ Scan each section. Where appropriate, add:
 
 ### Step 6 — Add Dynamics Tags
 
-At key moments, add explicit tags:
+At key moments, add explicit tags. Dynamics can be expressed as **standalone tags** (`[build]` before a section) OR as **pipe parameters** (`[section | building, rising]`). Use standalone tags for mid-section dynamic events (e.g., sudden silence in the middle of a verse). Use pipe parameters when the dynamic applies to the entire section.
 
-| Moment | Tag |
-|---|---|
-| Pre-chorus building | `[build]` (or in pipe: `[pre-chorus \| build, rising tension]`) |
-| Dramatic silence | `[silence: sudden]` |
-| Key change | `[modulation: ascending]` or `[modulation: sudden]` |
-| Volume increasing | `[crescendo]` |
-| Volume decreasing | `[diminuendo]` |
-| Rhythm change | `[beat-switch: half-time]` |
-| Grand ending | `[big finish]` |
-| Held note | `[fermata]` |
+| Moment | Standalone Tag | Pipe Alternative |
+|---|---|---|
+| Pre-chorus building | `[build]` | `[pre-chorus \| building, rising tension]` |
+| Dramatic silence | `[silence: sudden]` | N/A (use standalone — mid-section event) |
+| Key change | `[modulation: ascending]` or `[modulation: sudden]` | N/A |
+| Volume increasing | `[crescendo]` | `[section \| swelling, crescendo]` |
+| Volume decreasing | `[diminuendo]` | `[section \| fading, pulling back]` |
+| Rhythm change | `[beat-switch: half-time]` | N/A |
+| Grand ending | `[big finish]` | `[final chorus \| powerful, big finish]` |
+| Held note | `[fermata]` | N/A |
 
 ### Step 7 — Add Termination
 
@@ -140,12 +150,12 @@ Scan for and REMOVE any of these:
 ### Step 9 — Verify Suno Compatibility
 
 Final checklist:
-- [ ] No end punctuation on lyric lines (no periods, commas, semicolons)
+- [ ] No prohibited end punctuation on lyric lines (no periods, commas, semicolons, exclamation marks, question marks). Em-dashes (—) ARE allowed for phrasing/breath. Apostrophes (') and hyphens (-) are fine.
 - [ ] Each line = one melodic phrase
-- [ ] 4-8 lines per section maximum
+- [ ] 4-8 lines per section maximum (for sections with sung/spoken lyrics — instrumental sections with only a tag and no lyrics are valid)
 - [ ] No lyrics on same line as tags
 - [ ] Tags on their own line
-- [ ] `[Title:]` is present and matches song name
+- [ ] `[track:]` tag is present with genre, mood, and length
 - [ ] Production Direction block present
 - [ ] Vocal Direction block present
 
@@ -162,12 +172,16 @@ Recommend slider values based on song type:
 | Epic orchestral | 50-55% | 60-70% | 45-55% |
 | Experimental | 60-75% | 40-50% | 30-40% |
 
+**Album consistency note:** For album tracks, document slider values per track. If a render captures the intended palette well, note the settings as a baseline for adjacent tracks with similar sonic palettes. Consistency across an album matters more than per-track optimization.
+
 ### Step 11 — Prepare Exclude Field Content
 
-Format exclusions for the dedicated Exclude field:
+Format exclusions for the dedicated Exclude field in Suno's UI:
 ```
-‑trap drums, ‑beatboxing, ‑vocal hums, ‑[genre-specific exclusions]
+distortion, electric guitar, synthesizers, trap drums, beatboxing, vocal hums
 ```
+
+**Important format note:** In the dedicated Exclude field, list items as plain comma-separated text — no dash prefix needed (the field itself implies exclusion). The dash-prefix format (`‑item`) is only needed when placing exclusions WITHIN the Style Prompt field to negate within a positive-description context.
 
 **Note:** This goes in the EXCLUDE field in Suno's UI — NOT in Style Prompt or Lyrics.
 
@@ -179,6 +193,7 @@ Document the optimized version with:
 
 ### Changes Made:
 - [list of specific additions/changes]
+- (If no changes: "Verification pass — all checks passed, no changes needed")
 
 ### Character Counts:
 - Style: XXX/1000

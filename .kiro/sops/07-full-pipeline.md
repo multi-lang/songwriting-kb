@@ -22,14 +22,14 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 **Agent:** Songwriter
 **Input:** Concept/prompt + album context (if applicable)
 **Process:** Full SOP 01 (analysis → writing → quality check → formatting)
-**Output:** Complete first draft (lyrics + style + production notes)
+**Output:** Complete first draft (lyrics + style + production notes + Suno formatting)
 **Time:** 50-75 min
 
 **Exit criteria:**
 - [ ] Song thesis stated
 - [ ] All sections written
 - [ ] Production notes complete
-- [ ] Basic Suno format applied
+- [ ] Suno format applied (full formatting from SOP 01 Phase 4)
 
 ---
 
@@ -54,6 +54,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 - If composite 7.0-8.4: Proceed to Stage 3 (Revise)
 - If composite <7.0: Return to Stage 1 with new approach (concept may need rethinking)
 
+**⚠️ Score source:** The decision gate uses the SOP 02 CRITIQUE composite score. Self-scores from SOP 01 (which use a different rubric) are for the writer's reference only — they do not drive pipeline decisions.
+
 ---
 
 ### Stage 3: REVISE
@@ -77,7 +79,9 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 - [ ] Hook timing still works
 - [ ] Character count still within limits
 
-**Optional:** Run through Critique again (Stage 2) for a revised score. Target: +0.5-1.0 improvement.
+**Optional:** Run through Critique again (Stage 2) for a revised score. Target: +0.5-1.0 improvement. Recommended for songs targeting ≥8.5 or when revisions were structural. Optional for polish-only fixes where the original score was already 8.0-8.4.
+
+**Note:** Revision is defined here (not as a standalone SOP) because it always requires critique output as input. The critique report IS the revision brief.
 
 ---
 
@@ -87,6 +91,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 **Input:** Revised (or first draft if skipping revision)
 **Process:** Full SOP 03 (char count → global tags → validation → delivery tags → dynamics → termination)
 **Output:** Suno-ready version with all meta-tags applied
+
+**Note:** For songs written with SOP 01 (which includes Phase 4 Suno formatting), this stage functions primarily as VERIFICATION. Run all SOP 03 checks to confirm compliance and catch any formatting disrupted during revision (Stage 3). Expect minimal changes for well-formatted songs.
 
 **Time:** 15-20 min
 
@@ -106,6 +112,7 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 
 **Agent:** Album-Continuity
 **Input:** Optimized song + Album Bible
+**Authority:** All verification checks reference the Album Bible (`references/[ALBUM]_BIBLE.md`) as the single source of truth.
 **Process:**
 1. Run all hard rules against the track
 2. Check sonic palette compliance
@@ -127,6 +134,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 - [ ] Arc position correct
 
 **If FAIL:** Return to Stage 3 (Revise) with continuity notes. Fix violation. Re-optimize (Stage 4). Re-verify.
+
+**⚠️ Conflict resolution:** If continuity rules conflict with critique recommendations (e.g., critique says "add harmony vocals" but album rule forbids harmony before Track 7): continuity rules always win. Achieve the critique's INTENT through rule-compliant means. Document the conflict and resolution.
 
 ---
 
@@ -167,3 +176,5 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 | Song is experimental/non-Suno | Skip Stage 4 |
 | Quick draft / idea capture | Stop after Stage 1 |
 | Just need feedback | Stop after Stage 2 |
+| Song already Suno-formatted from SOP 01 | Stage 4 is verification only (still run, expect minimal changes) |
+| Album track but non-Suno | Skip Stage 4, keep Stage 5 |

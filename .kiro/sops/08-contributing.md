@@ -20,7 +20,8 @@ The `.kiro/` directory auto-configures Kiro IDE with all agents, skills, hooks, 
 These work for ANY songwriter with zero customization:
 - 4 agents (songwriter, critic, suno-optimizer, album-continuity)
 - 5 skills (critique, suno-tags, music-theory, character-voice, concept-album-bible)
-- 3 hooks (format-check, char-count, prosody-lint)
+- 3 universal hooks (format-check, char-count, prosody-lint) + album-specific continuity hooks (one per example album)
+- 8 SOPs (writing, critiquing, optimizing, album setup, extending, character voice, full pipeline, contributing)
 - Full songwriting knowledge base (13 sections)
 - Full music production theory (12 disciplines + 23 frameworks)
 - Complete Suno tag reference (35 confirmed tags + v5.0)
@@ -34,8 +35,14 @@ These files contain templates/examples — personalize them:
 |---|---|
 | `.kiro/steering/voletek-preferences.md` | Rename to your username, set YOUR output format preferences |
 | `.kiro/steering/concept-album.md` | Replace with YOUR album's rules (or delete if no album) |
-| `references/FRACTURED_SHADOWS_BIBLE.md` | Replace with YOUR album bible (see SOP 04) |
+| `.kiro/steering/keeper-of-the-light.md` | Example album steering — delete or keep as format reference |
+| `references/FRACTURED_SHADOWS_BIBLE.md` | Example album bible — replace with YOUR bible or keep as reference |
+| `references/KEEPER_OF_THE_LIGHT_BIBLE.md` | Example album bible — replace with YOUR bible or keep as reference |
+| `.kiro/hooks/continuity-check.md` | Replace with YOUR album's continuity hook (or delete) |
+| `.kiro/hooks/keeper-continuity-check.md` | Example album hook — delete or replace with yours |
 | `songs/` | Replace with YOUR songs |
+
+**Note:** Example bibles and album files are valuable FORMAT references — keep them as read-only references until you've created your own, then optionally remove them.
 
 ---
 
@@ -44,6 +51,8 @@ These files contain templates/examples — personalize them:
 ### Step 4 — Create Your Preferences File
 
 Copy `.kiro/steering/voletek-preferences.md` and rename to `.kiro/steering/[your-name]-preferences.md`
+
+Use the existing file as a FORMAT template — match its structure while filling in your own preferences.
 
 Customize:
 - What should Production Notes include? (minimum: Key, Tempo, Chords, Vocal, Instruments)
@@ -69,6 +78,8 @@ Edit `.kiro/skills/concept-album-bible/SKILL.md`:
 - Change the `#[[file:...]]` reference to point at YOUR bible
 - Update the rule list to YOUR rules
 
+**Note:** The `#[[file:path]]` syntax is Kiro's file-reference system — it embeds the referenced file's content when the skill is activated. Replace the path with your bible's location (e.g., `#[[file:references/YOUR_ALBUM_BIBLE.md]]`).
+
 ### Step 7 — Update the Album Continuity Agent
 
 Edit `.kiro/agents/album-continuity.md`:
@@ -82,14 +93,15 @@ Edit `.kiro/agents/album-continuity.md`:
 
 ### What We Accept
 
-| Type | Examples | Requirements |
-|---|---|---|
-| **Knowledge base additions** | New genre conventions, new Suno tag findings, new theory | Must be sourced, verified, and universal |
-| **New skills** | Genre-specific skills (metal songwriting, hip-hop production) | Must follow SKILL.md format with reference doc |
-| **New hooks** | Additional quality checks | Must be useful to >1 person |
-| **Bug fixes** | Incorrect tag syntax, outdated Suno info | Must include evidence of the fix |
-| **SOPs** | New procedures for workflows not covered | Must follow SOP format |
-| **Example albums** | YOUR completed album bible as a reference | Helps others see how a filled system looks |
+| Type | Examples | Requirements | Target File |
+|---|---|---|---|
+| **Knowledge base additions** | New genre conventions, new Suno tag findings, new theory | Must be sourced, verified, and universal | `SONGWRITING_KNOWLEDGE_BASE.md` or `MUSIC_PRODUCTION_THEORY.md` |
+| **Suno tag findings** | New confirmed tags, updated tag behavior | Must be tested and verified | `references/SUNO_TAGS_REFERENCE.md` |
+| **New skills** | Genre-specific skills (metal songwriting, hip-hop production) | Must follow SKILL.md format with reference doc | `.kiro/skills/[new-skill]/` |
+| **New hooks** | Additional quality checks | Must be useful to >1 person | `.kiro/hooks/` |
+| **Bug fixes** | Incorrect tag syntax, outdated Suno info | Must include evidence of the fix | Relevant file |
+| **SOPs** | New procedures for workflows not covered | Must follow SOP format | `.kiro/sops/` |
+| **Example albums** | YOUR completed album bible as a reference | Helps others see how a filled system looks | `references/` |
 
 ### What We Don't Accept
 
@@ -103,7 +115,7 @@ Edit `.kiro/agents/album-continuity.md`:
 1. Fork the repo
 2. Create a branch: `contribution/[your-addition]`
 3. Add your content following existing format
-4. Verify: no personal references in universal files
+4. Verify: no personal references in universal files (search for your album name, character names, or personal details — these should only appear in personal files)
 5. Submit PR with description of what you're adding and why
 
 ---
@@ -152,10 +164,14 @@ cd songwriting-kb
 cp .kiro/steering/voletek-preferences.md .kiro/steering/my-preferences.md
 # Edit my-preferences.md with your format choices
 
-# Remove example album content (or keep as reference)
+# Remove example album content (or keep as format references)
 rm references/FRACTURED_SHADOWS_BIBLE.md
+rm references/KEEPER_OF_THE_LIGHT_BIBLE.md
 rm .kiro/steering/concept-album.md
-rm -rf songs/album_act2 songs/album_act3 songs/experimental
+rm .kiro/steering/keeper-of-the-light.md
+rm .kiro/hooks/continuity-check.md
+rm .kiro/hooks/keeper-continuity-check.md
+rm -rf songs/album_act2 songs/album_act3 songs/experimental songs/keeper_of_the_light
 rm songs/0*_*.md songs/Shadow* songs/Shapes* songs/What_If* songs/Evil* songs/Cat*
 
 # Create your own album (follow SOP 04)
@@ -173,7 +189,7 @@ rm songs/0*_*.md songs/Shadow* songs/Shapes* songs/What_If* songs/Evil* songs/Ca
 A: No. The songwriter agent, critic, suno-optimizer, and all knowledge base files work for standalone songs. The album continuity system is optional.
 
 **Q: Can I use this without Kiro IDE?**
-A: Yes. The knowledge base files, SOPs, and reference docs work with any AI assistant. The agents/skills/hooks/powers are Kiro-specific features but the CONTENT they contain is universal.
+A: Yes. The knowledge base files, SOPs, and reference docs work with any AI assistant. The agents/skills/hooks/powers are Kiro-specific features but the CONTENT they contain is universal. SOPs (in `.kiro/sops/`) are tool-agnostic procedures — follow them with any AI assistant or manually.
 
 **Q: Do I need to use Suno?**
 A: No. The songwriting methodology (9-step, 12-category rubric, Nashville method) works for any songwriting — human performance, other AI tools, or traditional recording. The Suno-specific sections (tags, formatting, sliders) are only relevant if using Suno.
