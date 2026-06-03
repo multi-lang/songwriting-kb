@@ -9,7 +9,19 @@
 
 **Fractured Shadows** — 17 tracks (Act 1: T1-7, Act 2: T8-17)
 
-## 10 Hard Rules (Never Break)
+## ALBUM EXTENSION PROTOCOL
+
+**⚠️ STOP — Before writing ANY track outside the current registry (T1-17):**
+1. Update `references/FRACTURED_SHADOWS_BIBLE.md` with the new act's track registry
+2. Extend the sonic palette evolution map
+3. Define which existing rules carry forward vs which are act-specific
+4. Get the bible update committed BEFORE writing new songs
+
+Failure to do this creates cascading continuity errors that compound with each new track.
+
+---
+
+## 11 Hard Rules (Never Break)
 
 1. **No electronic/industrial after Track 8** — digital world is gone
 2. **Alaric's voice = same production in T11 and T15** — recognizable
@@ -21,6 +33,7 @@
 8. **Rikan's vocal texture evolves EVERY track** — never the same twice
 9. **T12 Fm rhymes with T6 Fm** — war and transfer are related trauma
 10. **Album title phrase ONLY in T17 final chorus** — "The fracture made the shadows / But the shadows made the dawn"
+11. **No two tracks may share >70% instrument palette without documented justification** — sonic differentiation is mandatory
 
 ## Sonic Palette by Track Range
 

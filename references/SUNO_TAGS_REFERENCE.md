@@ -70,6 +70,23 @@ Priority order when hitting 1000 char limit:
 
 Saves characters vs stacking multiple `[tag]` lines. Can combine vocal + production + mood.
 
+### Valid Pipe Parameters (USE THESE):
+- **Mood/energy:** powerful, soft, intimate, energetic, stripped, atmospheric, dark, bright, warm, cold
+- **Vocal delivery:** vulnerable vocals, close-mic, whispered, belting, spoken, breathy, gritty
+- **Dynamics:** building, rising tension, fading, crescendo, near-silence
+- **Stereo/space:** wide stereo, narrow, immersive, mono
+- **Style:** anthemic, minimal, cinematic, dramatic, playful
+
+### Invalid Pipe Parameters (DON'T DO THIS):
+| ❌ Wrong | Why | ✅ Correct Alternative |
+|---|---|---|
+| `[verse | cello enters low]` | Instrument instruction, not a parameter | Put in Production Direction block |
+| `[build | drums enter soft]` | Literal instrument cue | `[build | rising tension, soft percussion]` |
+| `[chorus | maximum width]` | Not a recognized term | `[chorus | wide stereo, powerful]` |
+| `[control | build across sections]` | Not a valid control value | `[control: dynamic transitions]` |
+
+**Rule:** Pipe params should be **adjectives/descriptors**, not **instructions about what instruments do.** Instrument-specific direction belongs in `[Production Direction]` blocks or standalone production tags.
+
 ---
 
 ## DYNAMICS & INTENSITY TAGS

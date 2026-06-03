@@ -143,6 +143,19 @@ T17:    Resolution (integration — both names)
 
 ---
 
+## ALBUM EXTENSION PROTOCOL
+
+**⚠️ Before writing ANY track outside this registry (T1-17), you MUST:**
+1. Add the new track(s) to this bible's Track Registry table
+2. Extend the Sonic Palette Evolution map
+3. Define which rules carry forward and which are act-specific
+4. Commit the updated bible BEFORE writing new songs
+5. Verify sonic differentiation against all existing tracks sharing similar palettes
+
+**Failure to follow this protocol creates cascading continuity errors.**
+
+---
+
 ## CONTINUITY RULES
 
 1. **No electronic/industrial after Track 8** — the digital world is gone
@@ -155,6 +168,7 @@ T17:    Resolution (integration — both names)
 8. **Rikan's vocal texture MUST evolve per track** — he's never the same twice
 9. **Track 12's F minor rhymes with Track 6's F minor** — war and transfer are related trauma
 10. **The album title phrase appears ONLY in T17 final chorus** — "The fracture made the shadows / But the shadows made the dawn"
+11. **No two tracks may share >70% of the same instrument palette** — sonic differentiation is mandatory. If similar, document WHY and specify the distinguishing elements explicitly.
 
 ---
 
