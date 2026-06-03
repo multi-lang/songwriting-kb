@@ -1,6 +1,6 @@
 # Songwriting Knowledge Base
 
-A professional song production system combining Nashville/LA co-writing craft, academic music theory (12 disciplines), Suno AI v5.0 formatting expertise, and concept album continuity management — packaged as a complete Kiro IDE ecosystem with step-by-step SOPs for every workflow.
+A professional song production system combining Nashville/LA co-writing craft, academic music theory (12 disciplines), Suno AI v5.5 formatting expertise, and concept album continuity management — packaged as a complete Kiro IDE ecosystem with step-by-step SOPs for every workflow.
 
 ---
 
@@ -31,12 +31,13 @@ songwriting-kb/
 ├── .kiro/
 │   ├── steering/              4 files — auto-loaded every session
 │   ├── skills/                5 skills — loaded on demand
-│   ├── hooks/                 4 hooks — automated on file events
+│   ├── hooks/                 3 universal + album-specific continuity hooks
 │   ├── agents/                4 agents — invocable specialized roles
 │   ├── powers/songwriting/    1 power — activatable master bundle
 │   └── sops/                  8 SOPs — step-by-step procedures
-├── references/                4 companion docs for skills
+├── references/                5 companion docs (critique, tags, voice, 2 album bibles)
 ├── songs/                     Album tracks + experimental + standalone
+├── analysis/                  Stress test reports + critique outputs
 ├── SONGWRITING_KNOWLEDGE_BASE.md    Master craft reference (13 sections)
 └── MUSIC_PRODUCTION_THEORY.md       Academic framework (12 disciplines)
 ```
@@ -50,7 +51,7 @@ The procedural layer — step-by-step HOW for every workflow:
 | # | SOP | What It Covers | Time |
 |---|---|---|---|
 | **01** | [Writing a Song](/.kiro/sops/01-writing-a-song.md) | 27 steps: concept → analysis → writing → QA → formatting | 50-75 min |
-| **02** | [Critiquing a Song](/.kiro/sops/02-critiquing-a-song.md) | 8 steps: read → 9-step analysis → score → flag → recommend | 30-35 min |
+| **02** | [Critiquing a Song](/.kiro/sops/02-critiquing-a-song.md) | 9 steps: read → 9-step analysis → score → flag → recommend | 30-50 min |
 | **03** | [Optimizing for Suno](/.kiro/sops/03-optimizing-for-suno.md) | 12 steps: char audit → tags → validate → dynamics → sliders | 15-20 min |
 | **04** | [Setting Up a Concept Album](/.kiro/sops/04-setting-up-concept-album.md) | 12 steps: concept → registry → rules → motifs → documentation | 2.5-3.5 hrs |
 | **05** | [Extending an Album](/.kiro/sops/05-extending-an-album.md) | 12 steps: evaluate → scope → update bible → verify → write | 1-2 hrs |
@@ -74,7 +75,7 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 |---|---|---|
 | **songwriter** | Creates complete songs from concepts using Nashville method, outputs Suno-ready format with Production Notes | "Write a song about X" |
 | **critic** | Scores songs on 12 categories (1-10), identifies strongest line, flags issues with alternatives | "Critique this" / "Score this song" |
-| **suno-optimizer** | Adds meta-tags, checks char counts, validates pipe params, converts to v5.0 format. Does NOT change creative content | "Make this Suno-ready" |
+| **suno-optimizer** | Adds meta-tags, checks char counts, validates pipe params, verifies parenthetical layers, converts to v5.5 format | "Make this Suno-ready" |
 | **album-continuity** | Runs hard rules, verifies sonic palette, motifs, character voices, key relationships | "Check continuity" |
 
 ---
@@ -84,10 +85,10 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 | Skill | Contains | Activate When |
 |---|---|---|
 | **song-critique** | 12-category rubric, scoring examples, flag patterns | Evaluating any song |
-| **suno-meta-tags** | 35 confirmed tags, v5.0 techniques, slider guide, templates | Formatting for Suno |
+| **suno-meta-tags** | 35+ confirmed tags, v5.5 features, layers, sliders, era tags | Formatting for Suno |
 | **music-theory** | 12 disciplines, 23-point framework, 18 advanced concepts | Deep production analysis |
-| **character-voice** | Accent/dialect system, voice design template, instrumentation maps | Writing for characters |
-| **concept-album-bible** | Track registry, motifs, continuity rules (template + example) | Album work |
+| **character-voice** | Accent/dialect system, voice design template (vocal + non-vocal), instrumentation maps | Writing for characters |
+| **concept-album-bible** | Track registry, motifs, continuity rules (template + 2 examples) | Album work |
 
 ---
 
@@ -97,8 +98,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 |---|---|---|
 | **song-format-check** | File create in `songs/` | Required sections present |
 | **suno-char-count** | File save in `songs/` | Style ≤1000, Lyrics ≤5000 |
-| **prosody-lint** | File save in `songs/` | Lines >12 syllables, stuffed phrases |
-| **continuity-check** | File save in album dirs | Sonic palette, key rules, phrase protection |
+| **prosody-lint** | File save in `songs/` | Lines >12 syllables, stuffed phrases, weak endings |
+| **continuity-check** | File save in album dirs | Sonic palette, key rules, phrase protection, layer declarations |
 
 ---
 
@@ -107,34 +108,9 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 | File | Purpose |
 |---|---|
 | `songwriting.md` | Core principles + 9-step workflow + quality gates |
-| `suno-formatting.md` | Suno rules, limits, essential tags, creative sliders |
-| `voletek-preferences.md` | Output format (customize for your own preferences) |
-| `concept-album.md` | Album continuity rules (replace with your own album) |
-
----
-
-## Knowledge Base
-
-### SONGWRITING_KNOWLEDGE_BASE.md (13 Sections)
-1. Song Structure & Form
-2. The Hook (4 types, 6 principles)
-3. Lyric Writing Mastery
-4. Rhyme Types & Prosody (Pattison method)
-5. Chord Progressions & Music Theory
-6. Emotional Arc & Storytelling
-7. Genre Conventions
-8. Co-Writing & Nashville Method
-9. Pitching & Industry Standards
-10. Songwriter's Workflow & Exercises
-11. Quick Reference Cheat Sheets
-12. Suno AI Complete System (formatting, duet modes, hit formulas)
-13. **Suno Advanced Meta-Tags & v5.0** (35 tags, pipe notation, controls, sliders)
-
-### MUSIC_PRODUCTION_THEORY.md
-- 12 Academic Disciplines
-- 23-Point Song Development Framework
-- 18 Advanced Concepts
-- Vocal Accent & Dialect Phonetics (real-world + fantasy)
+| `suno-formatting.md` | Suno rules, limits, tags, sliders, v5.5 features, era tags, layers |
+| `voletek-preferences.md` | Output format, layers, hit formulas (customize for your own) |
+| `keeper-of-the-light.md` | Album continuity rules (replace with your own album) |
 
 ---
 
@@ -144,22 +120,49 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 | Field | Limit | Notes |
 |---|---|---|
 | Style of Music | 1000 chars | Genre, BPM, mood, instruments, vocal |
-| Lyrics | 5000 chars | Must fit — no overflow option |
-| Exclude | Dedicated field | Negative prompts ONLY |
+| Lyrics | 5000 chars | Confirmed June 2026 — must fit, no overflow |
+| Exclude | Dedicated field | Negative prompts ONLY (plain text, no dash prefix) |
 
 ### Creative Sliders
-| Slider | Default | Effect |
+| Slider | Default | Our Songs | Effect |
+|---|---|---|---|
+| Weirdness | 50% | 50-55% | Safe (0%) ↔ Chaos (100%) — creative latitude |
+| Style Influence | 50% | 50-60% | How much Style Prompt steers output |
+| Audio Influence | ~45% | 45% | Reference track weight (Inspo only) |
+
+### v5.5 Features (UI — not text tags)
+| Feature | What It Does | Album Use |
 |---|---|---|
-| Weirdness | 50% | Safe (0%) ↔ Chaos (100%) — creative latitude |
-| Style Influence | 50% | How much Style Prompt steers output |
-| Audio Influence | ~45% | How much reference track affects output (Inspo only) |
+| **Personas/Voices** | Lock vocal identity from your own sample | Same voice across all character tracks |
+| **Stems (12-track)** | Extract vocals, drums, bass, guitar, keys, strings, synth, brass, perc, backing, FX, other | DAW mixing for album consistency |
+| **Custom Models** | Train Suno on your completed tracks | Learn your sound for future songs |
+| **My Taste** | AI learns your preferences over time | Better defaults on quick sessions |
+
+### Parenthetical Layers — `()` in Lyrics
+| Pattern | Effect | Style Prompt Needed? |
+|---|---|---|
+| `(whispered) text` | Delivery cue — whispers next text | Usually works alone |
+| `(spoken) text` | Spoken not sung | Usually works alone |
+| `(robotic layer: text)` | Named secondary voice (AI/machine) | **YES — must declare** |
+| `(echo layer: text)` | Delayed/echo treatment | **YES — must declare** |
+| `(whisper layer: text)` | Background whisper texture | **YES — must declare** |
+| `(response text)` | Backup vocal / duet response | Best with declaration |
+
+### Era Tags (Production Modifiers)
+Decade tags in Style Prompt aggressively bias production style:
+- `"1980s"` → gated reverb drums, synth textures, bright digital
+- `"1970s"` → analog warmth, tape compression, live-room bleed
+- **Separation Principle:** Want vintage instruments + modern production? Be explicit: `"modern production, vintage 1970s guitar tone"`
+
+### The Specificity Principle
+The more dimensions you specify (genre, tempo, mood, vocal, instruments, space, key), the less Suno fills gaps with statistical averages. Our SOP system produces 7-dimension "precise" prompts by design.
 
 ### 5 Formatting Modes
 | Mode | Use Case |
 |---|---|
 | **A** — Per-Line Vocal Tags | Intimate cinematic dialogue |
 | **B** — Parenthetical () | Space-efficient call-and-response |
-| **C** — Theatrical/Concept | Multi-layer concept albums |
+| **C** — Theatrical/Concept | Multi-layer concept albums (named layers) |
 | **D** — Character Performance | Fantasy characters, accents |
 | **E** — Solo Anthem/Intimate | Accessible solo tracks |
 
@@ -192,46 +195,41 @@ Applied to every song:
 - ABCB default rhyme scheme
 - Near/slant rhymes preferred over forced perfect
 - Production choices must SIGNIFY correctly (Tagg semiotics)
+- Named parenthetical layers must be declared in Style Prompt
+- Era tags separated from production intent when mixing vintage + modern
 
 ---
 
-## Community Use
+## Knowledge Base
 
-This system is designed for sharing. The architecture separates **universal** from **personal**:
+### SONGWRITING_KNOWLEDGE_BASE.md (13 Sections)
+1. Song Structure & Form
+2. The Hook (4 types, 6 principles)
+3. Lyric Writing Mastery
+4. Rhyme Types & Prosody (Pattison method)
+5. Chord Progressions & Music Theory
+6. Emotional Arc & Storytelling
+7. Genre Conventions
+8. Co-Writing & Nashville Method
+9. Pitching & Industry Standards
+10. Songwriter's Workflow & Exercises
+11. Quick Reference Cheat Sheets
+12. Suno AI Complete System (formatting, duet modes, layers, hit formulas, v5.5, era tags, specificity)
+13. **Suno Advanced Meta-Tags & v5.0/5.5** (35+ tags, pipe notation, controls, sliders, stems, personas)
 
-### Universal (works for anyone — 72% of system):
-- All knowledge base files
-- All SOPs
-- Songwriter, Critic, Suno-Optimizer agents
-- All skills (except album-bible content)
-- Format-check, char-count, prosody-lint hooks
-- All reference docs (except album bible)
-
-### Personal (customize for your projects — 28% of system):
-- `concept-album.md` — replace with YOUR album rules
-- `voletek-preferences.md` — rename and set YOUR preferences
-- `FRACTURED_SHADOWS_BIBLE.md` — replace with YOUR album bible
-- Album-continuity agent — configure YOUR rules
-- Continuity-check hook — set YOUR violations
-
-### Getting Started (Community):
-```bash
-git clone https://github.com/Voletek/songwriting-kb.git
-cd songwriting-kb
-# See SOP 08 for full setup guide
-# See SOP 04 to create your own concept album
-```
+### MUSIC_PRODUCTION_THEORY.md
+- 12 Academic Disciplines
+- 23-Point Song Development Framework
+- 18 Advanced Concepts
+- Vocal Accent & Dialect Phonetics (real-world + fantasy)
 
 ---
 
-## The Concept Album: Fractured Shadows (Example)
+## Example Albums (Reference Implementations)
 
-Included as a **reference implementation** showing how a completed album system looks.
+### Fractured Shadows — Digital→Fantasy Concept (17 tracks)
 
-### Album Thesis
 > "The fracture made the shadows — but the shadows made the dawn."
-
-### Track Listing (17 tracks, 2 acts)
 
 **Act 1 — Digital Dissolution → Transfer (Tracks 1-7)**
 
@@ -260,9 +258,56 @@ Included as a **reference implementation** showing how a completed album system 
 | 16 | Campfire | **D major** | Found family |
 | 17 | Both Names | Am→**C major** | Integration |
 
-**Sonic Evolution:**
-```
-Industrial/Glitch → Tribal/Primal → Cinematic Orchestral → Folk Rock → Full Orchestra + Key Change
+**Sonic Evolution:** Industrial/Glitch → Tribal/Primal → Cinematic Orchestral → Folk Rock → Full Orchestra + Key Change
+
+---
+
+### Keeper of the Light — Folk-Horror/Sea-Shanty Concept (8 tracks)
+
+> "The light was never a beacon — it was a lullaby, and she's been singing something terrible to sleep her entire life."
+
+| # | Title | Key | Emotion |
+|---|---|---|---|
+| 01 | The Keeper's Morning | D Mixolydian | Devotion, solitude |
+| 02 | Sixty Years of Light | G Dorian | Ritual, quiet loneliness |
+| 03 | What the Logbook Says | Em | Unease, first dread |
+| 04 | The Depth Hymn | Bm | Revelation, awe-horror |
+| 05 | The Night the Light Died | F#m | Panic, guilt, chaos |
+| 06 | Something Stirs Below | Cm | Cosmic dread, paralysis |
+| 07 | It Remembers the Sun | Fm | Ancient sorrow, terrible beauty |
+| 08 | Lullaby for Leviathan | D Mixolydian (underwater) | Acceptance, transformation |
+
+**Sonic Evolution:** Warm acoustic folk → Darkened folk → Dark ambient → Storm chaos → Near-silence → Massive choir → Transformed return
+
+**Unique features:** Non-vocal entity character design, harmonic circle (starts/ends in D Mixolydian), the sea as ever-present instrument evolving across 8 tracks.
+
+---
+
+## Community Use
+
+This system is designed for sharing. The architecture separates **universal** from **personal**:
+
+### Universal (works for anyone — ~70% of system):
+- All knowledge base files
+- All SOPs
+- Songwriter, Critic, Suno-Optimizer agents
+- All skills (except album-bible content)
+- Format-check, char-count, prosody-lint hooks
+- All reference docs (except album bibles)
+
+### Personal (customize for your projects — ~30% of system):
+- `voletek-preferences.md` → rename, set YOUR format preferences
+- `keeper-of-the-light.md` / `concept-album.md` → replace with YOUR album rules
+- `KEEPER_OF_THE_LIGHT_BIBLE.md` / `FRACTURED_SHADOWS_BIBLE.md` → replace with YOUR bible
+- Album-continuity agent → configure YOUR rules
+- Continuity-check hooks → set YOUR violations
+
+### Getting Started (Community):
+```bash
+git clone https://github.com/Voletek/songwriting-kb.git
+cd songwriting-kb
+# See SOP 08 for full setup guide
+# See SOP 04 to create your own concept album
 ```
 
 ---
@@ -273,9 +318,10 @@ Industrial/Glitch → Tribal/Primal → Cinematic Orchestral → Folk Rock → F
 - Franco Fabbri (genre theory), Philip Tagg (music semiotics)
 - Patrik Juslin (BRECVEMA emotion psychology)
 - stayen/suno-reference (November 2025 — v5.0 meta-tags)
-- Suno AI official documentation
+- Suno AI official documentation + community testing
 - Battle-tested prompt engineering (real Suno playlist prompts)
 - iZotope, The Song Foundry, American Songwriter, Nashville Guitar Studios
+- Community research: era tag production biases, parenthetical layer techniques, specificity principle
 
 ---
 
