@@ -45,8 +45,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 **Exit criteria:**
 - [ ] All 12 categories scored
 - [ ] Composite score calculated
-- [ ] 2-3 issues flagged with alternatives
-- [ ] 3 priority recommendations given
+- [ ] All issues flagged with alternatives
+- [ ] Priority recommendations given (all issues, ordered by impact)
 - [ ] Report saved to `analysis/[song-filename]_critique.md`
 
 **Decision gate:**

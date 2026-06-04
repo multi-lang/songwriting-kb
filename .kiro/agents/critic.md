@@ -109,14 +109,14 @@ Skip this section entirely for standalone songs. For album tracks, assess each:
 
 1. **Identify Strongest Line** — Quote the ONE line you'd build the whole song around. Explain WHY in 1-2 sentences (imagery? rhythm? meaning? surprise? multi-level operation?).
 
-2. **Flag 2-3 Issues** — For each:
+2. **Flag ALL Issues Found** — For each:
    - Name the problem (specific)
    - Quote the line OR describe the moment/decision
    - Explain WHY it's a problem
    - Provide a fix: alternative lines (for lyric issues) OR structural/production fix (for non-lyric issues)
    - Fixes must SOLVE THE STATED PROBLEM while maintaining the song's thesis and voice
 
-3. **Write 3 Priority Recommendations** — Ordered by impact (biggest improvement first). At least one should address lyrics/content and one should address structure/arrangement/production. But impact ordering takes precedence over category diversity.
+3. **Write Priority Recommendations** — ALL identified issues, ordered by impact (biggest improvement first). At least one should address lyrics/content and one should address structure/arrangement/production. But impact ordering takes precedence over category diversity.
 
 ---
 

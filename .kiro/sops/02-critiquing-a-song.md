@@ -67,9 +67,9 @@ Average all 12 scores. This is the composite.
 
 Find the ONE line you'd build the whole song around. Quote it. Explain in 1-2 sentences WHY it works (imagery? rhythm? meaning? surprise?).
 
-### Step 6 — Flag 2-3 Issues
+### Step 6 — Flag ALL Issues
 
-For each issue:
+For each issue found (do not limit to a fixed number — report everything that needs fixing):
 1. Name the problem (specific — not "could be better")
 2. Quote the current line (for lyric issues) OR describe the specific moment/decision (for structural/production issues)
 3. Explain WHY it's a problem (prosody? forced rhyme? abstract? redundant? predictable? static?)
@@ -80,9 +80,9 @@ For each issue:
 
 **Rule:** Alternatives/fixes must SOLVE THE STATED PROBLEM while maintaining the song's thesis and voice — not just be different for difference's sake.
 
-### Step 7 — Write 3 Priority Recommendations
+### Step 7 — Write Priority Recommendations
 
-Ordered by impact (biggest improvement first). Each recommendation should target a different LEVEL of the song where possible (one lyric-level, one structural/arrangement, one polish) — but if the song's problems cluster at one level, that's fine. Impact ordering takes precedence over category diversity.
+ALL identified issues, ordered by impact (biggest improvement first). Each recommendation should target a different LEVEL of the song where possible (one lyric-level, one structural/arrangement, one polish) — but if the song's problems cluster at one level, that's fine. Impact ordering takes precedence over category diversity.
 
 1. The ONE change that would improve the song most
 2. The second-highest-impact fix

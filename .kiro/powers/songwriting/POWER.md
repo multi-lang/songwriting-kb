@@ -66,7 +66,7 @@ A professional song production system combining Nashville/LA co-writing craft wi
 - **Layer 2:** 5 advanced assessments (Moore functional layers, Lacasse proxemics, Tagg musemics, Scope of Vision, Skip Test) + advanced composite
 - **Layer 3 (album tracks):** 6 album-context checks (position, intention vs delivery, transitions, dramatic irony, motifs, sonic differentiation)
 - **Calibration:** Self-score delta, layer audit, production-lyric alignment, discovery depth
-- Strongest line, flagged issues with fixes, 3 priority recommendations
+- Strongest line, flagged issues with fixes, priority recommendations ordered by impact
 
 For quick feedback, ask: "Quick score this" → Core 12 only.
 

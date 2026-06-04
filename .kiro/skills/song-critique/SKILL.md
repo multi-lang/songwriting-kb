@@ -31,8 +31,8 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  — "Does it serve its role?" (album
 6. Run Album-Context checks (if applicable) — 6 PASS/FAIL checks
 7. Run Calibration audit (self-score delta, layer check, production-lyric alignment, discovery depth)
 8. Identify strongest line (quote + explain)
-9. Flag 2-3 issues with fixes (lyric alternatives OR structural/production fixes)
-10. Write 3 priority recommendations ordered by impact
+9. Flag ALL issues with fixes (lyric alternatives OR structural/production fixes)
+10. Write priority recommendations ordered by impact (all issues, not limited to 3)
 
 ## When to Use Abbreviated vs Full
 
