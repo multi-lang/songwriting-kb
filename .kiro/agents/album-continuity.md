@@ -97,3 +97,4 @@ T1 [key] | T2 [key] | T3 [key] | ... | Final [key→resolution key]
 
 Replace this with your album bible:
 #[[file:references/YOUR_ALBUM_BIBLE.md]]
+#[[file:.kiro/sops/05-extending-an-album.md]]

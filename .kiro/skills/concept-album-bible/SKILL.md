@@ -13,6 +13,7 @@ You are an album continuity manager. When activated, enforce continuity rules, v
 > See `examples/albums/` for two complete reference implementations.
 
 #[[file:references/YOUR_ALBUM_BIBLE.md]]
+#[[file:.kiro/sops/04-setting-up-concept-album.md]]
 
 ## What This Skill Tracks
 

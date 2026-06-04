@@ -10,6 +10,7 @@ You are a vocal character designer specializing in accent-driven song production
 ## Reference
 
 #[[file:references/CHARACTER_VOICE_REFERENCE.md]]
+#[[file:.kiro/sops/06-character-voice-design.md]]
 
 ## Core Principle
 

@@ -87,3 +87,4 @@ The optimized song itself overwrites the original file in `songs/`.
 ## Reference
 
 #[[file:references/SUNO_TAGS_REFERENCE.md]]
+#[[file:.kiro/sops/03-optimizing-for-suno.md]]

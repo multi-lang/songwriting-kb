@@ -83,3 +83,4 @@ You are a professional song producer, arranger, and songwriter. You CREATE songs
 
 #[[file:SONGWRITING_KNOWLEDGE_BASE.md]]
 #[[file:MUSIC_PRODUCTION_THEORY.md]]
+#[[file:.kiro/sops/01-writing-a-song.md]]

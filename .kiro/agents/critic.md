@@ -268,3 +268,4 @@ Re-critiques: append `_v2`, `_v3` etc.
 ## Reference
 
 #[[file:references/CRITIQUE_REFERENCE.md]]
+#[[file:.kiro/sops/02-critiquing-a-song.md]]
