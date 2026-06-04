@@ -30,8 +30,8 @@ A professional song production system combining Nashville/LA co-writing craft wi
 ### Steering (Always-on context)
 - Core songwriting principles + 9-step workflow
 - Suno formatting quick-reference (v5.5, Personas, Stems, Layers, Era Tags)
-- Voletek's output preferences (Production Notes, layers, hit formulas)
-- Album continuity rules (12 hard rules per album, sonic palette, v5.5 render strategy)
+- Output format preferences (Production Notes, layers, hit formulas) — customizable
+- Concept album framework (how to set up continuity, universal album rules)
 
 ### Hooks (Automated checks)
 - Song format validation on file create
@@ -144,8 +144,8 @@ The following steering files provide always-on context:
 Top-level (`.kiro/steering/` — auto-loaded in every session):
 - `songwriting.md` — Core principles + 9-step workflow
 - `suno-formatting.md` — Suno rules + creative sliders
-- `voletek-preferences.md` — Output format preferences (rename for your own)
-- `concept-album.md` — Album continuity rules (replace with your own)
+- `output-preferences.md` — Output format preferences (customize for your own)
+- `concept-album.md` — Album continuity framework + setup guide
 
 Power-specific (`.kiro/powers/songwriting/steering/` — condensed versions):
 - `craft.md` — Principles quick-ref

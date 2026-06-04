@@ -1,6 +1,7 @@
 # Voletek — Output & Format Preferences
 
-> Auto-loaded. User-specific formatting and output requirements.
+> Example preferences file showing one user's complete configuration.
+> Copy this pattern to `.kiro/steering/output-preferences.md` and customize for yourself.
 
 ---
 

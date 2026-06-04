@@ -31,11 +31,12 @@ songwriting-kb/
 ├── .kiro/
 │   ├── steering/              4 files — auto-loaded every session
 │   ├── skills/                5 skills — loaded on demand
-│   ├── hooks/                 3 universal + album-specific continuity hooks
+│   ├── hooks/                 3 universal hooks — format, char-count, prosody
 │   ├── agents/                4 agents — invocable specialized roles
 │   ├── powers/songwriting/    1 power — activatable master bundle
 │   └── sops/                  8 SOPs — step-by-step procedures
-├── references/                5 companion docs (critique, tags, voice, 2 album bibles)
+├── examples/                  Reference implementations (albums, preferences)
+├── references/                5 companion docs (critique, tags, voice, 2 example bibles)
 ├── songs/                     Album tracks + experimental + standalone
 ├── analysis/                  Stress test reports + critique outputs
 ├── SONGWRITING_KNOWLEDGE_BASE.md    Master craft reference (13 sections)
@@ -109,8 +110,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 |---|---|
 | `songwriting.md` | Core principles + 9-step workflow + quality gates |
 | `suno-formatting.md` | Suno rules, limits, tags, sliders, v5.5 features, era tags, layers |
-| `voletek-preferences.md` | Output format, layers, hit formulas (customize for your own) |
-| `keeper-of-the-light.md` | Album continuity rules (replace with your own album) |
+| `output-preferences.md` | Output format, layers, hit formulas (customize for your own) |
+| `concept-album.md` | Album continuity framework + setup guide (universal) |
 
 ---
 
@@ -296,11 +297,10 @@ This system is designed for sharing. The architecture separates **universal** fr
 - All reference docs (except album bibles)
 
 ### Personal (customize for your projects — ~30% of system):
-- `voletek-preferences.md` → rename, set YOUR format preferences
-- `keeper-of-the-light.md` / `concept-album.md` → replace with YOUR album rules
-- `KEEPER_OF_THE_LIGHT_BIBLE.md` / `FRACTURED_SHADOWS_BIBLE.md` → replace with YOUR bible
+- `output-preferences.md` → edit with YOUR format preferences
+- Album bibles in `references/` → replace YOUR_ALBUM_BIBLE.md with your own
 - Album-continuity agent → configure YOUR rules
-- Continuity-check hooks → set YOUR violations
+- Add conditional steering + continuity hooks for YOUR albums (see `examples/`)
 
 ### Getting Started (Community):
 ```bash
@@ -308,6 +308,7 @@ git clone https://github.com/Voletek/songwriting-kb.git
 cd songwriting-kb
 # See SOP 08 for full setup guide
 # See SOP 04 to create your own concept album
+# See examples/ for complete reference implementations
 ```
 
 ---

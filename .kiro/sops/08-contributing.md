@@ -29,20 +29,17 @@ These work for ANY songwriter with zero customization:
 
 ### Step 3 — What You Should Customize
 
-These files contain templates/examples — personalize them:
+These files contain templates — personalize them:
 
 | File | What to Do |
 |---|---|
-| `.kiro/steering/voletek-preferences.md` | Rename to your username, set YOUR output format preferences |
-| `.kiro/steering/concept-album.md` | Replace with YOUR album's rules (or delete if no album) |
-| `.kiro/steering/keeper-of-the-light.md` | Example album steering — delete or keep as format reference |
-| `references/FRACTURED_SHADOWS_BIBLE.md` | Example album bible — replace with YOUR bible or keep as reference |
-| `references/KEEPER_OF_THE_LIGHT_BIBLE.md` | Example album bible — replace with YOUR bible or keep as reference |
-| `.kiro/hooks/continuity-check.md` | Replace with YOUR album's continuity hook (or delete) |
-| `.kiro/hooks/keeper-continuity-check.md` | Example album hook — delete or replace with yours |
+| `.kiro/steering/output-preferences.md` | Edit with YOUR output format preferences |
+| `.kiro/steering/concept-album.md` | Generic framework — add your album's conditional steering (see examples/) |
+| `.kiro/agents/album-continuity.md` | Configure with YOUR album's rules |
+| `references/YOUR_ALBUM_BIBLE.md` | Replace with YOUR album bible (or delete if no album) |
 | `songs/` | Replace with YOUR songs |
 
-**Note:** Example bibles and album files are valuable FORMAT references — keep them as read-only references until you've created your own, then optionally remove them.
+**Example albums** are in `examples/albums/` — study them for format reference, then copy patterns to your active files. The bibles in `references/` (Fractured Shadows, Keeper of the Light) are kept as format references you can study.
 
 ---
 
@@ -50,9 +47,9 @@ These files contain templates/examples — personalize them:
 
 ### Step 4 — Create Your Preferences File
 
-Copy `.kiro/steering/voletek-preferences.md` and rename to `.kiro/steering/[your-name]-preferences.md`
+Edit `.kiro/steering/output-preferences.md` directly — it ships as a generic template.
 
-Use the existing file as a FORMAT template — match its structure while filling in your own preferences.
+See `examples/preferences/voletek-preferences.md` for a filled-in reference implementation showing all options.
 
 Customize:
 - What should Production Notes include? (minimum: Key, Tempo, Chords, Vocal, Instruments)
@@ -131,24 +128,33 @@ references/SUNO_TAGS_REFERENCE.md
 references/CHARACTER_VOICE_REFERENCE.md
 .kiro/steering/songwriting.md
 .kiro/steering/suno-formatting.md
+.kiro/steering/output-preferences.md
+.kiro/steering/concept-album.md
 .kiro/agents/songwriter.md
 .kiro/agents/critic.md
 .kiro/agents/suno-optimizer.md
 .kiro/skills/*/SKILL.md
-.kiro/hooks/song-format-check.md
-.kiro/hooks/suno-char-count.md
-.kiro/hooks/prosody-lint.md
+.kiro/hooks/song-format-check.json
+.kiro/hooks/suno-char-count.json
+.kiro/hooks/prosody-lint.json
 .kiro/sops/*.md
 ```
 
 ### Personal Files (Customize These)
 ```
-.kiro/steering/[your-name]-preferences.md
-.kiro/steering/[your-album].md
-.kiro/agents/album-continuity.md (customize rules)
-.kiro/hooks/[album]-continuity-check.md
+.kiro/agents/album-continuity.md (configure YOUR rules)
+.kiro/hooks/[album]-continuity-check.json (create for YOUR album)
+references/YOUR_ALBUM_BIBLE.md (replace with YOUR bible)
 references/[YOUR_ALBUM]_BIBLE.md
 songs/**/*
+```
+
+### Example/Reference Files (Study, don't edit)
+```
+examples/albums/*/
+examples/preferences/
+references/FRACTURED_SHADOWS_BIBLE.md
+references/KEEPER_OF_THE_LIGHT_BIBLE.md
 ```
 
 ---
@@ -160,17 +166,15 @@ songs/**/*
 git clone https://github.com/Voletek/songwriting-kb.git
 cd songwriting-kb
 
-# Customize preferences
-cp .kiro/steering/voletek-preferences.md .kiro/steering/my-preferences.md
-# Edit my-preferences.md with your format choices
+# Edit preferences (already a generic template — just fill in your conventions)
+# See examples/preferences/voletek-preferences.md for a filled-in reference
+nano .kiro/steering/output-preferences.md
 
-# Remove example album content (or keep as format references)
+# Optional: remove example album bibles (or keep as format references)
 rm references/FRACTURED_SHADOWS_BIBLE.md
 rm references/KEEPER_OF_THE_LIGHT_BIBLE.md
-rm .kiro/steering/concept-album.md
-rm .kiro/steering/keeper-of-the-light.md
-rm .kiro/hooks/continuity-check.md
-rm .kiro/hooks/keeper-continuity-check.md
+
+# Optional: remove example song files
 rm -rf songs/album_act2 songs/album_act3 songs/experimental songs/keeper_of_the_light
 rm songs/0*_*.md songs/Shadow* songs/Shapes* songs/What_If* songs/Evil* songs/Cat*
 
