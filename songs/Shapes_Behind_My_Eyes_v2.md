@@ -17,6 +17,12 @@ Dark indie atmospheric ballad, slow 72 BPM, E minor, intimate male vocal — mid
 
 ## Lyrics
 
+[Title: Shapes Behind My Eyes]
+
+[Production Direction: Dark, intimate, and atmospheric. Begin near-silent with single piano note and breath, bloom into fingerpicked guitar, add ambient pads and reverb in choruses, strip to heartbeat in bridge, rebuild with warmth and gentle strings for final chorus. Never aggressive. Proxemic arc: start in-your-ear intimate, open to social distance in choruses, collapse to primal heartbeat in bridge, rebuild to warm public space in final chorus. Piano and guitar are truth anchors. Pads are the unknown pressing in. Choir pad appears ONLY in final chorus as acceptance/spiritual warmth. Heartbeat percussion in bridge only — primal, ancient, grounding. The sound of meeting yourself in the dark and discovering love there.]
+
+[Vocal Direction: Narrator — mid-low male, breathy, close-mic, slight cracks, conversational and imperfect. Intimate like talking to yourself at 2am. Builds to strained openness in choruses but never belts. Whispered lines are close and breathy with slight reverb trail. Bridge soul-voice is a DIFFERENT delivery — warmer, deeper register, gentle room reverb, authority without force, like being spoken to by something ancient and loving. Clear shift between narrator and soul-voice. No hums, no beatboxing, no vocal runs.]
+
 [Intro]
 [Sparse piano, single note, breath, darkness]
 
