@@ -1,4 +1,4 @@
-# Shadow Weaver — Album Track 13 (v3)
+# Shadow Weaver — Album Track 13 (v4 — Universalized)
 
 > Song Thesis: *The most terrifying enemy isn't the one who overpowers you —
 > it's the one who was watching the whole time and let you think you had a chance.*
@@ -33,14 +33,14 @@ Like it knew I'd come
 [Creeping bass] [Piano single notes] [No drums] [Close-mic whisper]
 
 The weapons weren't crude — they were crafted
-Technology that Riftborn don't possess
-The eastern wall fell first — precisely where
-The crack had been reported just the week before
+Tools that mindless creatures couldn't make
+The weakest point fell first — precisely where
+The crack had been reported just a week before
 
 The timing of each wave — too perfect
-Each weakness exploited — already known
+Each weakness found — already known
 Someone gave these creatures more than teeth
-Someone gave these creatures gifts
+Someone gave these creatures maps
 
 [Pre-Chorus - The Journal]
 [Dissonant strings enter] [Bass deepens]
@@ -57,8 +57,8 @@ Shadow Weaver — pulling threads behind the dark
 Shadow Weaver — playing us like pieces on a board
 
 The assault wasn't rage — it was a move
-The Riftborn weren't attacking — they were aimed
-Every death at Dawnwatch had a purpose
+The monsters weren't attacking — they were aimed
+Every death that night served someone's purpose
 And the purpose had a name
 
 Shadow Weaver — we never had a chance
@@ -69,12 +69,12 @@ We were inside the trap before we knew
 
 The maps revealed what I was dreading most
 Not outposts — staging grounds — positioned wide
-A network spread across the continent
-Her influence already in the air
+A network spread across the land
+Her influence already in the walls
 
-She knew about the Mark — the Custodian
+She knew about the ones who came before me
 She knew that I was coming — probably first
-The prophecy that felt like hope is just
+The purpose that felt like hope is just
 A variable in a game she's always played
 
 [Pre-Chorus 2]
@@ -144,3 +144,24 @@ The hunt begins
 • Hook Type: "Shadow Weaver" (name hook) + "You left me alive / And that was your mistake" (resolve hook)
 • Rhyme Scheme: V=ABCB, PC=AABB, C=ABAB, Bridge=AABB
 • Emotional Arc: Investigation → horror → scope of conspiracy → cold fury → I see you now → the hunt begins
+
+---
+
+## REVISION NOTES (v3 → v4):
+
+**Goal:** Generalize plot-specific investigation details while keeping the noir discovery/fury structure. Remove proper-noun lore; keep the FEELING of uncovering a conspiracy.
+
+| Section | Change | Reasoning |
+|---|---|---|
+| V1 L1-2 | "Technology that Riftborn don't possess" → "Tools that mindless creatures couldn't make" | Universal: creatures given intelligence they shouldn't have. No proper noun |
+| V1 L3 | "The eastern wall fell first" → "The weakest point fell first" | Removes specific geography. "Weakest point" is strategically universal — any listener understands tactical precision |
+| V1 L8 | "Someone gave these creatures gifts" → "Someone gave these creatures maps" | "Maps" = knowledge/intel. More concrete than "gifts." Implies strategy, planning |
+| C L3 | "The Riftborn weren't attacking — they were aimed" → "The monsters weren't attacking — they were aimed" | "Monsters" is universal. The horror is the same: mindless things given direction |
+| V2 L3 | "A network spread across the continent" → "A network spread across the land" | Removes geographic specificity. "The land" is atmospheric/vast |
+| V2 L4 | "Her influence already in the air" → "Her influence already in the walls" | "Walls" = she's inside the defenses. More paranoid, more noir |
+| V2 L5 | "She knew about the Mark — the Custodian" → "She knew about the ones who came before me" | Universal: she's been watching the lineage. No proper nouns needed |
+| V2 L7 | "The prophecy that felt like hope" → "The purpose that felt like hope" | "Purpose" works universally. "Prophecy" is lore-specific vocabulary |
+
+**What's preserved:** The entire noir structure (evidence → journal → web → name → scope → hunt), the "Shadow Weaver" name hook (works as a song villain without book context), the cold resolve final chorus, "You left me alive / And that was your mistake," the investigation-to-fury emotional arc, choir whispers, the predator/prey inversion in the outro. The chess-game metaphor (pieces, board, moves, variables) needs no fantasy context — it's universal thriller language.
+
+**What was already universal:** PC1, PC2, Bridge, Final Chorus, and Outro were all clean — they deal in emotional states (dread, fury, resolve) not plot mechanics. Only V1 and V2 needed surgical edits.
