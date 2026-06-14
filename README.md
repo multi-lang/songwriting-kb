@@ -4,6 +4,13 @@ A professional song production system combining Nashville/LA co-writing craft, a
 
 ---
 
+
+## Methodology Review and Generalization Plan
+
+A full repository methodology audit is available in [`RESEARCH_METHODOLOGY_REVIEW.md`](RESEARCH_METHODOLOGY_REVIEW.md). It reviews the stated research foundations, identifies evidence and validation gaps, and recommends evolving this repo from a Kiro-specific package into a platform-neutral songwriting methodology with maintained adapters for Kiro, Kilo Code, and generic/manual agent workflows.
+
+---
+
 ## Quick Start
 
 Clone this repo. The `.kiro/` directory auto-configures Kiro with agents, skills, hooks, power, steering, and SOPs.
