@@ -1,0 +1,36 @@
+{
+  "experiment_id": "YYYY-MM-DD-short-name",
+  "date": "YYYY-MM-DD",
+  "model_version": "suno-version-or-unknown",
+  "source_song_path": "songs/path-or-null.md",
+  "claim_under_test": {
+    "claim_id": "SUNO-NEW-or-existing-id",
+    "summary": "Describe the tag, field, setting, or prompt behavior being tested."
+  },
+  "settings": {
+    "style_prompt": "Paste or summarize the Style Prompt.",
+    "lyrics_excerpt_or_field": "Paste the relevant Lyrics field or cite source_song_path.",
+    "exclude_field": "Paste exclusions if used.",
+    "sliders": {
+      "weirdness": "unknown",
+      "style_influence": "unknown",
+      "audio_influence": "unknown"
+    },
+    "persona_or_voice": "none-or-description",
+    "custom_model": "none-or-description"
+  },
+  "expected_behavior": "What should happen if the claim is true?",
+  "observations": [
+    {
+      "render_id_or_take": "take-1",
+      "result": "What happened?",
+      "supports_claim": "yes/no/partial/unclear"
+    }
+  ],
+  "conclusion": {
+    "status": "accept/reject/retest",
+    "confidence": "low/medium/high",
+    "notes": "What should change in the repo, if anything?",
+    "retest_date": "YYYY-MM-DD"
+  }
+}
