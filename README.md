@@ -4,6 +4,11 @@ A professional song production system combining Nashville/LA co-writing craft, a
 
 ---
 
+## Research Review & Generalization Plan
+
+A complete review of the repository's stated research methodologies, platform dependencies, identified problems, and recommended migration plan is available in [`docs/RESEARCH_METHODOLOGY_REVIEW_AND_GENERALIZATION_PLAN.md`](docs/RESEARCH_METHODOLOGY_REVIEW_AND_GENERALIZATION_PLAN.md).
+
+
 ## Quick Start
 
 Clone this repo. The `.kiro/` directory auto-configures Kiro with agents, skills, hooks, power, steering, and SOPs.
