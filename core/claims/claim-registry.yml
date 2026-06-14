@@ -1,0 +1,90 @@
+{
+  "claims": [
+    {
+      "id": "CRAFT-001",
+      "claim": "A finished song should have a one-sentence thesis before final drafting or critique.",
+      "category": "craft",
+      "source_ids": ["SRC-SOP-WRITING", "SRC-KB-SONGWRITING"],
+      "source_quality": "internal_methodology",
+      "date_added": "2026-06-09",
+      "date_verified": "2026-06-09",
+      "applies_to_versions": ["repo-2026-06-09"],
+      "confidence": "medium",
+      "files_using_claim": [
+        "core/methodology/songwriting-workflow.md",
+        ".kiro/sops/01-writing-a-song.md"
+      ],
+      "expiry_or_retest_date": "2026-12-09"
+    },
+    {
+      "id": "CRAFT-002",
+      "claim": "Verse 2 should add new information rather than restating Verse 1.",
+      "category": "craft",
+      "source_ids": ["SRC-SOP-WRITING", "SRC-KB-SONGWRITING"],
+      "source_quality": "internal_methodology",
+      "date_added": "2026-06-09",
+      "date_verified": "2026-06-09",
+      "applies_to_versions": ["repo-2026-06-09"],
+      "confidence": "medium",
+      "files_using_claim": [
+        "core/methodology/songwriting-workflow.md",
+        ".kiro/sops/01-writing-a-song.md",
+        ".kiro/steering/songwriting.md"
+      ],
+      "expiry_or_retest_date": "2026-12-09"
+    },
+    {
+      "id": "SUNO-001",
+      "claim": "Suno-ready songs should keep the Style Prompt within the repository's current 1000-character target.",
+      "category": "platform_empirical",
+      "source_ids": ["SRC-SOP-SUNO", "SRC-SUNO-TAGS"],
+      "source_quality": "internal_platform_guidance",
+      "date_added": "2026-06-09",
+      "date_verified": "2026-06-09",
+      "applies_to_versions": ["suno-v5.5-guidance"],
+      "confidence": "medium",
+      "files_using_claim": [
+        "core/methodology/suno-optimization.md",
+        "tools/count-suno-fields.py",
+        ".kiro/sops/03-optimizing-for-suno.md",
+        "references/SUNO_TAGS_REFERENCE.md"
+      ],
+      "expiry_or_retest_date": "2026-09-09"
+    },
+    {
+      "id": "SUNO-002",
+      "claim": "Suno-ready songs should keep the Lyrics field within the repository's current 5000-character target.",
+      "category": "platform_empirical",
+      "source_ids": ["SRC-SOP-SUNO", "SRC-SUNO-TAGS"],
+      "source_quality": "internal_platform_guidance",
+      "date_added": "2026-06-09",
+      "date_verified": "2026-06-09",
+      "applies_to_versions": ["suno-v5.5-guidance"],
+      "confidence": "medium",
+      "files_using_claim": [
+        "core/methodology/suno-optimization.md",
+        "tools/count-suno-fields.py",
+        ".kiro/sops/03-optimizing-for-suno.md",
+        "references/SUNO_TAGS_REFERENCE.md"
+      ],
+      "expiry_or_retest_date": "2026-09-09"
+    },
+    {
+      "id": "PLATFORM-001",
+      "claim": "The current `.kiro/` setup should be treated as the repo's automation adapter, not as the exclusive canonical methodology.",
+      "category": "repository_architecture",
+      "source_ids": ["SRC-REVIEW", "SRC-KIRO-README"],
+      "source_quality": "repository_review",
+      "date_added": "2026-06-09",
+      "date_verified": "2026-06-09",
+      "applies_to_versions": ["repo-2026-06-09"],
+      "confidence": "high",
+      "files_using_claim": [
+        "README.md",
+        "README_PLATFORM_SUPPORT.md",
+        "docs/RESEARCH_METHODOLOGY_REVIEW_AND_GENERALIZATION_PLAN.md"
+      ],
+      "expiry_or_retest_date": "2026-12-09"
+    }
+  ]
+}

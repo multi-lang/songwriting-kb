@@ -1,8 +1,13 @@
 # Songwriting Knowledge Base
 
-A professional song production system combining Nashville/LA co-writing craft, academic music theory (12 disciplines), Suno AI v5.5 formatting expertise, and concept album continuity management — packaged as a complete Kiro IDE ecosystem with step-by-step SOPs for every workflow.
+A professional song production system combining Nashville/LA co-writing craft, academic music theory (12 disciplines), Suno AI v5.5 formatting expertise, and concept album continuity management — currently packaged with a full Kiro IDE automation adapter plus step-by-step SOPs for broader/manual use.
 
 ---
+
+## Research Review & Generalization Plan
+
+A complete review of the repository's stated research methodologies, current `.kiro/` platform dependency, identified problems, and recommended migration plan is available in [`docs/RESEARCH_METHODOLOGY_REVIEW_AND_GENERALIZATION_PLAN.md`](docs/RESEARCH_METHODOLOGY_REVIEW_AND_GENERALIZATION_PLAN.md). It recommends keeping `.kiro/` as the best-supported automation adapter while moving canonical methodology into platform-neutral core docs. For a feature-by-feature breakdown of what requires `.kiro/` automation versus what works without it, see [`README_PLATFORM_SUPPORT.md`](README_PLATFORM_SUPPORT.md).
+
 
 ## Quick Start
 
