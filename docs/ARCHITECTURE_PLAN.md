@@ -1,0 +1,217 @@
+# Architecture Refactor Plan: Methodology as Source of Truth
+
+**Date:** June 2026
+**Status:** Planning — not yet implemented
+**Triggered by:** multi-lang/songwriting-kb PR #3 review + internal discussion
+
+---
+
+## The Problem
+
+The methodology currently lives fragmented across multiple layers:
+
+```
+.kiro/sops/           ← Step-by-step procedures (detailed)
+.kiro/agents/         ← Agent prompts (contain COPIES of procedures)
+.kiro/skills/         ← Skill files (contain ANOTHER summary)
+.kiro/steering/       ← Always-on rules (contain format rules)
+references/           ← Deep reference data (scoring rubrics, genre tables)
+```
+
+**Consequences:**
+- When the method updates, 3-5 files need manual syncing
+- Agents can miss rules that exist in steering but weren't loaded (e.g., the `[Title]` tag incident)
+- Non-Kiro users have no clear path to follow the methodology
+- The "source of truth" for any given rule is ambiguous
+
+---
+
+## The Solution
+
+Make `core/methodology/` the **single canonical source** for all methodology content. Everything else REFERENCES it rather than duplicating it.
+
+### Proposed Architecture
+
+```
+songwriting-kb/
+├── core/
+│   └── methodology/
+│       ├── songwriting.md          ← THE writing method (complete, self-contained)
+│       ├── critique.md             ← THE critique method (complete, self-contained)
+│       ├── suno-optimization.md    ← THE Suno optimization method (complete, self-contained)
+│       ├── album-continuity.md     ← THE continuity method (complete, self-contained)
+│       └── character-voice.md      ← THE character voice method (complete, self-contained)
+├── references/
+│   ├── CRITIQUE_REFERENCE.md       ← Deep scoring rubric details (referenced BY critique.md)
+│   ├── CRITIQUE_REPORT_TEMPLATE.md ← Output format (referenced BY critique.md)
+│   ├── SUNO_STYLE_GENRE_REFERENCE.md ← Genre/style data (referenced BY suno-optimization.md)
+│   ├── SUNO_TAGS_REFERENCE.md      ← Tag reference (referenced BY suno-optimization.md)
+│   └── CHARACTER_VOICE_REFERENCE.md ← Voice data (referenced BY character-voice.md)
+├── .kiro/
+│   ├── agents/
+│   │   ├── critic.md               ← THIN — loads core/methodology/critique.md via #[[file:]]
+│   │   ├── songwriter.md           ← THIN — loads core/methodology/songwriting.md
+│   │   ├── suno-optimizer.md       ← THIN — loads core/methodology/suno-optimization.md
+│   │   └── album-continuity.md     ← THIN — loads core/methodology/album-continuity.md
+│   ├── steering/                   ← Quick-reference rules (derived FROM core/methodology/)
+│   ├── skills/                     ← On-demand deep knowledge (references core/ + references/)
+│   ├── hooks/                      ← Automated checks (references core/ rules)
+│   └── sops/                       ← Step-by-step procedures (CAN be replaced by core/ if redundant)
+├── docs/
+│   └── context-packets/
+│       ├── critique-packet.md      ← "Non-Kiro: give your AI THESE files"
+│       ├── songwriting-packet.md
+│       ├── suno-optimize-packet.md
+│       └── album-continuity-packet.md
+├── tools/
+│   └── count-suno-fields.py        ← Deterministic char counter (platform-agnostic)
+├── experiments/
+│   └── suno/
+│       ├── README.md               ← How to log Suno experiments
+│       └── TEMPLATE.yml            ← Experiment log template
+└── (existing: songs/, analysis/, examples/, etc.)
+```
+
+### The Flow
+
+```
+core/methodology/  ← THE METHOD (what to do, why, complete procedure)
+       ↓ references for deep data
+references/        ← SUPPORTING DATA (scoring tables, genre maps, templates)
+       ↓ consumed by (Kiro users)
+.kiro/agents/      ← THIN WIRING — points at core/ via #[[file:]]
+.kiro/steering/    ← QUICK RULES — derived from core/ (subset for always-on loading)
+.kiro/skills/      ← ON-DEMAND — loads core/ + references/ when activated
+       ↓ consumed by (non-Kiro users)
+docs/context-packets/ ← "Load THESE files into your AI to get the same result"
+       ↓ consumed by (manual/CLI users)
+tools/             ← Deterministic validation scripts
+```
+
+### The Rule
+
+> **When the method changes, you update `core/methodology/`. Everything downstream inherits.**
+> 
+> `.kiro/` agents become thin loaders. They say WHO you are and WHAT to load — not HOW to do the work. The HOW lives in `core/methodology/`.
+
+---
+
+## What Each Layer Does
+
+| Layer | Purpose | Size | Updates When |
+|---|---|---|---|
+| `core/methodology/` | THE canonical method | Fat (complete) | Method changes |
+| `references/` | Deep supporting data | Fat (reference tables) | Data changes |
+| `.kiro/agents/` | Kiro wiring — loads the right files | Thin (pointers) | Rarely |
+| `.kiro/steering/` | Quick-reference always-on rules | Medium (derived subset) | Method changes |
+| `.kiro/skills/` | On-demand deep knowledge activation | Medium (pointers + context) | Method changes |
+| `.kiro/sops/` | MAY become redundant (core/ replaces them) OR stays as Kiro-specific step format | TBD | TBD |
+| `docs/context-packets/` | Non-Kiro access instructions | Small (file lists + prompts) | Method changes |
+| `tools/` | Deterministic validation | Code | When rules change |
+| `experiments/suno/` | Suno version-dated test logs | Growing over time | Each test |
+
+---
+
+## Migration Plan
+
+### Phase 1: Build `core/methodology/` (without breaking `.kiro/`)
+
+1. Write `core/methodology/critique.md` — the FULL critique method, self-contained
+2. Write `core/methodology/songwriting.md` — the FULL writing method
+3. Write `core/methodology/suno-optimization.md` — the FULL Suno optimization method
+4. Write `core/methodology/album-continuity.md` — the FULL continuity method
+5. Write `core/methodology/character-voice.md` — the FULL voice design method
+
+Each file should be COMPLETE ENOUGH to follow without any other file — but can reference `references/` for deep data tables.
+
+### Phase 2: Rewire `.kiro/` to point at `core/`
+
+1. Make agents thin — replace duplicated methodology content with `#[[file:core/methodology/X.md]]`
+2. Make skills reference `core/` — skill activation loads the methodology file
+3. Evaluate SOPs — if `core/methodology/` fully replaces them, SOPs become redundant. If SOPs add Kiro-specific steps (like "save to analysis/"), keep them as thin wrappers.
+4. Steering stays as quick-reference rules (derived FROM core/ but kept lean for always-on loading)
+
+### Phase 3: Add non-Kiro access
+
+1. Write context packets for each workflow
+2. Add `tools/count-suno-fields.py` (cherry-pick from Brian's PR)
+3. Add `experiments/suno/` template (cherry-pick from Brian's PR)
+4. Update README with "Using Without Kiro" section
+
+### Phase 4: Verify nothing broke
+
+1. Test: Kiro agents still load correctly and produce the same quality output
+2. Test: Non-Kiro users can follow `core/methodology/` independently
+3. Test: Context packets work with ChatGPT/Claude/other assistants
+4. Test: `count-suno-fields.py` runs correctly on existing songs
+
+---
+
+## Relationship to multi-lang/songwriting-kb PR #3
+
+**What we're adopting from their PR:**
+- The PRINCIPLE of platform-neutral methodology as source of truth
+- `tools/count-suno-fields.py` (deterministic validation)
+- `experiments/suno/README.md` + `TEMPLATE.yml` (Suno experiment logging)
+- The concept of version-dating Suno claims
+
+**What we're doing differently:**
+- `core/methodology/` files will be COMPLETE methods, not thin pointers to `.kiro/` SOPs
+- `.kiro/` becomes the consumer, not the source
+- No claim registry YAML (overkill — version notes in the methodology files themselves)
+- No `README_PLATFORM_SUPPORT.md` as a separate file — integrated into main README
+- No renaming of the project identity — this remains a Kiro-powered system with accessibility options
+
+---
+
+## Open Questions
+
+1. **Do SOPs survive?** If `core/methodology/critique.md` contains the full step-by-step, does `.kiro/sops/02-critiquing-a-song.md` still need to exist? Or does the agent just load the methodology file directly?
+
+2. **Steering overlap:** Steering files contain quick rules derived from the methodology. Do we keep them as a performance optimization (Kiro loads less), or do we consolidate into the methodology files?
+
+3. **How fat is "fat enough"?** The methodology files need to be self-contained enough to follow independently — but how much detail? Do they include the full 12-category scoring rubric inline, or reference `CRITIQUE_REFERENCE.md` for that?
+
+4. **Context packets vs README section:** Is a separate `docs/context-packets/` directory needed, or is a README section with "for critique, load these 3 files" sufficient?
+
+---
+
+## PR Comment (Draft)
+
+For posting on multi-lang/songwriting-kb PR #3:
+
+---
+
+Hey Brian — thanks for taking the time to fork this and put together such a thorough review. The methodology assessment is genuinely thoughtful, and the critique of both strengths and gaps is honest and fair.
+
+A few things from your PR that we're adopting:
+
+- **`tools/count-suno-fields.py`** — deterministic char counting should have existed already. We're bringing this in.
+- **`experiments/suno/`** — the template and promotion rule for Suno-versioned testing is smart. Structured experiment logging prevents "I swear that tag used to work" drift.
+- **Version-dating Suno claims** — fair point that mixed v4.5/v5.0/v5.5 guidance without clear labels creates trust issues.
+
+On the broader architecture: we're planning to restructure so the methodology lives in `core/methodology/` as the **single source of truth** — complete enough to use independently, referenced by `.kiro/` agents/SOPs via `#[[file:]]` for Kiro users, and directly readable for anyone using other tools.
+
+The key difference from your PR's implementation: our `core/methodology/` files will be **fat** (the full method, self-contained, followable without any other file) rather than thin pointers back to `.kiro/` SOPs. The `.kiro/` layer becomes thin wiring that loads the methodology — not the other way around. This means:
+
+- `core/methodology/critique.md` = the COMPLETE critique method
+- `.kiro/agents/critic.md` = thin loader that says "you are a critic, follow #[[file:core/methodology/critique.md]]"
+- `docs/context-packets/critique.md` = "Non-Kiro users: load these files into your AI"
+
+When the method updates, one file changes. Kiro picks it up through file references. Other tools pick it up through context packets. No stale copies.
+
+We're also adding a "Using Without Kiro" section to the README so non-Kiro users have a genuine path — without changing the project's identity as a Kiro-powered system.
+
+Your review surfaced real gaps (Suno version drift, deterministic validation, fragmented source of truth) and we're acting on them. The methodology deserves to exist in a form that isn't dependent on any single tool's config format — even while Kiro remains the primary engine.
+
+Appreciate the work. Even where the final implementation differs from your PR, the thinking pushed the project forward.
+
+---
+
+## Notes for Implementation
+
+- This branch (`refactor/methodology-as-source-of-truth`) is the staging area
+- Phase 1 is the heavy lift — writing the fat methodology files
+- Phase 2 is the rewiring — making `.kiro/` thin
+- Phase 3 is the accessibility layer — context packets + tools
+- Don't merge to main until Phase 1 + 2 are complete and tested
