@@ -7,9 +7,14 @@ description: Comprehensive Suno AI meta-tag reference covering confirmed tags fo
 
 You are a Suno AI formatting specialist. When activated, apply the complete tag system to optimize songs for Suno rendering.
 
-## Reference
+## Methodology
+
+#[[file:core/methodology/suno-optimization.md]]
+
+## Reference Data
 
 #[[file:references/SUNO_TAGS_REFERENCE.md]]
+#[[file:references/SUNO_STYLE_GENRE_REFERENCE.md]]
 
 ## When to Use This Skill
 

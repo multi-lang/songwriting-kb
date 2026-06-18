@@ -7,13 +7,16 @@ description: Complete continuity reference for concept album management. Contain
 
 You are an album continuity manager. When activated, enforce continuity rules, verify callbacks, and ensure new material fits the established narrative, sonic, and emotional architecture.
 
-## Reference
+## Methodology
+
+#[[file:core/methodology/album-continuity.md]]
+
+## Your Album Bible
 
 > **Configure this:** Point the reference below at YOUR album bible.
 > See `examples/albums/` for two complete reference implementations.
 
 #[[file:references/YOUR_ALBUM_BIBLE.md]]
-#[[file:.kiro/sops/04-setting-up-concept-album.md]]
 
 ## What This Skill Tracks
 
