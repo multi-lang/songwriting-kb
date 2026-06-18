@@ -2,7 +2,7 @@
   "id": "FEAT-003",
   "type": "feat",
   "description": "Phase 3: Add cherry-picked tools and experiments from Brian's PR concept. Create tools/validate-song.py, experiments/suno/ structure, add Suno Version Status table to references, and update README.md with 'Using Without Kiro' section.",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "Create tools/validate-song.py - an enhanced version of Brian's count-suno-fields.py concept. Python script with argparse that: (1) counts Style Prompt characters (must be <=1000), (2) counts Lyrics field characters including tags (must be <=5000), (3) checks for required elements ([Title:], [Production Direction:], [Vocal Direction:], [end]), (4) verifies genre is first in Style Prompt, (5) checks tag count is 5-8, (6) verifies named () layers are declared in Style Prompt, (7) outputs results as text or JSON (--json flag), (8) exits with code 1 on any failure. Use regex to parse our song format (## STYLE PROMPT: and ## LYRICS: headers). Handle [Exclusions:] block correctly (excluded from lyrics count).",
     "Create experiments/suno/README.md - explains how to log Suno experiments: (1) copy TEMPLATE.yml, (2) fill in settings and observations, (3) record per-render results, (4) conclude whether the claim is supported. Include the promotion rule: don't promote to universal guidance without evidence from 3+ renders across different songs.",
@@ -24,5 +24,5 @@
     "Run: grep -c 'Using Without Kiro' README.md and verify it returns at least 1"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "All 5 deliverables created successfully. validate-song.py passes syntax check and runs --help correctly. Script tested against real song file (01_Ghost_In_The_System_v2.md) - correctly identifies missing elements and high tag count. Edge cases handled gracefully (nonexistent files, non-song files). SUNO_STYLE_GENRE_REFERENCE.md section heading uses ALL CAPS to match existing convention (verification grep needs -i flag). README 'Using Without Kiro' section placed after 'Community Use' and before 'Sources' as specified."
 }
