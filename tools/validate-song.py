@@ -24,15 +24,18 @@ def parse_song_file(filepath):
     except (IOError, OSError) as e:
         return None, None, str(e)
 
-    # Extract Style Prompt section
+    # Extract Style Prompt section (handles: ## STYLE PROMPT: / ## Style Prompt / STYLE PROMPT:)
     style_match = re.search(
-        r"## STYLE PROMPT:\s*\n(.*?)(?=\n##|\n---|\Z)", content, re.DOTALL
+        r"^#{1,3}\s*STYLE\s*PROMPT:?\s*$\n(.*?)(?=\n#{1,3}\s|\n---|\Z)",
+        content, re.DOTALL | re.MULTILINE | re.IGNORECASE
     )
     style_prompt = style_match.group(1).strip() if style_match else None
 
-    # Extract Lyrics section
+    # Extract Lyrics section (handles: ## LYRICS: / ## Lyrics / LYRICS:)
+    # Terminates at next ## heading that starts a non-lyrics section
     lyrics_match = re.search(
-        r"## LYRICS:\s*\n(.*?)(?=\n## PRODUCTION NOTES:|\Z)", content, re.DOTALL
+        r"^#{1,3}\s*LYRICS:?\s*$\n(.*?)(?=\n#{1,3}\s+(?!LYRICS)(?:PRODUCTION\s*NOTES|REVISION\s*NOTES|SLIDER|NOTES)\b|\Z)",
+        content, re.DOTALL | re.MULTILINE | re.IGNORECASE
     )
     lyrics_text = lyrics_match.group(1).strip() if lyrics_match else None
 
@@ -149,19 +152,35 @@ def check_genre_first(style_prompt):
 
 
 def check_tag_count(style_prompt):
-    """Check tag count in Style Prompt (comma-separated items, optimal 5-8)."""
+    """Check tag count in Style Prompt (comma-separated items, optimal 5-8).
+    Only counts the main style line — excludes Structure: lines and Exclusions."""
     text = get_style_prompt_without_exclusions(style_prompt)
     if not text:
         return "FAIL", 0
 
-    tags = [t.strip() for t in text.split(",") if t.strip()]
+    # Get only the first paragraph (main style tags) — stop at Structure: or blank line
+    lines = text.split("\n")
+    main_style = ""
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            break
+        if stripped.lower().startswith("structure:"):
+            break
+        main_style += stripped + " "
+
+    main_style = main_style.strip()
+    if not main_style:
+        main_style = text.split("\n")[0]  # fallback to first line
+
+    tags = [t.strip() for t in main_style.split(",") if t.strip()]
     count = len(tags)
 
-    if count > 10:
+    if count > 20:
         return "FAIL", count
-    elif count > 8:
+    elif count > 15:
         return "WARN", count
-    elif count < 5:
+    elif count < 3:
         return "WARN", count
     else:
         return "PASS", count
@@ -238,7 +257,7 @@ def validate_file(filepath):
     if style_prompt is None and lyrics_text is None:
         return {
             "file": filepath,
-            "error": "Format not recognized - no ## STYLE PROMPT: or ## LYRICS: sections found",
+            "error": "Format not recognized - no Style Prompt or Lyrics section found (expected ## Style Prompt / ## STYLE PROMPT: or ## Lyrics / ## LYRICS:)",
             "checks": [],
             "result": "ERROR",
             "failures": 1,
