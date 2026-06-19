@@ -315,6 +315,20 @@ Modulation: Em→G major (resolution) | Dm→D major (lift) | C→Db (pop key li
 **Formula 2 (Anthem):** 90-110 BPM, minor→major lift, maximum production, chant hook, universal lyrics, spoken bridge soundbite
 **Rule:** F1 = specific/raw. F2 = universal/declarative. Different rules, both valid.
 
+### 12.13 Artist Reference Conversion
+
+When an artist name appears in creative direction (e.g., "in the style of X"), convert it to descriptive production language before final output. Translate the artist's SOUND into: genre + era + instruments + production characteristics + vocal style + structural habits. The artist name should NOT survive into the Style Prompt or Production Direction -- the translation replaces it.
+
+| Artist Reference | Converted To |
+|---|---|
+| "In the style of Radiohead" | "Atmospheric post-rock, electronic textures, unconventional structures, falsetto vocals, quiet-loud dynamics, 2000s experimental production" |
+| "Like Billie Eilish" | "Dark minimal pop, whispered close-mic vocals, heavy sub bass, sparse production, intimate bedroom aesthetic, 2019 lo-fi pop" |
+| "Wardruna vibes" | "Nordic folk, ancient instrumentation, throat singing textures, ritualistic percussion, vast reverb, pre-Christian atmosphere" |
+| "Sigur Ros feel" | "Ethereal post-rock, bowed guitar, falsetto vocals as texture, glacial builds, Icelandic atmosphere, vast reverb spaces" |
+| "Like Hozier" | "Dark folk-rock, rich baritone, gospel-influenced builds, literary lyrics, organic production, Celtic-soul fusion" |
+
+**Why:** Suno does not understand artist names as prompt parameters. Descriptive production language gives Suno actionable instructions across all 7 dimensions (genre, BPM, mood, instruments, vocal, era, space).
+
 ---
 
 ## 13. SUNO AI — ADVANCED META-TAGS & v5.0 TECHNIQUES

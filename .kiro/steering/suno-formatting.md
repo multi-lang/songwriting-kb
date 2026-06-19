@@ -53,6 +53,8 @@ Genre, BPM, Mood, Instruments, Vocal Style, Era/Production, Direction
 
 **70/30 Genre Combination:** One dominant genre (70%) + one flavor (30%). 50/50 splits confuse Suno. Use `+` to combine.
 
+**Artist Reference Conversion:** Never include artist names in the Style Prompt. Convert "in the style of X" to descriptive production language (genre + era + instruments + production characteristics + vocal style + structural habits). No artist names in final output.
+
 **Full genre/key/BPM/instrument reference:** `references/SUNO_STYLE_GENRE_REFERENCE.md`
 
 ## Essential Tags (Use in every song)

@@ -134,6 +134,7 @@ Slider recommendation: Weirdness X% / Style Influence X% / Audio Influence X%
 | Genre is FIRST in Style Prompt | ✅/❌ | |
 | Tag count 5-8 (not >10) | ✅/❌ | [actual count] |
 | No contradictory tags | ✅/❌ | [flag any conflicts] |
+| No artist names in Style/Production Direction | ✅/❌ | [list any unconverted references] |
 | BPM/tempo specified | ✅/❌ | |
 | Per-section tags ≤3 per section | ✅/❌ | [flag any over-tagged sections] |
 ```

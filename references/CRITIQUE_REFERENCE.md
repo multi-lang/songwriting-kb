@@ -525,6 +525,7 @@ Binary pass/fail checks:
 - Tag count in range (5-8 optimal, never >10)
 - No contradictory tags present
 - Exclusions in correct field
+- No artist names in Style Prompt or Production Direction (converted to descriptive production language)
 
 ### Key Evaluation Principles
 

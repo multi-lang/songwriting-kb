@@ -541,7 +541,44 @@ Each section's production cue tags should:
 
 ---
 
-## 11. SUNO VERSION STATUS
+## 11. ARTIST REFERENCE CONVERSION
+
+### Purpose
+
+When an artist name appears in creative direction (e.g., "in the style of X", "like Billie Eilish"), it must be converted to descriptive production language before final output. Artist names are not recognized as Suno prompt parameters -- Suno does not understand "make it sound like [Artist]." Descriptive language gives Suno actionable production instructions that produce dramatically better renders.
+
+### Conversion Methodology
+
+Step-by-step process to convert any artist reference:
+
+1. **Identify the artist's genre ecosystem** -- What cultural container do they occupy?
+2. **Pin the era** -- What sonic period defines their signature sound?
+3. **List signature instruments/textures** -- What do you HEAR in their productions?
+4. **Describe production characteristics** -- Recording technique, mix style, spatial design
+5. **Define vocal style** -- Delivery, register, techniques, emotional character
+6. **Note structural habits** -- Song forms, dynamics patterns, arrangement choices
+7. **Combine into comma-separated descriptors** -- Following the 7-Dimension formula
+
+### Conversion Examples
+
+| Artist Reference | Converted To |
+|---|---|
+| "In the style of Radiohead" | "Atmospheric post-rock, electronic textures, unconventional structures, falsetto vocals, quiet-loud dynamics, 2000s experimental production" |
+| "Like Billie Eilish" | "Dark minimal pop, whispered close-mic vocals, heavy sub bass, sparse production, intimate bedroom aesthetic, 2019 lo-fi pop" |
+| "Wardruna vibes" | "Nordic folk, ancient instrumentation, throat singing textures, ritualistic percussion, vast reverb, pre-Christian atmosphere" |
+| "Sigur Ros feel" | "Ethereal post-rock, bowed guitar, falsetto vocals as texture, glacial builds, Icelandic atmosphere, vast reverb spaces" |
+| "Like Hozier" | "Dark folk-rock, rich baritone, gospel-influenced builds, literary lyrics, organic production, Celtic-soul fusion" |
+
+### Why This Matters for Suno
+
+- **Artist names are not prompt parameters.** Suno's model does not map "Radiohead" to a specific set of production instructions. It may produce vaguely related output or ignore the reference entirely.
+- **Descriptive language IS actionable.** "Atmospheric post-rock, electronic textures, falsetto vocals, 2000s experimental production" maps directly to genre, instruments, vocal delivery, and era -- all dimensions Suno understands and responds to.
+- **Consistency across renders.** Artist names produce inconsistent results because Suno interprets them differently each generation. Descriptive language produces consistent, reproducible output.
+- **Specificity outperforms shortcuts.** The 7-dimension formula (genre, BPM, mood, instruments, vocal, era, space) always outperforms shorthand references.
+
+---
+
+## 12. SUNO VERSION STATUS
 
 > Track which Suno-specific claims have been verified and when they need retesting.
 > Suno updates frequently - guidance that worked in v4.5 may not apply to v5.5.

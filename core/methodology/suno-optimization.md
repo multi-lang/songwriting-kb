@@ -13,7 +13,7 @@ Suno optimization is the FINAL technical pass before rendering. It does NOT chan
 
 ---
 
-## The Complete 12-Step Optimization Procedure
+## The Complete 13-Step Optimization Procedure
 
 ### Step 1 -- Character Count Audit
 
@@ -143,7 +143,23 @@ Scan for and REMOVE any of these:
 | `[filter]` | Describe in Production Direction |
 | `[section: X]` | Use specific section names |
 
-### Step 9 -- Verify Suno Compatibility
+### Step 9 -- Artist Reference Conversion
+
+If any artist or band name appears in the Style Prompt, Production Direction, or Vocal Direction as creative shorthand (e.g., "in the style of Radiohead", "Billie Eilish vibes"), convert it to descriptive production language BEFORE final output. Artist names are not recognized as Suno prompt parameters -- descriptive language gives Suno actionable production instructions.
+
+**Conversion method:** Translate the artist's SOUND into: genre + era + instruments + production characteristics + vocal style + structural habits. The artist name should NOT survive into the Style Prompt or Production Direction.
+
+| Artist Reference | Converted To |
+|---|---|
+| "In the style of Radiohead" | "Atmospheric post-rock, electronic textures, unconventional structures, falsetto vocals, quiet-loud dynamics, 2000s experimental production" |
+| "Like Billie Eilish" | "Dark minimal pop, whispered close-mic vocals, heavy sub bass, sparse production, intimate bedroom aesthetic, 2019 lo-fi pop" |
+| "Wardruna vibes" | "Nordic folk, ancient instrumentation, throat singing textures, ritualistic percussion, vast reverb, pre-Christian atmosphere" |
+| "Sigur Ros feel" | "Ethereal post-rock, bowed guitar, falsetto vocals as texture, glacial builds, Icelandic atmosphere, vast reverb spaces" |
+| "Like Hozier" | "Dark folk-rock, rich baritone, gospel-influenced builds, literary lyrics, organic production, Celtic-soul fusion" |
+
+**Why this matters:** Suno does not understand "make it sound like [Artist]." It DOES understand specific production descriptors, era references, genre combinations, and vocal delivery characteristics. Converting artist references to descriptive language produces dramatically better renders.
+
+### Step 10 -- Verify Suno Compatibility
 
 Final checklist:
 - [ ] No prohibited end punctuation on lyric lines (no periods, commas, semicolons, exclamation marks, question marks). Em-dashes are allowed for phrasing/breath. Apostrophes and hyphens are fine.
@@ -155,7 +171,7 @@ Final checklist:
 - [ ] Production Direction block present
 - [ ] Vocal Direction block present
 
-### Step 10 -- Set Creative Sliders
+### Step 11 -- Set Creative Sliders
 
 Recommend slider values based on song type:
 
@@ -170,7 +186,7 @@ Recommend slider values based on song type:
 
 **Album consistency note:** Document slider values per track. If a render captures the intended palette, note settings as baseline for adjacent tracks.
 
-### Step 11 -- Prepare Exclude Field Content
+### Step 12 -- Prepare Exclude Field Content
 
 Format exclusions for the dedicated Exclude field:
 ```
@@ -179,7 +195,7 @@ distortion, electric guitar, synthesizers, trap drums, beatboxing, vocal hums
 
 **Format note:** In the dedicated Exclude field, list items as plain comma-separated text -- no dash prefix needed (the field implies exclusion). The dash-prefix format (`-item`) is only needed when placing exclusions WITHIN the Style Prompt field.
 
-### Step 12 -- Final Output
+### Step 13 -- Final Output
 
 Document the optimized version:
 ```

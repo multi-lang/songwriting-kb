@@ -38,6 +38,10 @@ Always include these as consistency anchors:
 
 These survive regenerations and keep Suno consistent across iterations.
 
+## Artist Reference Conversion
+
+Any artist name used as creative shorthand during writing (e.g., "in the style of Radiohead") must be converted to descriptive production language before appearing in the Style Prompt or Direction blocks. Translate to: genre + era + instruments + production characteristics + vocal style + structural habits. No artist names in final output.
+
 ## Per-Section Production Tags
 
 Keep per-section tags like `[Sparse piano, room ambience]` — these guide instrument changes section-by-section. Limit to 2-3 tags per section for best Suno parsing.

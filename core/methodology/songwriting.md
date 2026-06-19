@@ -240,6 +240,14 @@ Rules:
 - Must be <=1000 characters
 - Era anchoring ("early 2000s garage rock") outperforms genre labels ("indie rock")
 - 70/30 genre combination rule for fusion
+- **Artist Reference Conversion:** Any artist name used as creative shorthand (e.g., "in the style of Radiohead") must be converted to descriptive production language before writing the Style Prompt. Translate the artist's sound into genre + era + instruments + production characteristics + vocal style + structural habits. No artist names in final output.
+
+**Example conversions:**
+| Artist Reference | Converted To |
+|---|---|
+| "In the style of Radiohead" | "Atmospheric post-rock, electronic textures, unconventional structures, falsetto vocals, quiet-loud dynamics, 2000s experimental production" |
+| "Like Billie Eilish" | "Dark minimal pop, whispered close-mic vocals, heavy sub bass, sparse production, intimate bedroom aesthetic, 2019 lo-fi pop" |
+| "Wardruna vibes" | "Nordic folk, ancient instrumentation, throat singing textures, ritualistic percussion, vast reverb, pre-Christian atmosphere" |
 
 ### Step 21 -- Write Exclusions
 

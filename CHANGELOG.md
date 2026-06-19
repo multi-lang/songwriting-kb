@@ -6,6 +6,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+- Artist Reference Conversion rule -- artist names in creative direction must be converted to descriptive production language (genre + era + instruments + production characteristics + vocal style + structural habits) before final output. Applied across all methodology, steering, reference, template, validator, and knowledge base files. Requested by 21machines.
+
 ---
 
 ## [2.0.0] — June 2026

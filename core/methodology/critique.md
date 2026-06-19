@@ -328,6 +328,7 @@ Binary pass/fail checks:
 - Genre first in Style Prompt? Tag count 5-8? No contradictions?
 - Named `()` layers declared in Style Prompt?
 - Exclusions in dedicated Exclude field (not in Style or Lyrics)?
+- No artist names present in Style Prompt or Production Direction? (converted to descriptive production language)
 
 ### 5d. Overall Verdict
 

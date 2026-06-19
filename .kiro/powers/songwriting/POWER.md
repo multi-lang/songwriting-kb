@@ -121,6 +121,7 @@ Applied to every song concept:
 - Full chorus typically arrives within 45-60 seconds of track start
 - ABCB default rhyme scheme
 - Near/slant rhymes preferred over forced perfect
+- Artist names in creative direction converted to descriptive production language (no artist names in Style Prompt or Production Direction)
 
 ---
 

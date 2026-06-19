@@ -240,6 +240,52 @@ def check_section_tag_isolation(lyrics_text):
         return "PASS", violations
 
 
+def check_artist_references(style_prompt):
+    """Check for artist/band name references in Style Prompt.
+
+    Artist names should be converted to descriptive production language
+    before final output. Returns WARN (not FAIL) since detection may
+    have false positives.
+    """
+    text = get_style_prompt_without_exclusions(style_prompt)
+    if not text:
+        return "PASS", []
+
+    found = []
+
+    # Check for common indicator patterns
+    indicator_patterns = [
+        r"in the style of\s+[A-Z]",
+        r"like\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?",
+        r"inspired by\s+[A-Z]",
+        r"[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s+vibes",
+        r"[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s+feel\b",
+    ]
+
+    for pattern in indicator_patterns:
+        matches = re.findall(pattern, text)
+        for match in matches:
+            found.append(match.strip())
+
+    # Check for well-known artist/band names
+    artist_names = [
+        "Radiohead", "Billie Eilish", "Wardruna", "Sigur Ros",
+        "Hozier", "Taylor Swift", "The Beatles", "Pink Floyd",
+        "Nirvana", "Beyonce", "Adele", "Drake", "Kendrick Lamar",
+        "Led Zeppelin", "Bob Dylan", "Coldplay", "Daft Punk",
+        "Aphex Twin", "Nine Inch Nails", "Bjork",
+    ]
+
+    for artist in artist_names:
+        if re.search(r"\b" + re.escape(artist) + r"\b", text, re.IGNORECASE):
+            found.append(artist)
+
+    if found:
+        return "WARN", found
+    else:
+        return "PASS", found
+
+
 def validate_file(filepath):
     """Run all validation checks on a file."""
     style_prompt, lyrics_text, error = parse_song_file(filepath)
@@ -406,6 +452,24 @@ def validate_file(filepath):
             "detail": "skipped (no lyrics section)",
         })
 
+    # 8. Artist reference check
+    if style_prompt is not None:
+        status, found = check_artist_references(style_prompt)
+        detail = "no artist references" if not found else f"found: {', '.join(found[:3])}"
+        checks.append({
+            "name": "Artist References",
+            "status": status,
+            "detail": detail,
+        })
+        if status == "WARN":
+            warnings += 1
+    else:
+        checks.append({
+            "name": "Artist References",
+            "status": "PASS",
+            "detail": "skipped (no style prompt)",
+        })
+
     # Determine overall result
     if failures > 0:
         result = "FAIL"
@@ -458,6 +522,8 @@ def format_text_output(results):
                 output_lines.append(f"  Layer Declarations: {check['status']} ({detail})")
             elif name == "Section Tag Isolation":
                 output_lines.append(f"  Section Tag Isolation: {check['status']} ({detail})")
+            elif name == "Artist References":
+                output_lines.append(f"  Artist References: {check['status']} ({detail})")
             else:
                 output_lines.append(f"  {name}: {detail} {status_str}")
 
