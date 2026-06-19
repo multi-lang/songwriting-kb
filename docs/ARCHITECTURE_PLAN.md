@@ -193,38 +193,6 @@ Each file should be COMPLETE ENOUGH to follow without any other file — but can
 
 ---
 
-## PR Comment (Draft)
-
-For posting on multi-lang/songwriting-kb PR #3:
-
----
-
-Hey Brian — thanks for taking the time to fork this and put together such a thorough review. The methodology assessment is genuinely thoughtful, and the critique of both strengths and gaps is honest and fair.
-
-A few things from your PR that we're adopting:
-
-- **`tools/count-suno-fields.py`** — deterministic char counting should have existed already. We're bringing this in.
-- **`experiments/suno/`** — the template and promotion rule for Suno-versioned testing is smart. Structured experiment logging prevents "I swear that tag used to work" drift.
-- **Version-dating Suno claims** — fair point that mixed v4.5/v5.0/v5.5 guidance without clear labels creates trust issues.
-
-On the broader architecture: we're planning to restructure so the methodology lives in `core/methodology/` as the **single source of truth** — complete enough to use independently, referenced by `.kiro/` agents/SOPs via `#[[file:]]` for Kiro users, and directly readable for anyone using other tools.
-
-The key difference from your PR's implementation: our `core/methodology/` files will be **fat** (the full method, self-contained, followable without any other file) rather than thin pointers back to `.kiro/` SOPs. The `.kiro/` layer becomes thin wiring that loads the methodology — not the other way around. This means:
-
-- `core/methodology/critique.md` = the COMPLETE critique method
-- `.kiro/agents/critic.md` = thin loader that says "you are a critic, follow #[[file:core/methodology/critique.md]]"
-- `docs/context-packets/critique.md` = "Non-Kiro users: load these files into your AI"
-
-When the method updates, one file changes. Kiro picks it up through file references. Other tools pick it up through context packets. No stale copies.
-
-We're also adding a "Using Without Kiro" section to the README so non-Kiro users have a genuine path — without changing the project's identity as a Kiro-powered system.
-
-Your review surfaced real gaps (Suno version drift, deterministic validation, fragmented source of truth) and we're acting on them. The methodology deserves to exist in a form that isn't dependent on any single tool's config format — even while Kiro remains the primary engine.
-
-Appreciate the work. Even where the final implementation differs from your PR, the thinking pushed the project forward.
-
----
-
 ---
 
 ## Cherry-Pick Assessment: multi-lang/songwriting-kb PR #3
