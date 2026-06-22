@@ -16,7 +16,7 @@
 - A complete song (lyrics + production notes, or at minimum lyrics + genre/tempo info)
 - Access to the Critique Reference (`references/CRITIQUE_REFERENCE.md`) — this contains the full multi-layer scoring framework (Core 12 rubric definitions + Advanced 5 assessment scales + Suno Optimization methodology + Album-Context checks). Required for consistent scoring.
 - Access to the Style & Genre Reference (`references/SUNO_STYLE_GENRE_REFERENCE.md`) — required for evaluating genre/key/BPM/instrument choices against emotional content and providing Style Prompt alternatives.
-- If album track: access to the Album Bible for this track's intended role, emotion, and palette
+- If album track: access to the Album Blueprint for this track's intended role, emotion, and palette
 - If the song has an existing self-score: note it but do NOT let it anchor your assessment. Self-critiques inflate by ~1.0 point on average.
 
 ---

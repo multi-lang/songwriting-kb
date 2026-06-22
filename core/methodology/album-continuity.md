@@ -203,9 +203,9 @@ Final Track resolves: [which earlier threads]
 
 ### PHASE 5: Documentation
 
-#### Step 10 -- Assemble the Album Bible
+#### Step 10 -- Assemble the Album Blueprint
 
-Create `references/[YOUR_ALBUM]_BIBLE.md` containing:
+Create `references/[YOUR_ALBUM]_BLUEPRINT.md` containing:
 
 1. Album Thesis
 2. Track Registry (full table)
@@ -221,7 +221,7 @@ Create `references/[YOUR_ALBUM]_BIBLE.md` containing:
 
 #### Step 11 -- Create Your Steering File
 
-Create a condensed version of the bible for quick reference, containing:
+Create a condensed version of the blueprint for quick reference, containing:
 - Album title + track count
 - Extension protocol reminder
 - Hard rules (all numbered, scannable)
@@ -276,7 +276,7 @@ New track count: [X]
 
 ### Step 3 -- Update the Track Registry
 
-Add new rows to the Album Bible's track table. Verify:
+Add new rows to the Album Blueprint's track table. Verify:
 - No key duplicates without intentional reason
 - BPM varies from adjacent tracks
 - Emotions progress (do not repeat)
@@ -327,7 +327,7 @@ Map new keys against existing harmonic architecture:
 - For prequels: final prequel track's key should create harmonic gravity toward T1
 - For sequels: first new track's key should continue OR deliberately break the trajectory
 
-### Step 9 -- Update the Album Bible
+### Step 9 -- Update the Album Blueprint
 
 Update all sections: Track Registry, Sonic Palette, Key Relationships, Rules, Character Voices, Motifs, Emotional Arc, Extension Protocol.
 
@@ -341,7 +341,7 @@ Update: track count, rules (if changed), palette table, character voices (if new
 
 ### Step 12 -- Write New Tracks
 
-NOW proceed to songwriting (see `core/methodology/songwriting.md`) for each new track, with the updated bible available.
+NOW proceed to songwriting (see `core/methodology/songwriting.md`) for each new track, with the updated blueprint available.
 
 ---
 
@@ -398,7 +398,7 @@ These apply to ANY concept album regardless of genre:
 
 | Mistake | Consequence | Prevention |
 |---|---|---|
-| Writing songs before updating bible | Continuity violations discovered too late | Commit documentation FIRST |
+| Writing songs before updating blueprint | Continuity violations discovered too late | Commit documentation FIRST |
 | Keeping all old rules unchanged | New context may need different constraints | Review each rule explicitly |
 | Same sonic palette as earlier tracks | Album sounds repetitive | Rule 11 + palette differentiation |
 | Ignoring motif completion | Resolved motifs get resurrected cheaply | Check motif status before reuse |
@@ -413,9 +413,9 @@ These apply to ANY concept album regardless of genre:
 
 ## Output Formats
 
-### Album Bible Sections
+### Album Blueprint Sections
 
-The Album Bible (`references/[ALBUM]_BIBLE.md`) contains these sections:
+The Album Blueprint (`references/[ALBUM]_BLUEPRINT.md`) contains these sections:
 1. Album Thesis
 2. Track Registry (table)
 3. Sonic Palette Evolution
@@ -459,8 +459,8 @@ Save to: `analysis/[album-prefix]_[song-filename]_continuity.md`
 
 ## References
 
-- `references/YOUR_ALBUM_BIBLE.md` -- Template for album bible structure
-- `references/FRACTURED_SHADOWS_BIBLE.md` -- Complete example album bible
-- `references/KEEPER_OF_THE_LIGHT_BIBLE.md` -- Complete example album bible
+- `references/YOUR_ALBUM_BLUEPRINT.md` -- Template for album blueprint structure
+- `references/FRACTURED_SHADOWS_BLUEPRINT.md` -- Complete example album blueprint
+- `references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md` -- Complete example album blueprint
 - `core/methodology/character-voice.md` -- Full character voice design procedure
 - `core/methodology/songwriting.md` -- Song creation procedure (use after album is documented)

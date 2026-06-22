@@ -303,9 +303,9 @@ Does this track know WHERE it sits in the album's emotional arc?
 
 ### C2. Intention vs Delivery
 
-Compare the Album Bible's stated "Core Emotion" for this track against what the lyrics + production ACTUALLY deliver.
+Compare the Album Blueprint's stated "Core Emotion" for this track against what the lyrics + production ACTUALLY deliver.
 
-**Method:** Read the bible's one-line emotion description. Then read the song. Does the song make you feel THAT thing? Or something adjacent? Or something different?
+**Method:** Read the blueprint's one-line emotion description. Then read the song. Does the song make you feel THAT thing? Or something adjacent? Or something different?
 
 **Result:** MATCH (delivers the stated emotion) / PARTIAL (adjacent emotion, close but not exact) / MISS (different emotion than intended)
 
@@ -336,10 +336,10 @@ Does the song give the AUDIENCE more information than the CHARACTER has?
 
 ### C5. Motif & Callback Accuracy
 
-Are recurring motifs used correctly per the Album Bible?
+Are recurring motifs used correctly per the Album Blueprint?
 
 **What to check:**
-- Does the motif appear in the correct tracks (per bible)?
+- Does the motif appear in the correct tracks (per blueprint)?
 - Does the motif carry the correct MEANING at this point in its evolution?
 - Are forbidden motifs absent (motifs that don't exist yet in the timeline, or are reserved for other tracks)?
 - Is the motif EVOLVED from its last appearance (not just repeated)?

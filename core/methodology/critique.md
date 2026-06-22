@@ -36,7 +36,7 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  -- "Does it serve its role?" (concep
 
 - A complete song (lyrics + production notes, or at minimum lyrics + genre/tempo info)
 - Access to the Style & Genre Reference for evaluating genre/key/BPM/instrument choices
-- If album track: access to the Album Bible for this track's intended role, emotion, and palette
+- If album track: access to the Album Blueprint for this track's intended role, emotion, and palette
 - If the song has an existing self-score: note it but do NOT let it anchor your assessment
 
 ---
@@ -353,10 +353,10 @@ Skip entirely for standalone songs. For concept album tracks, run all 6 checks:
 | # | Check | Question | Result Options |
 |---|---|---|---|
 | C1 | **Position Awareness** | Does this track know WHERE it sits in the arc? An opener establishes; a climax delivers; a denouement resolves. | PASS / CONCERN / FAIL |
-| C2 | **Intention vs Delivery** | Compare the bible's stated "Core Emotion" against what the song ACTUALLY delivers. | MATCH / PARTIAL / MISS |
+| C2 | **Intention vs Delivery** | Compare the blueprint's stated "Core Emotion" against what the song ACTUALLY delivers. | MATCH / PARTIAL / MISS |
 | C3 | **Transition Consciousness** | Does the ending create harmonic/timbral/emotional gravity toward the next track? | STRONG / ADEQUATE / WEAK |
 | C4 | **Dramatic Irony Management** | Does the song give the AUDIENCE more information than the CHARACTER has? Is irony planted without being on-the-nose? | PRESENT & EFFECTIVE / PRESENT BUT HEAVY / ABSENT |
-| C5 | **Motif & Callback Accuracy** | Are recurring motifs used correctly per the bible? In the right tracks? With the right meaning evolution? | CORRECT / MINOR ISSUE / VIOLATION |
+| C5 | **Motif & Callback Accuracy** | Are recurring motifs used correctly per the blueprint? In the right tracks? With the right meaning evolution? | CORRECT / MINOR ISSUE / VIOLATION |
 | C6 | **Sonic Differentiation** | Does this track sound sufficiently DIFFERENT from adjacent tracks? (<70% palette overlap) | PASS / BORDERLINE / FAIL |
 
 ---

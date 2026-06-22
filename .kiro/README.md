@@ -81,7 +81,7 @@ Each agent defines WHO it is and loads the methodology from `core/methodology/`:
 | `suno-meta-tags` | Complete tag reference, v5.5, layers, sliders | Large |
 | `music-theory` | 12 disciplines, 23-point framework, 18 advanced concepts | Very large |
 | `character-voice` | Accent/dialect system, voice design template | Medium |
-| `concept-album-bible` | Album continuity template (**configure for your album**) | Variable |
+| `concept-album-blueprint` | Album continuity template (**configure for your album**) | Variable |
 
 ---
 
@@ -94,7 +94,7 @@ Step-by-step workflows that work with ANY AI assistant or manually:
 | 01 | Writing a Song | Creating a new song from concept to Suno-ready |
 | 02 | Critiquing a Song | Evaluating/scoring an existing song |
 | 03 | Optimizing for Suno | Final formatting pass before rendering |
-| 04 | Setting Up a Concept Album | Building your album bible, steering, and hooks |
+| 04 | Setting Up a Concept Album | Building your album blueprint, steering, and hooks |
 | 05 | Extending an Album | Adding tracks to an existing album |
 | 06 | Character Voice Design | Creating a voice for a specific character/accent |
 | 07 | Full Pipeline | Complete write→critique→revise→optimize→verify flow |
@@ -112,7 +112,7 @@ This system works identically in kiro-cli (headless mode). The steering files lo
 
 If you're new, customize in this order:
 1. `steering/output-preferences.md` — Your format conventions
-2. `agents/album-continuity.md` — Point `#[[file:]]` at YOUR album bible
+2. `agents/album-continuity.md` — Point `#[[file:]]` at YOUR album blueprint
 3. Add a conditional steering file for your album (use `examples/` as template)
 4. Add a continuity hook for your album
 

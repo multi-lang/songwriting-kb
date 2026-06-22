@@ -19,7 +19,7 @@ The `.kiro/` directory auto-configures Kiro IDE with all agents, skills, hooks, 
 
 These work for ANY songwriter with zero customization:
 - 4 agents (songwriter, critic, suno-optimizer, album-continuity)
-- 5 skills (critique, suno-tags, music-theory, character-voice, concept-album-bible)
+- 5 skills (critique, suno-tags, music-theory, character-voice, concept-album-blueprint)
 - 3 universal hooks (format-check, char-count, prosody-lint) + album-specific continuity hooks (one per example album)
 - 8 SOPs (writing, critiquing, optimizing, album setup, extending, character voice, full pipeline, contributing)
 - Full songwriting knowledge base (13 sections)
@@ -36,10 +36,10 @@ These files contain templates — personalize them:
 | `.kiro/steering/output-preferences.md` | Edit with YOUR output format preferences |
 | `.kiro/steering/concept-album.md` | Generic framework — add your album's conditional steering (see examples/) |
 | `.kiro/agents/album-continuity.md` | Configure with YOUR album's rules |
-| `references/YOUR_ALBUM_BIBLE.md` | Replace with YOUR album bible (or delete if no album) |
+| `references/YOUR_ALBUM_BLUEPRINT.md` | Replace with YOUR album blueprint (or delete if no album) |
 | `songs/` | Replace with YOUR songs |
 
-**Example albums** are in `examples/albums/` — study them for format reference, then copy patterns to your active files. The bibles in `references/` (Fractured Shadows, Keeper of the Light) are kept as format references you can study.
+**Example albums** are in `examples/albums/` — study them for format reference, then copy patterns to your active files. The blueprints in `references/` (Fractured Shadows, Keeper of the Light) are kept as format references you can study.
 
 ---
 
@@ -65,17 +65,17 @@ Customize:
 ### Step 5 — Follow SOP 04
 
 Use SOP 04 (Setting Up a Concept Album) to create:
-1. Your Album Bible in `references/[YOUR_ALBUM]_BIBLE.md`
+1. Your Album Blueprint in `references/[YOUR_ALBUM]_BLUEPRINT.md`
 2. Your steering file in `.kiro/steering/[your-album].md`
 3. Your continuity hook in `.kiro/hooks/[album]-continuity-check.md`
 
-### Step 6 — Update the Concept Album Bible Skill
+### Step 6 — Update the Concept Album Blueprint Skill
 
-Edit `.kiro/skills/concept-album-bible/SKILL.md`:
-- Change the `#[[file:...]]` reference to point at YOUR bible
+Edit `.kiro/skills/concept-album-blueprint/SKILL.md`:
+- Change the `#[[file:...]]` reference to point at YOUR blueprint
 - Update the rule list to YOUR rules
 
-**Note:** The `#[[file:path]]` syntax is Kiro's file-reference system — it embeds the referenced file's content when the skill is activated. Replace the path with your bible's location (e.g., `#[[file:references/YOUR_ALBUM_BIBLE.md]]`).
+**Note:** The `#[[file:path]]` syntax is Kiro's file-reference system — it embeds the referenced file's content when the skill is activated. Replace the path with your blueprint's location (e.g., `#[[file:references/YOUR_ALBUM_BLUEPRINT.md]]`).
 
 ### Step 7 — Update the Album Continuity Agent
 
@@ -98,7 +98,7 @@ Edit `.kiro/agents/album-continuity.md`:
 | **New hooks** | Additional quality checks | Must be useful to >1 person | `.kiro/hooks/` |
 | **Bug fixes** | Incorrect tag syntax, outdated Suno info | Must include evidence of the fix | Relevant file |
 | **SOPs** | New procedures for workflows not covered | Must follow SOP format | `.kiro/sops/` |
-| **Example albums** | YOUR completed album bible as a reference | Helps others see how a filled system looks | `references/` |
+| **Example albums** | YOUR completed album blueprint as a reference | Helps others see how a filled system looks | `references/` |
 
 ### What We Don't Accept
 
@@ -144,8 +144,8 @@ references/CHARACTER_VOICE_REFERENCE.md
 ```
 .kiro/agents/album-continuity.md (configure YOUR rules)
 .kiro/hooks/[album]-continuity-check.json (create for YOUR album)
-references/YOUR_ALBUM_BIBLE.md (replace with YOUR bible)
-references/[YOUR_ALBUM]_BIBLE.md
+references/YOUR_ALBUM_BLUEPRINT.md (replace with YOUR blueprint)
+references/[YOUR_ALBUM]_BLUEPRINT.md
 songs/**/*
 ```
 
@@ -153,8 +153,8 @@ songs/**/*
 ```
 examples/albums/*/
 examples/preferences/
-references/FRACTURED_SHADOWS_BIBLE.md
-references/KEEPER_OF_THE_LIGHT_BIBLE.md
+references/FRACTURED_SHADOWS_BLUEPRINT.md
+references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md
 ```
 
 ---
@@ -170,16 +170,16 @@ cd songwriting-kb
 # See examples/preferences/voletek-preferences.md for a filled-in reference
 nano .kiro/steering/output-preferences.md
 
-# Optional: remove example album bibles (or keep as format references)
-rm references/FRACTURED_SHADOWS_BIBLE.md
-rm references/KEEPER_OF_THE_LIGHT_BIBLE.md
+# Optional: remove example album blueprints (or keep as format references)
+rm references/FRACTURED_SHADOWS_BLUEPRINT.md
+rm references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md
 
 # Optional: remove example song files
 rm -rf songs/album_act2 songs/album_act3 songs/experimental songs/keeper_of_the_light
 rm songs/0*_*.md songs/Shadow* songs/Shapes* songs/What_If* songs/Evil* songs/Cat*
 
 # Create your own album (follow SOP 04)
-# This creates your bible, steering, and hooks
+# This creates your blueprint, steering, and hooks
 
 # Start writing songs (follow SOP 01)
 # Use the full pipeline (SOP 07) for best results

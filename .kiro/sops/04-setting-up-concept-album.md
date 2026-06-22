@@ -197,11 +197,11 @@ Final Track resolves: [which earlier threads]
 
 ### PHASE 5: Documentation
 
-**Step 10 — Assemble the Album Bible**
+**Step 10 — Assemble the Album Blueprint**
 
-Create `references/[YOUR_ALBUM]_BIBLE.md` containing all sections below.
+Create `references/[YOUR_ALBUM]_BLUEPRINT.md` containing all sections below.
 
-**See `references/FRACTURED_SHADOWS_BIBLE.md` for a completed example** — use it as your format reference for section structure, detail level, and table formats.
+**See `references/FRACTURED_SHADOWS_BLUEPRINT.md` for a completed example** — use it as your format reference for section structure, detail level, and table formats.
 
 Sections to include:
 
@@ -215,16 +215,16 @@ Sections to include:
 8. Callbacks/Transitions plan
 9. Emotional Arc (full album)
 10. Versioning Opportunities per track — *Alternative mixes/edits for each track (acoustic version, instrumental for sync, extended for streaming, clip for social media). Not every track needs one — identify the 3-5 with strongest standalone potential.*
-11. Extension Protocol — *A 4-6 line safety checklist for anyone who wants to add tracks later. Include: (a) update bible first, (b) extend palette map, (c) review which rules carry forward, (d) commit documentation before writing, (e) verify sonic differentiation. See SOP 05 Steps 2-3 for full detail.*
+11. Extension Protocol — *A 4-6 line safety checklist for anyone who wants to add tracks later. Include: (a) update blueprint first, (b) extend palette map, (c) review which rules carry forward, (d) commit documentation before writing, (e) verify sonic differentiation. See SOP 05 Steps 2-3 for full detail.*
 
 **Step 11 — Create Your Steering File**
 
 Create `.kiro/steering/[your-album-in-kebab-case].md` (e.g., `keeper-of-the-light.md`).
 
-This is a CONDENSED version of the bible — loaded into every session for quick reference. Contains:
+This is a CONDENSED version of the blueprint — loaded into every session for quick reference. Contains:
 - Album title + track count
 - Extension protocol reminder (4-line safety warning)
-- Hard rules (all of them, numbered — same as bible but more scannable)
+- Hard rules (all of them, numbered — same as blueprint but more scannable)
 - Sonic palette by track range (table format)
 - Character voices (quick reference — 1-2 lines each)
 - Key motifs to track (name + which tracks)
@@ -259,7 +259,7 @@ After completing this SOP, you should have:
 - [ ] Character Voice Registry (per character)
 - [ ] Motif plan (with first appearance + evolution)
 - [ ] Callbacks/transitions documented
-- [ ] Album Bible file created
+- [ ] Album Blueprint file created
 - [ ] Steering file created
 - [ ] (Optional) Hook configured
 
@@ -269,7 +269,7 @@ After completing this SOP, you should have:
 
 | Don't | Do Instead |
 |---|---|
-| Start writing songs before the bible exists | Complete Steps 1-12 first |
+| Start writing songs before the blueprint exists | Complete Steps 1-12 first |
 | Define all 15 tracks in detail immediately | Start with rough emotional arc, refine as you write |
 | Make rules you'll want to break | Make rules that SERVE the story |
 | Plan rigid key for every track upfront | Plan relationships, let specific keys emerge during writing |

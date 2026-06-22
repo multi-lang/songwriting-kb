@@ -244,7 +244,7 @@ Track Z: [final evolution]
 
 **Rule:** The voice must be DIFFERENT in every track. Document what changes.
 
-If the album bible already documents voice evolution in its Character Voice Registry, reference it rather than duplicating.
+If the album blueprint already documents voice evolution in its Character Voice Registry, reference it rather than duplicating.
 
 ---
 

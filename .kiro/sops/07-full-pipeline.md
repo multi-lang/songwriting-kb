@@ -112,8 +112,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 ### Stage 5: VERIFY (Album tracks only)
 
 **Agent:** Album-Continuity
-**Input:** Optimized song + Album Bible
-**Authority:** All verification checks reference the Album Bible (`references/[ALBUM]_BIBLE.md`) as the single source of truth.
+**Input:** Optimized song + Album Blueprint
+**Authority:** All verification checks reference the Album Blueprint (`references/[ALBUM]_BLUEPRINT.md`) as the single source of truth.
 **Process:**
 1. Run all hard rules against the track
 2. Check sonic palette compliance

@@ -99,7 +99,7 @@ All notable changes to this project will be documented in this file.
 #### Added
 - Fractured Shadows (17 tracks, 3 acts)
 - Keeper of the Light (8 tracks, folk-horror)
-- Album bible system + character voice design
+- Album blueprint system + character voice design
 
 ---
 

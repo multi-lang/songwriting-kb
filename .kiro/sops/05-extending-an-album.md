@@ -11,7 +11,7 @@
 
 ## Prerequisites
 
-- A completed Album Bible for the existing tracks
+- A completed Album Blueprint for the existing tracks
 - The new concept/story material that justifies extension
 - Clear understanding of WHERE the new tracks fit (sequel act? inserted? appendix?)
 
@@ -50,7 +50,7 @@ New track count: [X]
 
 ### Step 3 — Update the Track Registry
 
-Add new rows to the Album Bible's track table:
+Add new rows to the Album Blueprint's track table:
 ```
 | # | Working Title | Key | BPM | Core Emotion | Sonic Palette |
 |---|---|---|---|---|---|
@@ -143,9 +143,9 @@ Map the new keys against the existing harmonic architecture:
 
 **For sequels:** The first new track's key should either continue the harmonic trajectory or deliberately break it (if the extension represents a new phase).
 
-### Step 9 — Update the Album Bible
+### Step 9 — Update the Album Blueprint
 
-Open `references/[ALBUM]_BIBLE.md` and update:
+Open `references/[ALBUM]_BLUEPRINT.md` and update:
 - [ ] Track Registry (new rows)
 - [ ] Sonic Palette Evolution (extended)
 - [ ] Key Relationships (new entries)
@@ -166,7 +166,7 @@ Open `.kiro/steering/[album].md` and update:
 
 ### Step 11 — Commit BEFORE Writing
 
-**Commit all bible/steering updates to version control BEFORE writing any new songs.**
+**Commit all blueprint/steering updates to version control BEFORE writing any new songs.**
 
 This ensures:
 - The documentation is the source of truth
@@ -176,9 +176,9 @@ This ensures:
 
 ### Step 12 — Write New Tracks
 
-NOW proceed to SOP 01 (Writing a Song) for each new track, with the updated bible available.
+NOW proceed to SOP 01 (Writing a Song) for each new track, with the updated blueprint available.
 
-**Note:** This SOP is the expanded procedure referenced by "Album Extension Protocol" sections in album bibles. If your bible has an extension protocol checklist, this SOP fulfills and supersedes those steps.
+**Note:** This SOP is the expanded procedure referenced by "Album Extension Protocol" sections in album blueprints. If your blueprint has an extension protocol checklist, this SOP fulfills and supersedes those steps.
 
 ---
 
@@ -186,7 +186,7 @@ NOW proceed to SOP 01 (Writing a Song) for each new track, with the updated bibl
 
 | Mistake | Consequence | Prevention |
 |---|---|---|
-| Writing songs before updating bible | Continuity violations discovered too late | Step 11: commit documentation FIRST |
+| Writing songs before updating blueprint | Continuity violations discovered too late | Step 11: commit documentation FIRST |
 | Keeping all old rules unchanged | New context may need different constraints | Step 5: review each rule explicitly |
 | Same sonic palette as earlier tracks | Album sounds repetitive, no progression | Step 4 + Rule 11: differentiate |
 | Ignoring motif completion | Motifs that were "resolved" get resurrected cheaply | Step 7: check motif status |

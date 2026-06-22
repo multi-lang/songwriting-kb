@@ -23,7 +23,7 @@
 └────────┬──────────┘ └──────┬───────┘ └──────┬───────┘ └────────┬─────────┘
          │                   │                │                  │
          │ Also refs:        │ Also refs:     │ Also refs:       │ Also refs:
-         │ • KB files        │ • CRITIQUE_REF │ • SUNO_TAGS_REF  │ • ALBUM_BIBLE
+         │ • KB files        │ • CRITIQUE_REF │ • SUNO_TAGS_REF  │ • ALBUM_BLUEPRINT
          │ • MUSIC_THEORY    │ • STYLE_GENRE  │ • STYLE_GENRE    │
          │                   │                │                  │
          ▼                   ▼                ▼                  ▼

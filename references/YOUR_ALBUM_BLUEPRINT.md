@@ -1,4 +1,4 @@
-# [Your Album Name] — Concept Album Bible
+# [Your Album Name] — Concept Album Blueprint
 
 > Replace this file with your album's continuity document.
 > Follow SOP 04 (Setting Up a Concept Album) for the full procedure.

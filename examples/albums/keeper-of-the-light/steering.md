@@ -6,7 +6,7 @@ fileMatchPattern: "songs/keeper_of_the_light/**"
 # Keeper of the Light — Album Continuity Rules
 
 > Conditional steering — loads when working on files matching songs/keeper_of_the_light/**
-> Full bible: references/KEEPER_OF_THE_LIGHT_BIBLE.md
+> Full blueprint: references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md
 > System: Suno v5.5 (Personas, Stems, Era Tags, Layers)
 
 ---
@@ -19,10 +19,10 @@ Genre: Folk-horror / sea-shanty / dark ambient
 ## ALBUM EXTENSION PROTOCOL
 
 **⚠️ STOP — Before writing ANY track outside the current registry (T1-8):**
-1. Update `references/KEEPER_OF_THE_LIGHT_BIBLE.md` with new track registry (including Persona assignment)
+1. Update `references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md` with new track registry (including Persona assignment)
 2. Extend the sonic palette evolution map
 3. Define which existing rules carry forward vs which are act-specific
-4. Get the bible update committed BEFORE writing new songs
+4. Get the blueprint update committed BEFORE writing new songs
 5. Use SOP 05 — supports sequels, prequels (P01, P02...), and insertions (T3a, T3b...)
 
 ---
@@ -69,4 +69,4 @@ Genre: Folk-horror / sea-shanty / dark ambient
 
 ## Reference
 
-#[[file:references/KEEPER_OF_THE_LIGHT_BIBLE.md]]
+#[[file:references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md]]

@@ -160,7 +160,7 @@ Slider recommendation: Weirdness X% / Style Influence X% / Audio Influence X%
 | Check | Result | Notes |
 |---|---|---|
 | Position Awareness | PASS / CONCERN / FAIL | [One sentence: does track serve its position in the album arc?] |
-| Intention vs Delivery | MATCH / PARTIAL / MISS | [One sentence: bible's stated emotion vs what the song actually delivers] |
+| Intention vs Delivery | MATCH / PARTIAL / MISS | [One sentence: blueprint's stated emotion vs what the song actually delivers] |
 | Transition Consciousness | STRONG / ADEQUATE / WEAK | [One sentence: does the ending create gravity toward next track?] |
 | Dramatic Irony | PRESENT & EFFECTIVE / PRESENT BUT HEAVY-HANDED / ABSENT | [One sentence: audience knowledge vs character knowledge managed?] |
 | Motif & Callback Accuracy | CORRECT / MINOR ISSUE / VIOLATION | [One sentence: motifs in right tracks, correct meaning, forbidden absent?] |

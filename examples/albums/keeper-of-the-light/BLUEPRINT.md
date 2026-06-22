@@ -1,4 +1,4 @@
-# Keeper of the Light — Concept Album Bible
+# Keeper of the Light — Concept Album Blueprint
 
 > Complete continuity reference for the 8-track concept album.
 > Genre: Folk-horror meets sea-shanty meets dark ambient.
@@ -320,10 +320,10 @@ The phrase "the light keeps" resolves its 4-track journey: pride → question �
 ## ALBUM EXTENSION PROTOCOL
 
 **⚠️ Before writing ANY track outside this registry (T1-8), you MUST:**
-1. Add the new track(s) to this bible's Track Registry table (including Persona assignment)
+1. Add the new track(s) to this blueprint's Track Registry table (including Persona assignment)
 2. Extend the Sonic Palette Evolution map
 3. Define which rules carry forward and which are act-specific
-4. Commit the updated bible BEFORE writing new songs
+4. Commit the updated blueprint BEFORE writing new songs
 5. Verify sonic differentiation against all existing tracks sharing similar palettes
 6. Consult SOP 05 (Extending an Album) for full procedure — supports sequels, prequels, and insertions
 

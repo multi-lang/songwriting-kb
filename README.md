@@ -65,7 +65,7 @@ songwriting-kb/
 ├── experiments/
 │   └── suno/                  Suno experiment logs (version-dated prompt tests)
 ├── docs/                      Architecture plans, implementation docs
-├── references/                7 companion docs (critique, template, style/genre, tags, voice, 2 bibles)
+├── references/                7 companion docs (critique, template, style/genre, tags, voice, 2 blueprints)
 ├── examples/
 │   ├── songs/                 Developer's example songs (concept albums, standalones)
 │   ├── albums/                Album configuration examples
@@ -88,7 +88,7 @@ The procedural layer — step-by-step HOW for every workflow:
 | **02** | [Critiquing a Song](/.kiro/sops/02-critiquing-a-song.md) | 10 steps: read → 9-step analysis → score → Suno optimization → flag → recommend | 35-55 min |
 | **03** | [Optimizing for Suno](/.kiro/sops/03-optimizing-for-suno.md) | 12 steps: char audit → tags → validate → dynamics → sliders | 15-20 min |
 | **04** | [Setting Up a Concept Album](/.kiro/sops/04-setting-up-concept-album.md) | 12 steps: concept → registry → rules → motifs → documentation | 2.5-3.5 hrs |
-| **05** | [Extending an Album](/.kiro/sops/05-extending-an-album.md) | 12 steps: evaluate → scope → update bible → verify → write | 1-2 hrs |
+| **05** | [Extending an Album](/.kiro/sops/05-extending-an-album.md) | 12 steps: evaluate → scope → update blueprint → verify → write | 1-2 hrs |
 | **06** | [Character Voice Design](/.kiro/sops/06-character-voice-design.md) | 11 steps: identify → accent → template → instruments → mode | 15-25 min |
 | **07** | [Full Pipeline](/.kiro/sops/07-full-pipeline.md) | 6 stages: Write → Critique → Revise → Optimize → Verify → Render | 2-3 hrs |
 | **08** | [Contributing](/.kiro/sops/08-contributing.md) | Community guide: setup → customize → add albums → submit | Variable |
@@ -122,7 +122,7 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 | **suno-meta-tags** | 35+ confirmed tags, v5.5 features, layers, sliders, era tags | Formatting for Suno |
 | **music-theory** | 12 disciplines, 23-point framework, 18 advanced concepts | Deep production analysis |
 | **character-voice** | Accent/dialect system, voice design template (vocal + non-vocal), instrumentation maps | Writing for characters |
-| **concept-album-bible** | Track registry, motifs, continuity rules (template + 2 examples) | Album work |
+| **concept-album-blueprint** | Track registry, motifs, continuity rules (template + 2 examples) | Album work |
 
 ---
 
@@ -341,13 +341,13 @@ This system is designed for sharing. The architecture separates **universal** fr
 - All knowledge base files
 - All SOPs
 - Songwriter, Critic, Suno-Optimizer agents
-- All skills (except album-bible content)
+- All skills (except album-blueprint content)
 - Format-check, char-count, prosody-lint hooks
-- All reference docs (except album bibles)
+- All reference docs (except album blueprints)
 
 ### Personal (customize for your projects — ~30% of system):
 - `output-preferences.md` → edit with YOUR format preferences
-- Album bibles in `references/` → replace YOUR_ALBUM_BIBLE.md with your own
+- Album blueprints in `references/` → replace YOUR_ALBUM_BLUEPRINT.md with your own
 - Album-continuity agent → configure YOUR rules
 - Add conditional steering + continuity hooks for YOUR albums (see `examples/`)
 
@@ -375,7 +375,7 @@ Load the relevant methodology file(s) into your AI's context, then ask it to fol
 | **Critique a song** | `core/methodology/critique.md` + `references/CRITIQUE_REFERENCE.md` + `references/SUNO_STYLE_GENRE_REFERENCE.md` |
 | **Write a song** | `core/methodology/songwriting.md` + `SONGWRITING_KNOWLEDGE_BASE.md` |
 | **Optimize for Suno** | `core/methodology/suno-optimization.md` + `references/SUNO_TAGS_REFERENCE.md` |
-| **Album continuity** | `core/methodology/album-continuity.md` + your album bible |
+| **Album continuity** | `core/methodology/album-continuity.md` + your album blueprint |
 | **Character voice** | `core/methodology/character-voice.md` + `references/CHARACTER_VOICE_REFERENCE.md` |
 
 ### Example Prompts
@@ -411,7 +411,7 @@ This checks character counts, required elements, tag compliance, and formatting 
 |---|---|---|
 | Methodology loading | Automatic via agents | Manual file loading |
 | Format validation | Hooks fire on save | Run `tools/validate-song.py` manually |
-| Album continuity | Agent checks on edit | Load methodology + bible, ask AI to check |
+| Album continuity | Agent checks on edit | Load methodology + blueprint, ask AI to check |
 | Steering rules | Always-on context | Include in your system prompt |
 | Skills | Activated on demand | Load the relevant methodology file |
 

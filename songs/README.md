@@ -36,7 +36,7 @@ If you have album continuity hooks configured, they'll fire on saves in matching
 
 ## Album Continuity
 
-The album-continuity system works from whatever directory your album bible points to. Put your songs in `songs/my_album/`, set your album bible's track registry to reference that path, and it works. See `examples/albums/` for the configuration pattern.
+The album-continuity system works from whatever directory your album blueprint points to. Put your songs in `songs/my_album/`, set your album blueprint's track registry to reference that path, and it works. See `examples/albums/` for the configuration pattern.
 
 ## CLI Validation
 

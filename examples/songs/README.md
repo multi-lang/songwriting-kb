@@ -26,10 +26,10 @@ Feel free to copy any song file as a starting template for your own work. The fo
 - `## Lyrics` — ready to paste into Suno's Lyrics field (includes all direction blocks)
 - `## Production Notes` — reference document for arrangement decisions
 
-## Album Bibles
+## Album Blueprints
 
-The concept album examples have corresponding bibles in `references/`:
-- `references/FRACTURED_SHADOWS_BIBLE.md`
-- `references/KEEPER_OF_THE_LIGHT_BIBLE.md`
+The concept album examples have corresponding blueprints in `references/`:
+- `references/FRACTURED_SHADOWS_BLUEPRINT.md`
+- `references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md`
 
 And configuration examples in `examples/albums/`.

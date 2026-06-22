@@ -1,6 +1,6 @@
 ---
 inclusion: auto
-description: Framework for managing concept album continuity — how to set up album bibles, conditional steering, continuity hooks, and universal album rules.
+description: Framework for managing concept album continuity — how to set up album blueprints, conditional steering, continuity hooks, and universal album rules.
 ---
 
 # Concept Album — Continuity System
@@ -14,7 +14,7 @@ description: Framework for managing concept album continuity — how to set up a
 
 When working on a concept album, you need three things:
 
-1. **Album Bible** (in `references/`) — The complete continuity document: track registry, hard rules, sonic palette, character voices, key relationships, motifs, callbacks.
+1. **Album Blueprint** (in `references/`) — The complete continuity document: track registry, hard rules, sonic palette, character voices, key relationships, motifs, callbacks.
 2. **Conditional Steering File** (in `.kiro/steering/`) — A summary of hard rules that auto-loads when you open album files. Uses `inclusion: fileMatch` so it only appears when relevant.
 3. **Continuity Hook** (in `.kiro/hooks/`) — Automated check that fires on file save and verifies rules aren't violated.
 
@@ -22,7 +22,7 @@ When working on a concept album, you need three things:
 
 Follow **SOP 04** (Setting Up a Concept Album) for the full procedure. Quick version:
 
-1. Create your bible: `references/YOUR_ALBUM_BIBLE.md`
+1. Create your blueprint: `references/YOUR_ALBUM_BLUEPRINT.md`
 2. Create conditional steering: `.kiro/steering/your-album.md` with front-matter:
    ```yaml
    ---
@@ -38,10 +38,10 @@ See `examples/albums/` for two complete reference implementations.
 ## ALBUM EXTENSION PROTOCOL
 
 **⚠️ STOP — Before writing ANY track outside your current registry:**
-1. Update your Album Bible with new track registry (including Persona assignment)
+1. Update your Album Blueprint with new track registry (including Persona assignment)
 2. Extend the sonic palette evolution map
 3. Define which existing rules carry forward vs which are act-specific
-4. Get the bible update committed BEFORE writing new songs
+4. Get the blueprint update committed BEFORE writing new songs
 5. Use SOP 05 — supports sequels, prequels, and insertions
 
 Failure to follow this protocol creates cascading continuity errors.
@@ -59,5 +59,5 @@ These apply to ANY concept album regardless of genre:
 
 ## Reference
 
-When you have an active album bible, reference it here:
-#[[file:references/YOUR_ALBUM_BIBLE.md]]
+When you have an active album blueprint, reference it here:
+#[[file:references/YOUR_ALBUM_BLUEPRINT.md]]

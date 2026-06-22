@@ -19,7 +19,7 @@ Two fully-realized concept album setups showing how every piece connects:
 Each album folder contains:
 - `steering.md` — The conditional steering file (copy to `.kiro/steering/` and configure `fileMatchPattern`)
 - `continuity-hook.json` — The continuity check hook (copy to `.kiro/hooks/`)
-- `BIBLE.md` — The full album bible (copy to `references/`)
+- `BLUEPRINT.md` — The full album blueprint (copy to `references/`)
 
 ### `preferences/` — Format Preference Examples
 
@@ -36,7 +36,7 @@ Each album folder contains:
 3. Copy the relevant files to their active locations:
    ```
    examples/albums/your-ref/steering.md → .kiro/steering/your-album.md
-   examples/albums/your-ref/BIBLE.md    → references/YOUR_ALBUM_BIBLE.md
+   examples/albums/your-ref/BLUEPRINT.md    → references/YOUR_ALBUM_BLUEPRINT.md
    examples/albums/your-ref/hook.json   → .kiro/hooks/your-album-continuity.json
    ```
 4. Update file paths and patterns in your copies

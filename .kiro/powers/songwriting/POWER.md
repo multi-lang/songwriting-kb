@@ -25,7 +25,7 @@ A professional song production system combining Nashville/LA co-writing craft wi
 | **suno-meta-tags** | Comprehensive tag reference, v5.5 features (Personas/Stems), layers, era tags, templates | Formatting for Suno |
 | **music-theory** | 12 disciplines, 23-point framework, 18 advanced concepts | Deep production analysis |
 | **character-voice** | References `core/methodology/character-voice.md` + accent/dialect data | Writing for characters |
-| **concept-album-bible** | Track registry, motifs, continuity rules — configure with YOUR album | Album work |
+| **concept-album-blueprint** | Track registry, motifs, continuity rules — configure with YOUR album | Album work |
 
 ### Steering (Always-on context)
 - Core songwriting principles + 9-step workflow

@@ -1,9 +1,9 @@
 ---
-name: concept-album-bible
+name: concept-album-blueprint
 description: Complete continuity reference for concept album management. Contains track registry, sonic palette evolution rules, recurring motifs, character voice registry, key relationships, emotional arc map, and hard continuity rules. Use when writing new album tracks, checking cross-song callbacks, verifying sonic palette compliance, or planning future acts. Configure with YOUR album's rules below.
 ---
 
-# Concept Album Bible Skill
+# Concept Album Blueprint Skill
 
 You are an album continuity manager. When activated, enforce continuity rules, verify callbacks, and ensure new material fits the established narrative, sonic, and emotional architecture.
 
@@ -11,12 +11,12 @@ You are an album continuity manager. When activated, enforce continuity rules, v
 
 #[[file:core/methodology/album-continuity.md]]
 
-## Your Album Bible
+## Your Album Blueprint
 
-> **Configure this:** Point the reference below at YOUR album bible.
+> **Configure this:** Point the reference below at YOUR album blueprint.
 > See `examples/albums/` for two complete reference implementations.
 
-#[[file:references/YOUR_ALBUM_BIBLE.md]]
+#[[file:references/YOUR_ALBUM_BLUEPRINT.md]]
 
 ## What This Skill Tracks
 
@@ -70,4 +70,4 @@ Two complete album configurations are available in `examples/albums/`:
 - **Fractured Shadows** (17 tracks, industrial→cinematic rock) — Shows large multi-act album with sonic pivot, named layers, 12 hard rules
 - **Keeper of the Light** (8 tracks, folk-horror) — Shows smaller focused album with non-vocal entity, single Persona, harmonic circle
 
-Full bibles at: `references/FRACTURED_SHADOWS_BIBLE.md` and `references/KEEPER_OF_THE_LIGHT_BIBLE.md`
+Full blueprints at: `references/FRACTURED_SHADOWS_BLUEPRINT.md` and `references/KEEPER_OF_THE_LIGHT_BLUEPRINT.md`

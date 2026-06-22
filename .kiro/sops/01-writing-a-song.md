@@ -12,7 +12,7 @@
 
 - Concept, theme, or prompt (even a single sentence works)
 - Know your target: standalone single, album track, or experimental piece
-- If album track: have the concept-album-bible available
+- If album track: have the concept-album-blueprint available
 
 ---
 

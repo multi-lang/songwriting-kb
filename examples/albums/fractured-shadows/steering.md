@@ -6,7 +6,7 @@ fileMatchPattern: "songs/album_act*/**"
 # Fractured Shadows — Album Continuity Rules
 
 > Conditional steering — loads when working on files matching songs/album_act*/**
-> Full bible: references/FRACTURED_SHADOWS_BIBLE.md
+> Full blueprint: references/FRACTURED_SHADOWS_BLUEPRINT.md
 > System: Suno v5.5 (Personas, Stems, Era Tags, Parenthetical Layers)
 
 ---
@@ -18,10 +18,10 @@ fileMatchPattern: "songs/album_act*/**"
 ## ALBUM EXTENSION PROTOCOL
 
 **⚠️ STOP — Before writing ANY track outside the current registry (T1-17):**
-1. Update `references/FRACTURED_SHADOWS_BIBLE.md` with new track registry (including Persona assignment)
+1. Update `references/FRACTURED_SHADOWS_BLUEPRINT.md` with new track registry (including Persona assignment)
 2. Extend the sonic palette evolution map
 3. Define which existing rules carry forward vs which are act-specific
-4. Get the bible update committed BEFORE writing new songs
+4. Get the blueprint update committed BEFORE writing new songs
 5. Use SOP 05 — supports sequels (T18+), prequels (P01+), and insertions (T3a+)
 
 Failure to do this creates cascading continuity errors that compound with each new track.
@@ -74,4 +74,4 @@ Failure to do this creates cascading continuity errors that compound with each n
 
 ## Reference
 
-#[[file:references/FRACTURED_SHADOWS_BIBLE.md]]
+#[[file:references/FRACTURED_SHADOWS_BLUEPRINT.md]]
