@@ -7,9 +7,12 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+- `core/tenets.md` — 7 creative decision-making principles with academic basis (Pattison, Juslin, Dodge, Fabbri, Moore, Nashville A&R). Priority-ordered for resolving conflicts when methodology rules fight each other or artistic intent. Wired into songwriter + critic agents.
 - Artist Reference Conversion rule -- artist names in creative direction must be converted to descriptive production language (genre + era + instruments + production characteristics + vocal style + structural habits) before final output. Applied across all methodology, steering, reference, template, validator, and knowledge base files. Requested by 21machines.
 - Builder agent (`core/methodology/builder.md` + `.kiro/agents/builder.md`) -- interactive setup/configuration specialist for albums, character voices, directory structure, experiments, preferences, and track addition
 - Behavioral Directives section in all 5 agents (songwriter, critic, suno-optimizer, album-continuity, builder) -- explicit behavioral rules for autonomous execution without unnecessary permission-asking
+- Songwriter auto-pilot mode — 30+ trigger phrases ("you choose", "surprise me", "just do it", etc.) that skip questions and use methodology decision frameworks for all choices
+- Songwriter interactive mode — expanded parameter prompts (BPM, key, vocal staging, length, album position) matching community-requested fields
 
 ### Changed
 - Renamed "bible" to "blueprint" across entire repository -- all files, references, skill names, and documentation updated (case-preserving: BIBLE->BLUEPRINT, Bible->Blueprint, bible->blueprint)
