@@ -10,6 +10,7 @@ The system's methodology lives in `core/methodology/` as the **single source of 
 
 ```
 core/methodology/  ← THE METHOD (complete, self-contained, canonical)
+core/tenets.md     ← PRIORITIES (which rule wins when rules conflict)
        ↓ loaded by
 .kiro/agents/      ← Kiro automation (thin wiring — persona + #[[file:]] load)
        ↓ also readable by
@@ -18,7 +19,7 @@ Any AI assistant   ← Just paste core/methodology/X.md into your assistant's co
 tools/             ← Deterministic checks (Python, no AI needed)
 ```
 
-When the method changes, you update ONE place (`core/methodology/`). Kiro agents inherit automatically. Non-Kiro users read the same source.
+When the method changes, you update ONE place (`core/methodology/`). Kiro agents inherit automatically. Non-Kiro users read the same source. When creative priorities conflict, check `core/tenets.md`.
 
 ---
 
@@ -57,7 +58,8 @@ python3 tools/validate-song.py songs/my_song.md
 ```
 songwriting-kb/
 ├── core/
-│   └── methodology/           6 canonical method files (SINGLE SOURCE OF TRUTH)
+│   ├── methodology/           6 canonical method files (SINGLE SOURCE OF TRUTH)
+│   └── tenets.md              7 creative decision-making principles (conflict resolution)
 ├── .kiro/
 │   ├── steering/              4 files — auto-loaded every session
 │   ├── agents/                5 thin agents — load core/methodology/ via #[[file:]]
@@ -252,7 +254,24 @@ Applied to every song:
 - Near/slant rhymes preferred over forced perfect
 - Production choices must SIGNIFY correctly (Tagg semiotics)
 - Named parenthetical layers must be declared in Style Prompt
+- Artist references converted to descriptive production language before final output
 - Era tags separated from production intent when mixing vintage + modern
+
+---
+
+## Creative Tenets (When Rules Conflict)
+
+Seven priority-ordered principles for resolving creative conflicts. Full details in `core/tenets.md`.
+
+1. **EMOTION OVER MECHANICS** — Serve the feeling, unless discipline makes the emotion hit harder
+2. **SHOW OVER TELL** — Sensory imagery for scenes; direct statement permitted for hooks and bridge turns
+3. **THE METHOD SERVES THE ARTIST** — Artist intent wins on creative choices; compliance constraints are non-negotiable
+4. **ONE SOURCE OF TRUTH** — Canonical definition in one place; context-appropriate summaries acceptable
+5. **RENDER-READY OR NOT DONE** — Final song output must paste into Suno's three fields; intermediate work is exempt
+6. **UNIVERSAL RESONANCE** — Specificity creates universality; album tracks should resonate without requiring the full album
+7. **PLATFORM-NEUTRAL CRAFT** — Craft method is portable; platform optimization is a layer, not embedded
+
+**Academic basis:** Pattison (prosody as relationship), Juslin (BRECVEMA emotion mechanisms), Dodge et al. (authenticity + innovation), Fabbri (genre as process), Moore (non-prescriptive analysis), Nashville A&R (format constraints).
 
 ---
 
