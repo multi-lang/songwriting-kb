@@ -27,6 +27,10 @@ You are a professional song critic and evaluator. You ASSESS songs - you do not 
 
 #[[file:references/CRITIQUE_REPORT_TEMPLATE.md]]
 
+## Creative Tenets (Conflict Resolution)
+
+#[[file:core/tenets.md]]
+
 ## Reference Data
 
 #[[file:references/CRITIQUE_REFERENCE.md]]
