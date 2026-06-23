@@ -424,6 +424,72 @@ Two primary formulas to understand (do not mix their rules):
 
 ---
 
+## Temporal Specificity in Lyrics (Times, Dates, Numbers)
+
+> "Exact time/date/number language is most effective when it behaves as deictic scene-work plus prosodic design, and least effective when it functions as unearned information."
+
+### The Core Tension
+
+Two opposing forces govern whether time-specific language works in lyrics:
+
+| Position | Scholar | Argument |
+|---|---|---|
+| **Specific = Universal** | Pattison (*Writing Better Lyrics*, 2009, p.20) | Sensory memory projection -- "Can't tell unless you show first." Time works only when it becomes experiential. "3 in the morning" useful for darkness/solitude/habit; "3:00" by itself is just data. |
+| **Vague = Universal** | Murphey ("The when, where, and who of pop lyrics," *Popular Music* 8.2, 1989, pp.185-193; *TESOL Quarterly* 26.4, 1992) | In chart-song corpus: 94% had no time of enunciation, 80% no place, ZERO used precise dates or hours. Vagueness = "appropriability" -- listeners insert themselves. |
+
+**Resolution:** Hybrid approach -- specific verses for grounding + vague choruses for universality. When time IS used, it must earn its syllables by doing scene-work + prosodic design, not just conveying information.
+
+### The 6 Functions (When Times/Dates WORK)
+
+| # | Function | What It Does | Example |
+|---|---|---|---|
+| 1 | **Emotional Anchor** | Places listener in visceral moment | "3am" |
+| 2 | **Narrative Urgency** | Creates deadline/stakes | "25 or 6 to 4" |
+| 3 | **Hook/Memorability** | Numbers are phonetically punchy | "9 to 5" |
+| 4 | **Cinematic Specificity** | Makes song feel like a scene | "At seventeen" |
+| 5 | **Cultural Code** | Culturally-loaded times carry free emotion | "Summer of '69", "Friday night" |
+| 6 | **Structural Device** | Marks time-passing in narrative arc | "7 Years" |
+
+### The Oddness Effect
+
+Irregular numbers (6:14 vs 6:00) signal authenticity because precise anchors suggest lived experience rather than approximation (Janiszewski & Uy; Mason, Lee, Wiley, Ames).
+
+**Caveat:** Precision that reads as cleverness-display rather than memory reverses the effect. The number must feel recalled, not calculated.
+
+### Days of the Week -- Cultural Loading
+
+| Day | Connotation | Example |
+|---|---|---|
+| Monday | Dread, start, grind | "Manic Monday" |
+| Friday | Freedom, release, anticipation | "Friday Night" |
+| Saturday | Celebration, abandon | "Saturday Night" |
+| Sunday | Melancholy, sacred, reflection | "Sunday Morning" |
+| Tuesday/Wednesday/Thursday | Neutral -- use ONLY when ordinariness IS the point | — |
+
+### When to Use vs When to Avoid
+
+**USE when:**
+- Anchoring a scene (emotional grounding)
+- Creating urgency or deadline
+- Phonetic hook value (punchy, singable)
+- Establishing narrator voice (specificity = personality)
+- Cultural code shorthand (loaded reference)
+- Structural foothold in narrative arc
+- Oddness signals lived experience
+
+**AVOID when:**
+- Merely informational (no sensory or emotional payoff)
+- Prosodic drag (number disrupts rhythm/melody)
+- Narrows appropriation without adding vividness
+- "Narrow cut" the song doesn't need
+- Round number would carry same weight (no oddness benefit)
+
+### Practical Test
+
+> Can the listener FEEL the number on first listen? If not, it is unearned information -- cut it or replace it with a culturally-loaded alternative.
+
+---
+
 ## Core Principles
 
 1. **Craft over inspiration** -- Every song is a built structure

@@ -161,6 +161,39 @@ The moment meaning flips. Bridge reveals the real reason. Final chorus hits diff
 ### Narrative Techniques
 1. Linear 2. In Medias Res 3. Retrospective 4. Circular 5. Conversation
 
+### Temporal Specificity (Times, Dates, Numbers)
+
+> Core tension: Pattison (specific = universal via sensory memory) vs Murphey (94% of chart hits avoid time specifics -- vagueness = "appropriability"). Resolution: specific verses for grounding + vague choruses for universality.
+
+**The 6 Functions (when time/date language WORKS):**
+
+| # | Function | Example |
+|---|---|---|
+| 1 | Emotional Anchor -- visceral moment | "3am" |
+| 2 | Narrative Urgency -- deadline/stakes | "25 or 6 to 4" |
+| 3 | Hook/Memorability -- phonetically punchy | "9 to 5" |
+| 4 | Cinematic Specificity -- scene-feeling | "At seventeen" |
+| 5 | Cultural Code -- loaded reference | "Summer of '69", "Friday night" |
+| 6 | Structural Device -- time-passing arc | "7 Years" |
+
+**Days of the Week -- Cultural Loading:**
+
+| Day | Connotation | Day | Connotation |
+|---|---|---|---|
+| Monday | Dread/start | Friday | Freedom/release |
+| Saturday | Celebration/abandon | Sunday | Melancholy/sacred |
+| Tue/Wed/Thu | Neutral -- use only when ordinariness IS the point | | |
+
+**USE when:** anchoring scene, creating urgency, phonetic hook, narrator voice, cultural code, structural foothold, oddness signals lived experience
+
+**AVOID when:** merely informational, prosodic drag, narrows appropriation without adding vividness, round number carries same weight
+
+**The Oddness Effect:** Irregular numbers (6:14 vs 6:00) signal authenticity -- BUT precision that reads as cleverness-display reverses the effect.
+
+**Practical test:** Can the listener FEEL the number on first listen? If not -- cut or replace.
+
+> Full treatment: `core/methodology/songwriting.md` → "Temporal Specificity in Lyrics"
+
 ---
 
 ## 7. GENRE CONVENTIONS

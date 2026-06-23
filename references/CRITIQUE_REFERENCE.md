@@ -443,6 +443,9 @@ Apply this BEFORE scoring (Phase 2 of the critique process — internal scaffold
 | Dead zone | 15+ seconds with no new information | Add contrast, cut length, or introduce variation |
 | Proxemic mismatch | Intimate lyrics at public distance | Match reverb/mic treatment to emotional content |
 | Undeclared layer | Named `()` layer without Style Prompt declaration | Add declaration or remove layer |
+| Unearned temporal specificity | Time/date that does not anchor, ground, or hook -- just conveys information | Replace with culturally-loaded alternative OR cut |
+
+> **Note:** For full temporal specificity guidelines (6 functions, oddness effect, days-of-week loading, use/avoid criteria), see `core/methodology/songwriting.md` → "Temporal Specificity in Lyrics"
 
 ---
 

@@ -332,6 +332,42 @@ How algorithms analyze music — relevant because Suno IS computational.
 
 ---
 
+### 13. COGNITIVE POETICS & DEIXIS -- How Language Positions the Listener
+
+How temporal/spatial cues in lyrics create listener positioning -- the intersection of cognitive linguistics, corpus stylistics, and popular music studies.
+
+**Key Scholars & Contributions:**
+
+| Scholar/Source | Contribution |
+|---|---|
+| **Peter Stockwell** (*Cognitive Poetics*, 2002) | Temporal deixis, deictic shift theory, deictic centre -- how language creates "you are here" orientation (Ch.4) |
+| **Joanna Gavins** (*Text World Theory*) | Temporal parameters as world-building elements. Lyric example: "Watch the clock for half an hour" |
+| **Voice & Whiteley** | Multimodal cognitive analysis of deixis in song -- time cues work on THREE levels: discourse-world anchoring + meter/prosody interaction + attention competition against melody/groove |
+| **Werner** (register analysis) | Pop lyrics simulate immediacy (conversational features) while being planned/performed/distant. A time cue creates a "believable deictic frame" |
+| **Tim Murphey** (1989, 1992) | Corpus findings: 94% no time of enunciation, 80% no place, ZERO precise dates. Vagueness = "appropriability" |
+| **Rebecca Wilson** (PhD, Queen's University Belfast, 2025) | 1291-song corpus (every UK #1, 1960-2019). Uses Buhler's "deixis am phantasma" / imaginative deixis |
+| **Kreyer & Mukherjee** (corpus linguistics) | Pop lyrics sit "uneasily on the boundary between speech and writing" |
+
+**Key Concepts:**
+
+| Concept | Definition | Production Relevance |
+|---|---|---|
+| Deictic centre | The "here-now-I" anchor of a text | Determines where the listener stands in the song's world |
+| Deictic shift | Movement of the listener's mental position | Time-stamp lyrics trigger re-anchoring of listener attention |
+| Appropriability | Vague enough for personal projection | Explains why 94% of hits avoid specific time references |
+| Temporal world-building | Time cues as scene-setting parameters | "3am" builds a world; "at some point" does not |
+| Imaginative deixis | Buhler's "pointing at phantasma" | Listener projects into fictional time-space via language cues |
+
+**Production Questions This Answers:**
+- Why does "3am" feel more cinematic than "late at night"? (Deictic precision triggers world-building)
+- Why do most hit songs avoid specific times? (Appropriability -- listeners need space to self-insert)
+- How do time references interact with groove? (Three-level competition: lyrics vs meter vs melody)
+- When should production SUPPORT a time cue vs absorb it? (Match proxemic distance to deictic specificity)
+
+> See also: `core/methodology/songwriting.md` → "Temporal Specificity in Lyrics" for the practical songwriting guidelines derived from these theories.
+
+---
+
 ## THE 8-STEP PROFESSIONAL ANALYSIS WORKFLOW
 
 ### Step 1: SEMANTIC ANALYSIS

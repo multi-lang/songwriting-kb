@@ -595,3 +595,17 @@ Step-by-step process to convert any artist reference:
 | 5-8 tags optimal (>10 causes signal conflict) | June 2026 | v5.5 | Medium | Sept 2026 |
 | Named `()` layers require Style Prompt declaration | June 2026 | v5.5 | High | Dec 2026 |
 | Personas maintain vocal identity across generations | June 2026 | v5.5 | Medium | Sept 2026 |
+
+---
+
+## 13. TEMPORAL SPECIFICITY IN SUNO RENDERING
+
+Numbers and time references in lyrics interact with Suno's generation in specific ways:
+
+- **Numbers are rendered literally** -- Suno vocalizes "3am" and "25 or 6 to 4" as written; ensure the syllable count works melodically
+- **Days of the week carry implicit mood** -- "Friday night" biases toward upbeat/celebratory generation; "Sunday morning" toward reflective/sparse
+- **Precise times in lyrics anchor production** -- referencing time in Production Direction (e.g., "3am insomnia atmosphere") helps Suno select appropriate timbral palette
+- **Cultural-code times carry genre/mood signals** -- "Summer of '69" triggers classic rock warmth; "Friday night" triggers party-energy; "3am" triggers intimate/dark production
+- **Odd numbers read as authentic** -- Suno does not weight this, but listeners will perceive irregularity (6:14) as more real than round numbers (6:00)
+
+> Full temporal specificity guidelines: `core/methodology/songwriting.md` → "Temporal Specificity in Lyrics"
