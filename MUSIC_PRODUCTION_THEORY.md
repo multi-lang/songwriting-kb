@@ -678,7 +678,7 @@ Where does the song FEEL like it exists?
 |---|---|
 | Who is the audience? | Determines genre boundaries |
 | Streaming, sync, TikTok, live, game? | Determines length, hook speed, format |
-| Fast hook needed? | Under 3:00 for playlists, hook in first 15s |
+| Fast hook needed? | Under 3:00 for playlists, compelling hook signal within first 5-30s (genre-dependent) |
 | Cinematic intro acceptable? | Longer format for sync/concept albums |
 | Searchable title? | SEO, discoverability |
 | Too niche or distinctively positioned? | Balance uniqueness with accessibility |
@@ -1012,7 +1012,7 @@ Streaming listeners decide to skip or stay within 3-7 seconds. TikTok clips are 
 
 **Platform Windows:** Spotify 3-7s | TikTok 1-3s | Radio 7s | Sync 10s | Live 15s
 
-**Rules:** Hook within 15 seconds. Intro under 10s for streaming. First vocal moment = emotional thesis.
+**Rules:** Compelling hook signal within the first 5-30 seconds (genre-dependent). Intro under 10s for streaming. First vocal moment = emotional thesis.
 
 ---
 
@@ -1176,7 +1176,7 @@ Line break = breath. Em dash = short pause. Standalone short line = dramatic wei
 □ Genre code (what style-world?)
 □ Prosody (words on strong beats?)
 □ Vocal direction (range, weight, delivery, character)
-□ Hook (memorable, repeatable, arrives within 7-15 seconds)
+□ Hook (memorable, repeatable, compelling signal within first 5-30 seconds)
 □ Production space (where does the song live?)
 □ Arrangement arc (build/strip/break/explode)
 □ Audience + platform (who? what length? what format?)

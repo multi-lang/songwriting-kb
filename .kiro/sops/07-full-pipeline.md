@@ -67,8 +67,8 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 1. Address Priority 1 recommendation first (highest impact)
 2. Fix all flagged issues using provided alternatives (or write better ones)
 3. Address Priority 2 and 3
-4. Re-check prosody (every line ≤12 syllables)
-5. Re-check structure (hook timing, V2 new info, bridge turn)
+4. Re-check prosody (stress density and singability checked at tempo)
+5. Re-check structure (hook signal within 5-30s, V2 new info, bridge turn)
 6. Update Production Notes if changes affect key/chords/dynamics
 
 **Output:** Revised draft (v2)
@@ -77,7 +77,7 @@ WRITE → CRITIQUE → REVISE → OPTIMIZE → VERIFY → RENDER
 **Exit criteria:**
 - [ ] All flagged issues addressed
 - [ ] No new prosody violations introduced
-- [ ] Hook timing still works
+- [ ] Hook signal timing still works
 - [ ] Character count still within limits
 
 **Optional:** Run through Critique again (Stage 2) for a revised score. Target: +0.5-1.0 improvement. Recommended for songs targeting ≥8.5 or when revisions were structural. Optional for polish-only fixes where the original score was already 8.0-8.4.

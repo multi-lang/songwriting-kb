@@ -88,12 +88,12 @@ PHASE 3: QUALITY CHECK (Steps 17-19)       PHASE 4: FORMATTING (Steps 20-26)
 ────────────────────────────────────       ──────────────────────────────────
 
  17. Prosody Audit                          20. Assemble Style Prompt (≤1000)
-     □ Every line ≤12 syllables?            21. Write Exclusions
+     □ Syllable density checked at tempo?   21. Write Exclusions
      □ Stressed syllables on beats?         22. Add Global Meta-Tags
      □ No stuffed phrases?                  23. Add Direction Blocks
      □ No weak terminal words?              24. Format Lyrics with Section Tags
  18. Structure Check                        25. Write Production Notes
-     □ Hook within 15s?                     26. Final Character Count
+     □ Compelling hook signal in 5-30s?     26. Final Character Count
      □ V2 adds new info?                  
      □ Bridge turns?                       PHASE 5: ALBUM (Step 27)
  19. Quality Gates                         ──────────────────────────
