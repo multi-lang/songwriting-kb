@@ -270,7 +270,7 @@ When a character appears across multiple tracks, their voice must EVOLVE:
 
 - **Track-to-track evolution:** Each appearance should have at least one audible difference (texture shift, register change, delivery change, production treatment change)
 - **Arc-level evolution:** The character's voice should tell its own story across the album (e.g., intimate whisper in T1, full projection in T8, dissolved in T15)
-- **Proxemic evolution:** Vocal distance can change to reflect emotional state (Lacasse: intimate to public to dissolved)
+- **Proxemic evolution:** Vocal distance can change to reflect emotional state (composite framework after Lacasse: intimate to public to dissolved -- note: "dissolved" is our adaptation, not Lacasse's original term)
 - **Never static:** Even subtle changes (slightly more reverb, slightly harsher consonants) prevent staleness
 
 ---

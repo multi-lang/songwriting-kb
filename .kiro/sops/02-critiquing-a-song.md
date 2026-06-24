@@ -2,7 +2,7 @@
 
 > Step-by-step procedure for evaluating any song using the multi-layer critique model
 > (Core 12-category craft rubric + 5 Advanced Assessments + Suno Optimization Assessment + Album-Context Module).
-> Academic sources: Moore, Tagg, Lacasse, Moylan, Pattison, Fabbri, Juslin, Schubart, Dodge et al.
+> Academic sources: Moore, Tagg, Lacasse, Moylan, Pattison, Fabbri, Juslin (BRECVEMA), Eerola/Friberg/Bresin (cue hierarchy), Schubart, Dodge et al.
 > Suno sources: Community-tested prompt science (2025-2026), era anchoring, genre-first principle.
 
 > **Note:** The canonical methodology for this workflow now lives in `core/methodology/critique.md`.
@@ -52,9 +52,9 @@ Score using the rubric definitions in `references/CRITIQUE_REFERENCE.md` — the
 
 | Category | Question to Answer |
 |---|---|
-| 1. Hook | Can I remember it after one read? Does it arrive within 15s of first vocal? |
+| 1. Hook | Can I remember it after one read? Does a hook signal arrive within 5-30s of first vocal? [Tier 2] |
 | 2. Lyrics | Is it physical/sensory? Show-don't-tell? Specific? |
-| 3. Prosody | Lines ≤12 syllables? Stresses on strong beats? Open vowels on holds? |
+| 3. Prosody | Target 7-12 syllables? [Tier 2] Stresses on strong beats? Open vowels on holds? |
 | 4. Arc | Does the song's INTERNAL arc move? Does V2 add new info? Does bridge TURN? |
 | 5. Structure | Right length? Negative space? Contrast? |
 | 6. Originality | Fresh angle? Or territory I've heard covered this way? |
@@ -80,7 +80,7 @@ For each dimension, assess CORRECT / SUBOPTIMAL / WRONG:
 | # | Dimension | Check Against |
 |---|---|---|
 | 1 | Genre | Fabbri's 5 rules — does this genre SIGNIFY what the lyrics express? |
-| 2 | Key | Juslin's cue hierarchy — mode is #1 emotional cue. Does key character match dominant emotion? |
+| 2 | Key | Eerola, Friberg & Bresin (cue hierarchy) — mode is #1 emotional cue. Does key character match dominant emotion? |
 | 3 | BPM | Genre convention table + BPM-Emotion mapping. Correct for BOTH? |
 | 4 | Instruments | Tagg musemes — does each instrument carry the correct cultural connotation? |
 | 5 | Vocal style | Moore persona + Fabbri behavioral — delivery matches genre AND lyric arc? |

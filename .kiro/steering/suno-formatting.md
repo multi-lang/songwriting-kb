@@ -121,7 +121,7 @@ Always include: Style Prompt + Exclusions + Title tag + Production Direction + V
 
 When writing or revising songs, evaluate Style Prompt choices against the emotional content:
 
-- **Key is the #1 emotional cue** (Juslin) — choose key for emotional character, not just instrument convenience
+- **Key is the #1 emotional cue** (Eerola, Friberg & Bresin, 2013) — choose key for emotional character, not just instrument convenience
 - **BPM serves two masters** — must satisfy genre convention AND emotional pacing
 - **Instruments carry cultural meaning** (Tagg) — piano ≠ guitar ≠ synth even playing the same notes
 - **Section tags = per-section musemic signification** — each tag should carry the correct connotation for THAT section's content

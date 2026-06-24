@@ -205,7 +205,7 @@ The more dimensions you specify (genre, tempo, mood, vocal, instruments, space, 
 ### Genre-Emotion Alignment (Critic Evaluates This)
 The critic's **Suno Optimization Assessment** evaluates whether the Style Prompt's genre, key, BPM, and instrument choices are the BEST match for the song's emotional content — and provides complete alternative Style Prompts when they aren't. Key principles:
 
-- **Key is the #1 emotional cue** (Juslin) — wrong key = wrong emotion at the deepest level
+- **Key is the #1 emotional cue** (Eerola, Friberg & Bresin, 2013) — wrong key = wrong emotion at the deepest level
 - **Genre must SIGNIFY what the lyrics express** (Fabbri) — dark lyrics in an upbeat genre = semiotic violation
 - **BPM serves two masters** — must satisfy genre convention AND emotional pacing
 - **Instruments carry cultural meaning** (Tagg) — piano ≠ guitar ≠ synth even playing the same notes
@@ -244,13 +244,13 @@ Applied to every song:
 
 ## Quality Standards
 
-- Hook arrives within 15 seconds of first sung vocal
-- No line exceeds 12 syllables at the song's tempo
-- V2 adds NEW information (not restatement)
-- Bridge contains a genuine TURN (meaning shifts)
+- [Tier 2] Hook signal arrives within 5-30 seconds of first sung vocal (genre-dependent)
+- [Tier 2] Target 7-12 syllables per line; lines exceeding ~12-15 should be checked for stress density and singability at tempo
+- [Tier 2] V2 usually adds new information or a new angle (unless reiteration is part of the form)
+- [Tier 2] Bridge often works best when it creates contrast or a turn (semantic, musical, textural, or energetic)
 - Hook passes "would someone text this line?" test
 - Every word earns its place — no filler
-- ABCB default rhyme scheme
+- [Tier 2] ABCB rhyme scheme often works well for a conversational feel (one common option, not a universal default)
 - Near/slant rhymes preferred over forced perfect
 - Production choices must SIGNIFY correctly (Tagg semiotics)
 - Named parenthetical layers must be declared in Style Prompt
@@ -447,7 +447,8 @@ This checks character counts, required elements, tag compliance, and formatting 
 - Berklee Online, Pat Pattison (Berklee Professor)
 - Franco Fabbri (genre theory — 5 rules of genre membership)
 - Philip Tagg (music semiotics — musemes, cultural connotation of timbres)
-- Patrik Juslin (BRECVEMA emotion psychology, emotional cue hierarchy)
+- Patrik Juslin (BRECVEMA emotion psychology)
+- Eerola, Friberg & Bresin (emotional cue hierarchy, Frontiers in Psychology 4:487, 2013)
 - Allan F. Moore (functional texture layers, soundbox theory, style vs genre)
 - Serge Lacasse (vocal staging, proxemic distance)
 - Christian Schubart (key characteristics and emotional associations)

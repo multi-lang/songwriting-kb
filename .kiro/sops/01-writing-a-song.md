@@ -77,9 +77,9 @@ Plan the dynamic arc:
 - Growth pattern (additive? subtractive? explosive? bloom?)
 - Where is negative space?
 - What contrast pairs exist? (quiet/loud, sparse/dense, human/machine)
-- Where does the hook land? (Must be within 15s of first sung vocal — instrumental intros don't count against this clock)
+- Where does the hook land? [Tier 2] (Aim for a hook signal within the first 5-30s of singing; genre-dependent -- instrumental intros don't count against this clock)
 
-**Hook timing rule:** 15 seconds is measured from the first SUNG word to the beginning of the hook phrase. An 8-second instrumental intro followed by a 12-second verse means the hook must land by second 12 of singing, not second 20 of the track.
+**Hook timing guidance:** Measured from the first SUNG word to the beginning of the hook phrase. An 8-second instrumental intro followed by a 12-second verse means the hook must land by second 12 of singing, not second 20 of the track. Pop tends toward earlier hooks; progressive and cinematic genres allow more setup.
 
 **Runtime estimation formula:** (total lyric lines × 60/BPM × 2) + intro seconds + outro seconds. At 92 BPM: each line ≈ 2.5s with breath. Typical: 24 lines + 8s intro + 8s outro ≈ 3:15.
 
@@ -103,7 +103,7 @@ This is your destination. Write it before anything else.
 - If lyric hook: it must be in the chorus lyrics
 - If melodic/production hook: the chorus must still contain the emotional peak
 - Must be singable (test: can you hum it?)
-- Every line ≤12 syllables
+- Target 7-12 syllables per line [Tier 2]
 - Check: would someone text this line to a friend?
 
 **Step 11 — Write the Pre-Chorus**
@@ -118,12 +118,12 @@ This is your destination. Write it before anything else.
 4-8 lines that SET UP the chorus.
 - Establish the situation/character/world
 - Show don't tell (imagery, physical, sensory)
-- Every line ≤12 syllables
+- Target 7-12 syllables per line [Tier 2]
 - Use em-dashes for breath within lines
 
 **Step 13 — Write Verse 2**
-4-8 lines that ADD NEW INFORMATION.
-- Must NOT restate V1
+4-8 lines that ADD NEW INFORMATION. [Tier 2]
+- Usually should not restate V1 (unless reiteration is part of the form -- blues, hymnal, chant)
 - Deepens, complicates, or progresses the narrative
 - New images, new details, new perspective
 - Same syllable discipline
@@ -153,14 +153,14 @@ Same structure as Chorus 1 but:
 
 **Step 17 — Prosody Audit**
 Go line by line:
-- [ ] Every line ≤12 syllables?
+- [ ] Lines target 7-12 syllables? Any over ~12-15 checked for stress density and singability? [Tier 2]
 - [ ] Stressed syllables on strong beats?
 - [ ] Open vowels on any sustained notes?
 - [ ] No stuffed phrases (3+ long words crammed)?
 - [ ] No weak terminal words (the, of, to, in)?
 
 **Step 18 — Structure Check**
-- [ ] Hook within 15s of first vocal?
+- [ ] Hook signal within first 5-30s of first vocal? [Tier 2]
 - [ ] V2 adds genuinely new information?
 - [ ] Bridge contains a real turn?
 - [ ] Total lyrics estimatable under 5000 chars?
@@ -279,8 +279,8 @@ A complete file containing:
 |---|---|
 | Writing V1 first | Write CHORUS first (Nashville method) |
 | No thesis before writing | Can't build without a destination |
-| V2 restates V1 | Ask "what's NEW?" — different angle, deeper, progression |
-| Bridge restates chorus | The bridge must REVEAL something the chorus hasn't said |
-| Lines over 12 syllables | Split or trim — no exceptions |
+| V2 restates V1 | [Tier 2] Ask "what's NEW?" -- different angle, deeper, progression (unless reiteration is part of form) |
+| Bridge restates chorus | [Tier 2] The bridge often works best when it reveals something the chorus hasn't said |
+| Lines over 12 syllables | [Tier 2] Check stress density and singability at tempo -- split or trim if crowded |
 | Hook after 30s | Shorten intro or V1 |
 | Rhyme forcing meaning | Use slant rhyme or restructure |

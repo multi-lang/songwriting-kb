@@ -48,7 +48,8 @@ Brian forked the repo, conducted a thorough methodology review, and submitted [P
 | **William Moylan** (2014) | Recording analysis, timbral balance, spatial imaging |
 | **Pat Pattison** (Berklee) | Prosody, phrase weight, stable/unstable systems |
 | **Franco Fabbri** (1982) | Genre theory — 5 rules of genre membership |
-| **Patrik Juslin** (2013) | BRECVEMA emotional mechanisms, cue hierarchy |
+| **Patrik Juslin** (2013) | BRECVEMA emotional mechanisms (8 pathways by which music induces emotion) |
+| **Eerola, Friberg & Bresin** (2013, *Frontiers in Psychology* 4:487) | Emotional cue hierarchy (mode > tempo > register > dynamics > articulation > timbre) |
 | **Christian Schubart** (1806) | Key characteristics and emotional associations |
 | **Dodge et al.** (2025) | 6 universal evaluation criteria for popular music |
 | **Gabrielsson & Lindstrom** (2010) | Emotional expression linearity in primary musical cues |

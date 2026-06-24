@@ -13,6 +13,22 @@ Suno optimization is the FINAL technical pass before rendering. It does NOT chan
 
 ---
 
+## Three-Tier Evidence Labeling System
+
+Claims in this methodology carry one of three evidence tiers:
+
+| Label | Meaning |
+|---|---|
+| **[Tier 1: Scholarship-backed]** | Documented academic framework with primary sources and peer-reviewed research. |
+| **[Tier 2: Professional heuristic]** | Widely-used craft guidance supported by professional practice but not empirically validated as universal law. |
+| **[Tier 3: Community/platform heuristic]** | Empirical observation from practitioner testing (e.g., Suno community experiments). Unverified, version-dependent. |
+
+Unlabeled claims are general craft consensus or structural descriptions that do not require tiering.
+
+> **Note:** Most Suno-specific claims in this document are Tier 3 unless otherwise noted. Suno's behavior changes across versions; verify against the version you are using.
+
+---
+
 ## The Complete 13-Step Optimization Procedure
 
 ### Step 1 -- Character Count Audit
@@ -232,7 +248,7 @@ Genre, BPM, Mood, Instruments, Vocal Style, Era/Production, Space/Direction
 
 | # | Dimension | Purpose | Example |
 |---|---|---|---|
-| 1 | Genre | Cultural container (MUST be first) | "Progressive dark folk" |
+| 1 | Genre | Cultural container (MUST be first) [Tier 3] | "Progressive dark folk" |
 | 2 | BPM | Tempo anchor | "92 BPM" |
 | 3 | Mood | Emotional direction | "melancholic, haunting" |
 | 4 | Instruments | Timbral palette | "acoustic guitar, cello, distant choir" |
@@ -246,10 +262,10 @@ Genre, BPM, Mood, Instruments, Vocal Style, Era/Production, Space/Direction
 
 ## Genre Combination Rules
 
-- **Genre-First Principle:** Genre MUST be the first element -- it anchors everything else
-- **5-8 Tag Sweet Spot:** Comma-separated descriptors. Past 10 tags, signals conflict and Suno defaults to generic
+- **Genre-First Principle:** Genre MUST be the first element -- it anchors everything else. [Tier 3: community practice, not official. v4.5+ allows conversational prompts.]
+- **5-8 Tag Sweet Spot:** Comma-separated descriptors. Past 10 tags, signals conflict and Suno defaults to generic. [Tier 3: Suno v4.5+ docs encourage more descriptive prompting. Test by version.]
 - **70/30 Rule:** One dominant genre (70%) + one flavor (30%). 50/50 splits confuse Suno. Use `+` to combine
-- **Era Anchoring:** Time references ("early 2000s garage rock") outperform genre labels ("indie rock") because they give Suno a specific sonic PERIOD
+- **Era Anchoring:** Time references ("early 2000s garage rock") outperform genre labels ("indie rock") because they give Suno a specific sonic PERIOD. [Tier 3: promising but not A/B tested.]
 - **The Separation Principle:** Era tags aggressively bias PRODUCTION style (recording technique, mix character). To get a retro instrument with modern production: "modern production, vintage 1970s guitar tone" -- separate the era from the mix
 
 ---
@@ -431,12 +447,14 @@ Controls how much a reference audio track affects the output.
 ## Key Optimization Principles
 
 1. **Genre-Emotion Alignment (Fabbri):** The genre must SIGNIFY what the lyrics express. Dark lyrics in upbeat genre = semiotic violation.
-2. **Key is King (Juslin):** Mode is the #1 emotional cue. Wrong key = wrong emotion at the deepest level.
+2. **Key is King (Eerola, Friberg & Bresin, 2013):** Mode is the #1 emotional cue. Wrong key = wrong emotion at the deepest level.
+
+   > **Tier split:** Mode effects on perceived valence = [Tier 1: confirmed by Eerola, Friberg & Bresin 2013 and multiple replications]. Specific key character associations (e.g., D minor = devotional, F# minor = mysterious) = [Tier 2: historical tradition (Schubart 1806, Mattheson), not cognitive science. Useful as creative prompts, not empirical claims.]
 3. **BPM Serves Two Masters:** Must satisfy genre convention AND emotional pacing simultaneously.
 4. **Instruments Carry Meaning (Tagg):** Every instrument signifies independently of melody. Piano != guitar != synth even playing the same notes.
-5. **Era Anchoring > Genre Labels:** Time references give Suno specific sonic periods. "1995 trip-hop" > "dark electronic."
+5. **Era Anchoring > Genre Labels:** Time references give Suno specific sonic periods. "1995 trip-hop" > "dark electronic." [Tier 3: promising but not A/B tested.]
 6. **The 70/30 Rule:** Genre combinations -- one dominant (70%) + one flavor (30%). 50/50 splits confuse Suno.
-7. **5-8 Tags Maximum:** Past 10, signals conflict and Suno defaults to generic.
+7. **5-8 Tags Maximum:** Past 10, signals conflict and Suno defaults to generic. [Tier 3: Suno v4.5+ docs encourage more descriptive prompting. Test by version.]
 8. **Section Tags = Musemic Signification:** Per-section tags should carry correct connotation for THAT section's content (Tagg applied to Suno tags).
 9. **Separation Principle:** Separate era from instrumentation when you want retro sounds with modern production.
 
@@ -454,7 +472,8 @@ Controls how much a reference audio track affects the output.
 |---|---|
 | **Philip Tagg** | Musemic analysis -- applied to section tag signification |
 | **Franco Fabbri** | Genre theory -- validates genre selection |
-| **Patrik Juslin** | Cue hierarchy -- key/mode as #1 emotional driver |
+| **Patrik Juslin** | BRECVEMA emotional mechanisms |
+| **Eerola, Friberg & Bresin** (2013) | Cue hierarchy -- key/mode as #1 emotional driver |
 | **Allan F. Moore** | Soundbox theory -- spatial tag design |
 | **Serge Lacasse** | Proxemic distance -- reverb/space as emotional signal |
 | **Suno community research** (2025-2026) | Era anchoring, genre-first, 5-8 sweet spot, slider behavior, v5 parsing rules |

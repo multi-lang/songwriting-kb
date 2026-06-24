@@ -32,6 +32,20 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  -- "Does it serve its role?" (concep
 
 ---
 
+## Three-Tier Evidence Labeling System
+
+Claims in this methodology carry one of three evidence tiers:
+
+| Label | Meaning |
+|---|---|
+| **[Tier 1: Scholarship-backed]** | Documented academic framework with primary sources and peer-reviewed research. |
+| **[Tier 2: Professional heuristic]** | Widely-used craft guidance supported by professional practice but not empirically validated as universal law. |
+| **[Tier 3: Community/platform heuristic]** | Empirical observation from practitioner testing (e.g., Suno community experiments). Unverified, version-dependent. |
+
+Unlabeled claims are general craft consensus or structural descriptions that do not require tiering.
+
+---
+
 ## Prerequisites
 
 - A complete song (lyrics + production notes, or at minimum lyrics + genre/tempo info)
@@ -76,7 +90,7 @@ Score using the rubric definitions below. For each category, write ONE sentence 
 
 ## The 12-Category Scoring Rubric
 
-### 1. Hook (Memorable? Singable? Arrives within 7-15s?)
+### 1. Hook (Memorable? Singable? Hook signal within first 5-30s?)
 
 | Score | Meaning |
 |---|---|
@@ -86,7 +100,7 @@ Score using the rubric definitions below. For each category, write ONE sentence 
 | 3-4 | Weak -- forgettable, buried, or unclear what the hook IS |
 | 1-2 | No identifiable hook |
 
-**Hook timing verification:** At the song's BPM, count ~2-3 seconds per sung line with breath. (Total lines before hook x 2.5s) + intro seconds = time to hook. Must be <=15s from first sung vocal.
+**Hook timing verification:** [Tier 2] At the song's BPM, count ~2-3 seconds per sung line with breath. (Total lines before hook x 2.5s) + intro seconds = time to hook. Aim for 5-30s from first sung vocal (genre-dependent).
 
 ### 2. Lyrics (Imagery? Specificity? Visual/cinematic writing?)
 
@@ -154,7 +168,7 @@ Score using the rubric definitions below. For each category, write ONE sentence 
 
 | Score | Meaning |
 |---|---|
-| 9-10 | Hits target platform perfectly, hook in first 15s, right length, sync-placeable |
+| 9-10 | Hits target platform perfectly, hook signal early, right length, sync-placeable |
 | 7-8 | Good fit with minor adjustments needed (slightly long, hook slightly late) |
 | 5-6 | Works for its context but limited broader appeal |
 | 3-4 | Too niche, too long, or structurally uncommercial |
@@ -172,7 +186,7 @@ Score using the rubric definitions below. For each category, write ONE sentence 
 | 3-4 | Genre confused -- conflicting signals |
 | 1-2 | No discernible genre coherence |
 
-**Fabbri's 5 Rules:** Formal (structural conventions), Semiotic (what the genre signifies), Behavioral (performance conventions), Social/Ideological (community values), Juridical/Commercial (marketplace expectations).
+**Fabbri's 5 Rules:** formal and technical rules (structural conventions), semiotic rules (what the genre signifies), behaviour rules (performance conventions), social and ideological rules (community values), economical and juridical rules (marketplace expectations).
 
 ### 10. Arrangement/Production (Dynamics? Timbre? Contrast?)
 
@@ -222,7 +236,7 @@ These go DEEPER than craft. They assess whether the song is meaningful, spatiall
 
 ### A1. Functional Layer Completeness (Moore)
 
-Based on Moore's 4 functional texture layers: explicit beat (percussion), functional bass (bass-register harmonic foundation), harmonic filler (keyboards/guitars/pads), melodic layer (voice + melodic instruments).
+Based on Moore's 4 functional texture layers (described as generalized descriptions, not prescriptive rules -- not all will be present in every example): explicit beat (percussion), functional bass (bass-register harmonic foundation), harmonic filler (keyboards/guitars/pads), melodic layer (voice + melodic instruments).
 
 | Score | Meaning |
 |---|---|
@@ -241,7 +255,7 @@ The soundbox is the virtual 3D space (left-right, close-far, high-low). Proxemic
 - **Conversational:** Light room reverb, natural delivery. Storytelling, connection.
 - **Social:** Moderate reverb, some projection. Performance, address.
 - **Public:** Heavy reverb, projected, vast space. Declaration, anthem.
-- **Dissolved:** Underwater/infinite reverb, voice=environment. Transcendence.
+- **Dissolved:** Underwater/infinite reverb, voice=environment. Transcendence. *(Note: "Dissolved" is our adaptation extending the framework beyond Lacasse's original categories. The proxemics model here is composite: Hall's proxemics theory + Lacasse's vocal staging semiotics + Moore's recorded song hermeneutics.)*
 
 | Score | Meaning |
 |---|---|
@@ -253,7 +267,7 @@ The soundbox is the virtual 3D space (left-right, close-far, high-low). Proxemic
 
 ### A3. Musemic Signification (Tagg)
 
-A museme = the smallest meaningful musical unit. It carries cultural connotations independent of lyrics. The question: do the sounds MEAN what they should?
+A museme = the smallest meaningful musical unit. It carries cultural connotations inferred through culturally-informed interobjective comparison. The question: do the sounds MEAN what they should?
 
 | Score | Meaning |
 |---|---|
@@ -306,7 +320,7 @@ For each dimension, assess CORRECT / SUBOPTIMAL / WRONG:
 | # | Dimension | Framework | Check Against |
 |---|---|---|---|
 | 1 | **Genre** | Fabbri (5 rules) | Does this genre SIGNIFY what the lyrics express? |
-| 2 | **Key** | Juslin (cue hierarchy) | Mode is #1 emotional cue. Does key character match dominant emotion? |
+| 2 | **Key** | Eerola, Friberg & Bresin (cue hierarchy) | Mode is #1 emotional cue. Does key character match dominant emotion? |
 | 3 | **BPM** | Genre + emotion mapping | Correct for BOTH genre conventions AND emotional pacing? |
 | 4 | **Instruments** | Tagg (musemes) | Does each instrument carry the correct cultural connotation? |
 | 5 | **Vocal style** | Moore (persona) + Fabbri (behavioral) | Delivery matches genre AND serves the lyric arc? |
@@ -456,7 +470,7 @@ The **core 12-category composite** drives the pipeline decision:
 12. Production-lyric alignment failures create unease the listener cannot name
 13. Suno Optimization is NOT gate-blocking -- it does not prevent passing the 8.5 threshold, but determines render quality
 14. Genre-Emotion Alignment is the highest-impact Suno choice -- wrong genre = the entire sound fights the lyrics
-15. Key is the #1 emotional cue (Juslin) -- evaluate key choice with the same seriousness as lyric quality
+15. Key is the #1 emotional cue (Eerola, Friberg & Bresin, 2013) -- evaluate key choice with the same seriousness as lyric quality
 
 ---
 
@@ -474,11 +488,12 @@ The template defines exact structure, section ordering, conditional inclusion ru
 |---|---|
 | **Allan F. Moore** (*Song Means*, 2012) | 4 functional texture layers, soundbox theory, persona analysis (real/performer/character) |
 | **Philip Tagg** (*Music's Meanings*, 2013) | Musemes (smallest meaningful musical units), semiotic signification |
-| **Serge Lacasse** | Vocal staging, proxemic distance (intimate to public to dissolved) |
+| **Serge Lacasse** | Vocal staging, proxemic distance (intimate to public). Part of a composite framework: Hall (proxemics theory) + Lacasse (vocal staging semiotics) + Moore (hermeneutics of recorded song). "Dissolved" is our extension. |
 | **William Moylan** | Recording analysis, timbral balance, spatial imaging |
 | **Pat Pattison** (Berklee) | Prosody as relationship between form and content |
 | **Franco Fabbri** | Genre theory (5 rules of genre membership) |
-| **Patrik Juslin** | BRECVEMA emotional mechanisms + cue hierarchy (mode > tempo > register > dynamics > articulation > timbre) |
+| **Patrik Juslin** | BRECVEMA emotional mechanisms (8 pathways by which music induces emotion) |
+| **Eerola, Friberg & Bresin** (2013, *Frontiers in Psychology* 4:487) | Emotional cue hierarchy (mode > tempo > register > dynamics > articulation > timbre) |
 | **Christian Schubart** | Key characteristics and emotional associations |
 | **Dodge et al.** (2025) | 6 universal criteria: innovation, beauty, scope of vision, technical prowess, generosity of spirit, authenticity |
 | **Nashville A&R** | Melody memorability, "cut" potential, market fit, 7-second emotional truth, skip test |

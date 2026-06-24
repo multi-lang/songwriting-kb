@@ -114,12 +114,12 @@ Applied to every song concept:
 
 - Every word earns its place — no filler
 - Hook passes "would someone text this line?" test
-- No line exceeds 12 syllables at song tempo
-- V2 adds NEW information
-- Bridge contains a TURN
-- Hook arrives within 15 seconds of first sung vocal
+- [Tier 2] Target 7-12 syllables per line; lines exceeding ~12-15 should be checked for stress density and singability at tempo
+- [Tier 2] V2 usually adds new information or a new angle (unless reiteration is part of the form)
+- [Tier 2] Bridge often works best when it creates contrast or a turn (semantic, musical, textural, or energetic)
+- [Tier 2] Hook signal arrives within 5-30 seconds of first sung vocal (genre-dependent)
 - Full chorus typically arrives within 45-60 seconds of track start
-- ABCB default rhyme scheme
+- [Tier 2] ABCB rhyme scheme often works well for a conversational feel (one common option, not a universal default)
 - Near/slant rhymes preferred over forced perfect
 - Artist names in creative direction converted to descriptive production language (no artist names in Style Prompt or Production Direction)
 

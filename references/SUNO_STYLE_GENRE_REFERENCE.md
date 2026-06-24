@@ -4,7 +4,7 @@
 > BPM-genre conventions, instrument-genre alignment, era anchoring, and Suno-specific prompt science.
 > Used by the Critic agent's Suno Optimization Assessment for evaluating and improving style choices.
 >
-> **Sources:** Fabbri (genre theory), Juslin/Gabrielsson (emotional cues), Tagg (musemes),
+> **Sources:** Fabbri (genre theory), Eerola, Friberg & Bresin (emotional cue hierarchy), Juslin (BRECVEMA), Tagg (musemes),
 > Moore (style vs genre), Schubart/Mattheson (key characteristics), community-tested Suno v4.5-v5.5 research.
 >
 > **Last updated:** June 2026
@@ -29,11 +29,11 @@ Every genre is defined by rules across 5 dimensions. When selecting a genre for 
 
 | Rule | What It Governs | Suno Prompt Implication |
 |---|---|---|
-| **Formal** | Structure, length, instrumentation, techniques | Structure notes, instrument list, section lengths |
+| **Formal and technical** | Structure, length, instrumentation, techniques | Structure notes, instrument list, section lengths |
 | **Semiotic** | What the genre SIGNIFIES culturally | Mood descriptors, cultural reference points |
-| **Behavioral** | Performance conventions (how it's played/sung) | Vocal delivery tags, performance cues |
-| **Social/Ideological** | Community values, identity, context | Audience targeting, thematic alignment |
-| **Juridical/Commercial** | Marketplace expectations, platform fit | Length, hook timing, sync readiness |
+| **Behaviour** | Performance conventions (how it's played/sung) | Vocal delivery tags, performance cues |
+| **Social and ideological** | Community values, identity, context | Audience targeting, thematic alignment |
+| **Economical and juridical** | Marketplace expectations, platform fit | Length, hook timing, sync readiness |
 
 **Application:** If a song's lyrics deal with intimate male vulnerability but the Style Prompt says "epic orchestral metal" — the Semiotic and Social rules are violated. The genre doesn't SIGNIFY what the lyrics express.
 
@@ -59,7 +59,7 @@ Dimension 7: Space/Reverb    → anchors the environment
 
 ## 2. KEY-EMOTION MAPPING
 
-### 2.1 The Emotional Cue Hierarchy (Juslin, Gabrielsson, Frontiers in Psychology)
+### 2.1 The Emotional Cue Hierarchy (Eerola, Friberg & Bresin, 2013, *Frontiers in Psychology* 4:487)
 
 Musical cues ranked by their contribution to perceived emotion:
 
@@ -71,6 +71,8 @@ Musical cues ranked by their contribution to perceived emotion:
 5. ARTICULATION (legato/staccato) ← determines character
 6. TIMBRE (instrument choice)     ← determines color/signification
 ```
+
+> **Tier split:** Mode effects on perceived valence = [Tier 1: confirmed by Eerola, Friberg & Bresin 2013 and multiple replications]. Specific key character associations (e.g., D minor = devotional, F# minor = mysterious) = [Tier 2: historical tradition (Schubart 1806, Mattheson), not cognitive science. Useful as creative prompts, not empirical claims.]
 
 **Critical implication:** If key and tempo are wrong for the emotional content, no amount of instrument tags will fix it. Key + Tempo are the foundation. Instruments are paint on the wall — key is the wall itself.
 
@@ -524,13 +526,14 @@ Each section's production cue tags should:
 
 | Source | Contribution |
 |---|---|
-| **Franco Fabbri** (1982) | 5 rules of genre membership — formal, semiotic, behavioral, social/ideological, juridical/commercial |
+| **Franco Fabbri** (1982) | 5 rules of genre membership -- formal and technical rules, semiotic rules, behaviour rules, social and ideological rules, economical and juridical rules |
 | **Allan F. Moore** (2001, 2012) | Style vs genre distinction, categorical conventions in music discourse |
 | **Philip Tagg** (2013) | Musemes — smallest meaningful musical units, cultural connotation of timbres |
-| **Patrik Juslin** (2013) | BRECVEMA emotional mechanisms, cue hierarchy (mode > tempo > register > dynamics > articulation > timbre) |
-| **Gabrielsson & Lindström** (2010) | Emotional expression in music — contribution of primary musical cues |
+| **Patrik Juslin** (2013) | BRECVEMA emotional mechanisms -- 8 pathways by which music induces emotion |
+| **Eerola, Friberg & Bresin** (2013, *Frontiers in Psychology* 4:487) | Emotional cue hierarchy (mode > tempo > register > dynamics > articulation > timbre). Linearity and additivity of primary cues |
+| **Gabrielsson & Lindström** (2010) | Emotional expression in music -- contribution of primary musical cues |
 | **Christian Schubart** (1806) | Key characteristics and emotional associations |
-| **Frontiers in Psychology** (2013) | Emotional expression linearity and additivity of primary musical cues |
+| **Eerola, Friberg & Bresin** (2013) | Emotional expression linearity and additivity of primary musical cues |
 | **Suno community research** (2025-2026) | Prompt formula, era anchoring, genre combination rules, tag limits, slider behavior |
 | **beehiiv/roo research** (2026) | 301 styles tested, prompt ordering matters, genre-first principle, 5-8 tag sweet spot |
 | **HowToPromptSuno** (2025-2026) | Structural prompt methodology, drum identity naming, production space descriptors |

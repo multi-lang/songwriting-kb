@@ -30,6 +30,20 @@ If you cannot write this sentence, you do not have a song yet -- you have a topi
 
 ---
 
+## Three-Tier Evidence Labeling System
+
+Claims in this methodology carry one of three evidence tiers:
+
+| Label | Meaning |
+|---|---|
+| **[Tier 1: Scholarship-backed]** | Documented academic framework with primary sources and peer-reviewed research. |
+| **[Tier 2: Professional heuristic]** | Widely-used craft guidance supported by professional practice but not empirically validated as universal law. |
+| **[Tier 3: Community/platform heuristic]** | Empirical observation from practitioner testing (e.g., Suno community experiments). Unverified, version-dependent. |
+
+Unlabeled claims are general craft consensus or structural descriptions that do not require tiering.
+
+---
+
 ## Phase 1: Analysis (Before Writing a Single Word)
 
 ### Step 1 -- State the Song Thesis
@@ -58,7 +72,7 @@ Decide before writing:
 - Target syllables per line (7-12 at your tempo)
 - Where will breath points fall?
 - Which vowels work for sustained notes in your key?
-- Default rhyme scheme (ABCB unless you have reason to deviate)
+- Default rhyme scheme (ABCB is often useful for a conversational feel; choose intentionally) [Tier 2]
 
 ### Step 5 -- Narrative Arc
 
@@ -81,7 +95,7 @@ Answer: Who is singing?
 
 Decide:
 - Primary genre (70%) and texture genre (30%) if fusion
-- Does this honor Fabbri's 5 rules? (Formal, Semiotic, Behavioral, Social/Ideological, Juridical/Commercial)
+- Does this honor Fabbri's 5 rules? (formal and technical rules, semiotic rules, behaviour rules, social and ideological rules, economical and juridical rules)
 - What instrumentation "belongs" in this genre?
 
 ### Step 8 -- Arrangement Design
@@ -90,9 +104,9 @@ Plan the dynamic arc:
 - Growth pattern (additive? subtractive? explosive? bloom?)
 - Where is negative space?
 - What contrast pairs exist? (quiet/loud, sparse/dense, human/machine)
-- Where does the hook land? (Must be within 15s of first sung vocal)
+- Where does the hook land? [Tier 2] (Aim for a hook signal within the first 5-30s of singing; exact timing is genre-dependent)
 
-**Hook timing rule:** 15 seconds is measured from the first SUNG word to the beginning of the hook phrase. An 8-second instrumental intro followed by a 12-second verse means the hook must land by second 12 of singing, not second 20 of the track.
+**Hook timing guidance:** Measured from the first SUNG word to the beginning of the hook phrase. An 8-second instrumental intro followed by a 12-second verse means the hook must land by second 12 of singing, not second 20 of the track. Pop tends toward earlier hooks; progressive and cinematic genres allow more setup.
 
 **Runtime estimation formula:**
 ```
@@ -139,7 +153,7 @@ V2 (new info) -> Bridge (the turn) -> Final Chorus (variation) -> Intro/Outro
 This is your destination. Write it before anything else.
 - Must contain the hook (identify type: lyric, melodic, rhythmic, or production)
 - Must be singable (test: can you hum it?)
-- Every line <=12 syllables
+- Target 7-12 syllables per line [Tier 2]
 - Check: would someone text this line to a friend?
 
 ### Step 11 -- Write the Pre-Chorus
@@ -154,24 +168,24 @@ This is your destination. Write it before anything else.
 4-8 lines that SET UP the chorus.
 - Establish the situation/character/world
 - Show don't tell (imagery, physical, sensory)
-- Every line <=12 syllables
+- Target 7-12 syllables per line [Tier 2]
 - Use em-dashes for breath within lines
 
 ### Step 13 -- Write Verse 2
 
-4-8 lines that ADD NEW INFORMATION.
-- Must NOT restate V1
+4-8 lines that ADD NEW INFORMATION. [Tier 2]
+- Usually should not restate V1 (unless reiteration is part of the form -- blues, hymnal, chant)
 - Deepens, complicates, or progresses the narrative
 - New images, new details, new perspective
 - Same syllable discipline
 
 ### Step 14 -- Write the Bridge (The Turn)
 
-3-6 lines that CHANGE THE MEANING.
-- Must reveal something new
-- Must make the final chorus hit differently
+3-6 lines that CREATE CONTRAST or CHANGE THE MEANING. [Tier 2]
+- Often works best when it reveals something new
+- Can make the final chorus hit differently
 - Strip the production here (contrast)
-- The strongest single line should live here
+- The strongest single line often lives here
 
 ### Step 15 -- Write Final Chorus (Variation)
 
@@ -194,7 +208,7 @@ Same structure as Chorus 1 but:
 ### Step 17 -- Prosody Audit
 
 Go line by line:
-- [ ] Every line <=12 syllables?
+- [ ] Lines target 7-12 syllables? Any over ~12-15 checked for stress density and singability at tempo? [Tier 2]
 - [ ] Stressed syllables on strong beats?
 - [ ] Open vowels on any sustained notes?
 - [ ] No stuffed phrases (3+ long words crammed)?
@@ -203,9 +217,9 @@ Go line by line:
 
 ### Step 18 -- Structure Check
 
-- [ ] Hook within 15s of first vocal?
-- [ ] V2 adds genuinely new information?
-- [ ] Bridge contains a real turn?
+- [ ] Hook signal within first 5-30s of first vocal? [Tier 2]
+- [ ] V2 adds new information or a new angle? [Tier 2]
+- [ ] Bridge creates contrast or a turn? [Tier 2]
 - [ ] Total lyrics estimatable under 5000 chars?
 - [ ] Target runtime appropriate for platform?
 
@@ -213,15 +227,15 @@ Go line by line:
 
 | Gate | Rule |
 |---|---|
-| Syllable limit | No line exceeds 12 syllables at the song's tempo |
-| Hook timing | Hook arrives within 15 seconds of first sung vocal |
-| V2 novelty | V2 adds NEW information (not restatement) |
-| Bridge turn | Bridge contains a TURN (meaning shifts) |
+| Syllable check | [Tier 2] Target 7-12 syllables per line; lines exceeding ~12-15 should be checked for stress density and singability at tempo |
+| Hook timing | [Tier 2] Provide a compelling hook signal within the first 5-30 seconds of first sung vocal. Full chorus timing is genre-dependent. |
+| V2 novelty | [Tier 2] V2 usually adds new information or a new angle (unless reiteration is part of the form's design -- blues, hymnal, chant) |
+| Bridge turn | [Tier 2] A bridge often works best when it creates contrast or a turn -- semantic, musical, textural, or energetic |
 | Hook memorability | Hook passes "would someone text this?" test |
 | Word economy | Every word earns its place -- no filler |
-| Rhyme scheme | ABCB default (deviate intentionally, not accidentally) |
+| Rhyme scheme | [Tier 2] ABCB is often useful for a conversational feel -- one common option, not a universal default |
 | Rhyme quality | Near/slant rhymes preferred over forced perfect |
-| 15-second rule | Hook arrives within first 15s of vocals (from FIRST singing) |
+| 15-second rule | [Tier 2] Hook signal arrives within first 5-30s of vocals (genre-dependent; pop avg 39s to full chorus, hip-hop 30s) |
 
 ---
 
@@ -413,9 +427,9 @@ Two primary formulas to understand (do not mix their rules):
 |---|---|
 | Writing V1 first | Write CHORUS first (Nashville method) |
 | No thesis before writing | Cannot build without a destination |
-| V2 restates V1 | Ask "what is NEW?" -- different angle, deeper, progression |
-| Bridge restates chorus | The bridge must REVEAL something the chorus has not said |
-| Lines over 12 syllables | Split or trim -- no exceptions |
+| V2 restates V1 | [Tier 2] Ask "what is NEW?" -- different angle, deeper, progression (unless reiteration is part of the form: blues, hymnal, chant) |
+| Bridge restates chorus | [Tier 2] The bridge often works best when it reveals something the chorus has not said |
+| Lines over 12 syllables | [Tier 2] Check stress density and singability at tempo -- split or trim if the line feels crowded |
 | Hook after 30s | Shorten intro or V1 |
 | Rhyme forcing meaning | Use slant rhyme or restructure |
 | Mixing hit formulas | Know which formula you are using and stay committed |
@@ -495,9 +509,9 @@ Irregular numbers (6:14 vs 6:00) signal authenticity because precise anchors sug
 1. **Craft over inspiration** -- Every song is a built structure
 2. **Prosody is law** -- Words, melody, chords, and emotion must align (Pattison)
 3. **Show, don't tell** -- Imagery, sensory detail, specificity over abstraction
-4. **Hook is king** -- Memorable, singable, repeatable, lands within 7-15 seconds
+4. **Hook is king** -- Memorable, singable, repeatable, arrives early [Tier 2]
 5. **Earn the chorus** -- Verses set up; chorus pays off
-6. **The turn changes everything** -- Bridge must shift meaning
+6. **The turn changes everything** -- A bridge often works best when it creates contrast or a turn [Tier 2]
 7. **Timbre is meaning** -- Every sound SIGNIFIES something (Tagg)
 8. **Silence is content** -- Design where NOT to play
 9. **Repetition is calibrated** -- Too little = forgettable, too much = fatigue
@@ -525,7 +539,8 @@ Irregular numbers (6:14 vs 6:00) signal authenticity because precise anchors sug
 | **Pat Pattison** (Berklee) | Prosody as relationship between form and content |
 | **Franco Fabbri** | Genre theory -- 5 rules of genre membership |
 | **Philip Tagg** | Musemic analysis -- every sound carries cultural meaning |
-| **Patrik Juslin** | BRECVEMA emotional mechanisms, cue hierarchy |
+| **Patrik Juslin** | BRECVEMA emotional mechanisms |
+| **Eerola, Friberg & Bresin** (2013) | Emotional cue hierarchy (mode > tempo > register > dynamics > articulation > timbre) |
 | **Allan F. Moore** | 4 functional texture layers, soundbox theory, persona |
 | **Nashville/LA tradition** | Chorus-first writing, hook discipline, co-writing craft |
 | **Suno community** (2025-2026) | Era anchoring, genre-first, 5-8 tag sweet spot, slider science |

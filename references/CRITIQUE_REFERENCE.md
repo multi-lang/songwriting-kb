@@ -31,7 +31,7 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  — "Does it serve its role?" (conce
 
 ## LAYER 1: THE 12-CATEGORY SCORING RUBRIC (1-10 each)
 
-### 1. HOOK (Memorable? Singable? Arrives within 7-15s?)
+### 1. HOOK (Memorable? Singable? Hook signal within first 5-30s?)
 | Score | Meaning |
 |---|---|
 | 9-10 | Instantly memorable, arrives early, works a cappella, textable, melodically distinct |
@@ -40,7 +40,7 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  — "Does it serve its role?" (conce
 | 3-4 | Weak — forgettable, buried, or unclear what the hook IS |
 | 1-2 | No identifiable hook |
 
-**Hook timing verification:** At the song's BPM, count ~2-3 seconds per sung line with breath. (Total lines before hook × 2.5s) + intro seconds = time to hook. Must be ≤15s from first sung vocal.
+**Hook timing verification:** [Tier 2] At the song's BPM, count ~2-3 seconds per sung line with breath. (Total lines before hook × 2.5s) + intro seconds = time to hook. Aim for 5-30s from first sung vocal (genre-dependent).
 
 ### 2. LYRICS (Imagery? Specificity? Visual/cinematic writing?)
 | Score | Meaning |
@@ -107,7 +107,7 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  — "Does it serve its role?" (conce
 ### 8. COMMERCIAL VIABILITY (Platform fit? Sync ready? 7-second rule?)
 | Score | Meaning |
 |---|---|
-| 9-10 | Hits target platform perfectly, hook in first 15s, right length, sync-placeable |
+| 9-10 | Hits target platform perfectly, hook signal early, right length, sync-placeable |
 | 7-8 | Good fit with minor adjustments needed (slightly long, hook slightly late) |
 | 5-6 | Works for its context but limited broader appeal |
 | 3-4 | Too niche, too long, or structurally uncommercial |
@@ -124,7 +124,7 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  — "Does it serve its role?" (conce
 | 3-4 | Genre confused — conflicting signals |
 | 1-2 | No discernible genre coherence |
 
-**Fabbri's 5 Rules:** Formal (structural conventions), Semiotic (what the genre signifies), Behavioral (performance conventions), Social/Ideological (community values), Juridical/Commercial (marketplace expectations).
+**Fabbri's 5 Rules:** formal and technical rules (structural conventions), semiotic rules (what the genre signifies), behaviour rules (performance conventions), social and ideological rules (community values), economical and juridical rules (marketplace expectations).
 
 ### 10. ARRANGEMENT/PRODUCTION (Dynamics? Countermelody? Timbre?)
 | Score | Meaning |
@@ -166,7 +166,7 @@ Layer 3: ALBUM-CONTEXT MODULE (Continuity)  — "Does it serve its role?" (conce
 
 ### A1. FUNCTIONAL LAYER COMPLETENESS (Moore)
 
-Based on Allan F. Moore's 4 functional texture layers in recorded popular song:
+Based on Allan F. Moore's 4 functional texture layers in recorded popular song (these are generalized descriptions, not prescriptive rules -- not all will be present in every example):
 
 | Layer | What It Is | What to Check |
 |---|---|---|
@@ -198,6 +198,8 @@ The **soundbox** is the virtual 3D space of the recording: left-right (stereo), 
 | **Public** | Heavy reverb, projected, vast space | On a stage/in a cathedral — declaration, anthem |
 | **Dissolved** | Underwater/infinite reverb, voice=environment | No boundary — transcendence, transformation |
 
+> *Note: "Dissolved" is our adaptation extending beyond Lacasse's original categories. This proxemics model is composite: Hall's proxemics theory + Lacasse's vocal staging semiotics + Moore's recorded song hermeneutics.*
+
 | Score | Meaning |
 |---|---|
 | 9-10 | Soundbox is vivid and intentional — you can "see" the space. Proxemic distance matches emotional content perfectly. Distance CHANGES meaningfully (e.g., intimate verse → public chorus → dissolved outro). |
@@ -210,7 +212,7 @@ The **soundbox** is the virtual 3D space of the recording: left-right (stereo), 
 
 ### A3. MUSEMIC SIGNIFICATION (Tagg)
 
-Philip Tagg's **museme** = the smallest meaningful musical unit. A museme carries cultural connotations independent of lyrics. The question: **do the sounds MEAN what they should?**
+Philip Tagg's **museme** = the smallest meaningful musical unit. A museme carries cultural connotations inferred through culturally-informed interobjective comparison. The question: **do the sounds MEAN what they should?**
 
 **Process:**
 1. Identify the dominant musemes (a riff, a chord movement, a timbre, a rhythmic pattern)
@@ -483,7 +485,7 @@ Evaluate each dimension of the Style Prompt against the song's emotional content
 | # | Dimension | Framework Applied | What to Check |
 |---|---|---|---|
 | 1 | **Genre** | Fabbri (5 rules) | Does the genre container satisfy all 5 rules for this song's content? Is it the BEST emotional container? |
-| 2 | **Key** | Juslin (cue hierarchy) | Mode is the #1 emotional cue. Does this key carry the correct character for the lyric content? |
+| 2 | **Key** | Eerola, Friberg & Bresin (cue hierarchy) | Mode is the #1 emotional cue. Does this key carry the correct character for the lyric content? |
 | 3 | **BPM** | Genre conventions + emotion mapping | Is tempo correct for BOTH the genre conventions AND the emotional pacing of the lyrics? |
 | 4 | **Instruments** | Tagg (musemes) | Does every instrument signify the correct cultural connotation? Any that fight the lyric meaning? |
 | 5 | **Vocal style** | Moore (persona) + Fabbri (behavioral) | Does the vocal delivery match genre expectations AND serve the lyrics' emotional arc? |
@@ -533,7 +535,9 @@ Binary pass/fail checks:
 ### Key Evaluation Principles
 
 1. **Genre-Emotion Alignment** — The genre must SIGNIFY what the lyrics express. Dark lyrics in an upbeat genre = semiotic violation (Fabbri Rule 2).
-2. **Key is King** — Mode is the #1 emotional cue (Juslin). Wrong key = wrong emotion at the deepest level.
+2. **Key is King** — Mode is the #1 emotional cue (Eerola, Friberg & Bresin, 2013). Wrong key = wrong emotion at the deepest level.
+
+   > **Tier split:** Mode effects on perceived valence = [Tier 1: confirmed by Eerola, Friberg & Bresin 2013 and multiple replications]. Specific key character associations (e.g., D minor = devotional, F# minor = mysterious) = [Tier 2: historical tradition (Schubart 1806, Mattheson), not cognitive science. Useful as creative prompts, not empirical claims.]
 3. **BPM serves TWO masters** — Must satisfy genre convention AND emotional pacing simultaneously.
 4. **Instruments carry meaning** — Every instrument signifies independently of melody (Tagg). Piano ≠ guitar ≠ synth even playing the same notes.
 5. **Era anchoring is more powerful than genre labeling** — Time references give Suno specific sonic periods. "1995 trip-hop" > "dark electronic."
@@ -548,16 +552,16 @@ Binary pass/fail checks:
 |---|---|
 | **Allan F. Moore** (*Song Means*, 2012) | 4 functional texture layers, soundbox theory, persona analysis (real/performer/character), interpretation vs analysis distinction |
 | **Philip Tagg** (*Music's Meanings*, 2013) | Musemes (smallest meaningful musical units), interobjective comparison, semiotic analysis of popular music, connotation chains |
-| **Serge Lacasse** (2000, 2010) | Vocal staging, proxemic interaction in recorded song, perceived distance as meaning |
+| **Serge Lacasse** (2000, 2010) | Vocal staging, proxemic interaction in recorded song, perceived distance as meaning. Part of a composite framework: Hall (proxemics theory) + Lacasse (vocal staging) + Moore (hermeneutics). "Dissolved" is our extension beyond Lacasse's original categories. |
 | **William Moylan** (*Understanding and Crafting the Mix*, 2014) | Recording analysis framework, timbral balance, sound source imaging, ecological listening |
 | **Pat Pattison** (Berklee) | Prosody as "appropriate relationship between elements," phrase weight, stable/unstable systems |
-| **Franco Fabbri** (1982) | Genre theory — 5 rules of genre membership (formal, semiotic, behavioral, social/ideological, juridical/commercial) |
+| **Franco Fabbri** (1982) | Genre theory -- 5 rules of genre membership (formal and technical rules, semiotic rules, behaviour rules, social and ideological rules, economical and juridical rules) |
 | **Patrik Juslin** (2013) | BRECVEMA — 8 mechanisms by which music induces emotion (Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, Aesthetic judgment) |
 | **Dodge et al.** (2025) | 6 universal criteria for evaluating popular music with inter-rater reliability: Innovation, Beauty, Scope of Vision, Technical Prowess, Generosity of Spirit, Authenticity |
 | **Nashville A&R** (industry practice) | Melody memorability, "cut" potential, market fit, 7-second emotional truth test, "would I skip?" test |
 | **Dockwray & Moore** (2010) | Establishment of virtual performance space in rock, the "diagonal mix" as norm |
 | **Megan Lavengood** (2020, 2021) | Cultural significance of timbre analysis, novelty layer semiotic significance |
-| **Juslin & Gabrielsson** (emotional cue research) | Emotional cue hierarchy: mode > tempo > register > dynamics > articulation > timbre. Linearity and additivity of primary cues |
+| **Eerola, Friberg & Bresin** (2013, *Frontiers in Psychology* 4:487) | Emotional cue hierarchy: mode > tempo > register > dynamics > articulation > timbre. Linearity and additivity of primary cues |
 | **Christian Schubart** (1806) | Key characteristics and emotional associations — historical foundation for key-emotion mapping |
 | **Suno community research** (2025-2026) | Prompt formula (genre-first, 5-8 tags), era anchoring, genre combination rules, slider behavior, v5 parsing |
 
