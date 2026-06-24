@@ -2,7 +2,7 @@
   "id": "FEAT-001",
   "type": "feat",
   "description": "Add Three-Tier Evidence Labeling System explanation to the top of the three core methodology files, and apply Tier labels plus all 14 specific claim corrections across the entire knowledge base.",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "Step 1 - Add the Three-Tier Evidence Labeling System explanation block near the top of core/methodology/songwriting.md (after the 'Overview' section, before Phase 1). The block should define: [Tier 1: Scholarship-backed] = Documented academic framework with primary sources; [Tier 2: Professional heuristic] = Widely-used craft guidance supported by professional practice; [Tier 3: Community/platform heuristic] = Empirical observation from practitioner testing, unverified.",
     "Step 2 - Add the same Three-Tier Evidence Labeling System explanation block near the top of core/methodology/critique.md (after 'Overview: The Multi-Layer Critique Model' section, before 'Prerequisites').",
@@ -44,5 +44,5 @@
     "grep -rn 'dissolved' /projects/sandbox/songwriting-kb/core/methodology/critique.md to confirm note about adaptation"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "All 15 steps implemented successfully. 14 files modified across core methodology, steering, SOPs, powers, references, README, and CREDITS. Validator (tools/validate-song.py) runs without regression. No quality gates removed -- all claims softened from absolute rules to heuristic checks. Juslin retains BRECVEMA credit in all locations; only cue hierarchy attribution changed to Eerola, Friberg & Bresin (2013). Fabbri labels use his exact English terminology from translations. Dissolved proxemics noted as our adaptation of composite framework. Moore caveat added. Tagg interobjective comparison language applied."
 }
