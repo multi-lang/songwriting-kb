@@ -14,10 +14,21 @@ All notable changes to this project will be documented in this file.
 - Behavioral Directives section in all 5 agents (songwriter, critic, suno-optimizer, album-continuity, builder) -- explicit behavioral rules for autonomous execution without unnecessary permission-asking
 - Songwriter auto-pilot mode — 30+ trigger phrases ("you choose", "surprise me", "just do it", etc.) that skip questions and use methodology decision frameworks for all choices
 - Songwriter interactive mode — expanded parameter prompts (BPM, key, vocal staging, length, album position) matching community-requested fields
+- Three-Tier Evidence Labeling System ([Tier 1: Scholarship-backed], [Tier 2: Professional heuristic], [Tier 3: Community/platform heuristic]) applied across all methodology files
+- The Compression Test -- decision framework for handling lines exceeding singable density (songwriting.md Phase 3)
+- Eerola, Friberg & Bresin (2013) properly attributed for emotional cue hierarchy
 
 ### Changed
 - Renamed "bible" to "blueprint" across entire repository -- all files, references, skill names, and documentation updated (case-preserving: BIBLE->BLUEPRINT, Bible->Blueprint, bible->blueprint)
 - Expanded trigger keywords in all agent description fields and POWER.md keywords array for better activation matching
+- Emotional cue hierarchy attribution corrected from Juslin/Gabrielsson to Eerola, Friberg & Bresin (2013, Frontiers in Psychology 4, Article 487)
+- Fabbri rule labels corrected to exact terminology (formal and technical rules, semiotic rules, behaviour rules, social and ideological rules, economical and juridical rules)
+- Lacasse proxemics -- noted "dissolved" as system adaptation; credited composite framework (Hall + Lacasse + Moore)
+- Moore 4 layers -- added caveat: generalized descriptions, not prescriptive rules
+- Tagg musemes -- corrected to interobjective comparison methodology
+- Quality gate language softened from absolute rules to professional heuristic checks [Tier 2]: syllable limits, hook timing, V2 novelty, bridge turn, ABCB scheme
+- Suno-specific claims labeled [Tier 3] with version notes: 5-8 tags, genre-first, era anchoring
+- Key-emotion mapping split: mode effects [Tier 1], specific key character [Tier 2 historical tradition]
 
 ---
 

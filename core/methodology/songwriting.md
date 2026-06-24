@@ -237,6 +237,28 @@ Go line by line:
 | Rhyme quality | Near/slant rhymes preferred over forced perfect |
 | 15-second rule | [Tier 2] Hook signal arrives within first 5-30s of vocals (genre-dependent; pop avg 39s to full chorus, hip-hop 30s) |
 
+### The Compression Test [Tier 2: Professional heuristic]
+
+When a line exceeds normal singable density (triggered at >15 syllables):
+
+1. Write a compressed version (<=12 syllables) attempting the same emotional impact
+2. Compare:
+   - **COMPRESSED HITS HARDER** -> use it (discipline served emotion)
+   - **COMPRESSED HITS EQUALLY** -> use it (same impact, better flow)
+   - **COMPRESSED IS WEAKER** -> keep long version IF performable as spoken/recitative
+3. If keeping long: tag as spoken, strip production, ensure surrounding lines maintain normal density
+4. The fourth path -- **REWRITE DIFFERENTLY**: different metaphor/angle/structure, not just shorter or longer
+
+**Decision tree:**
+
+| Condition | Action |
+|---|---|
+| Passes emotion AND flow | Keep regardless of length |
+| Passes emotion, fails flow, compression weakens | Keep as spoken + production support |
+| Passes emotion, fails flow, compression equals | Compress (overwriting) |
+| Passes emotion, fails flow, compression weakens, could be rewritten | Rewrite differently |
+| Fails emotion | Rewrite regardless |
+
 ---
 
 ## Phase 4: Formatting (Suno-Ready Output)

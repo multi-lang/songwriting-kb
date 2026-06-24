@@ -44,7 +44,7 @@ Brian forked the repo, conducted a thorough methodology review, and submitted [P
 |---|---|
 | **Allan F. Moore** (*Song Means*, 2012) | 4 functional texture layers, soundbox theory, persona analysis |
 | **Philip Tagg** (*Music's Meanings*, 2013) | Musemes, semiotic signification, cultural connotation of timbres |
-| **Serge Lacasse** (2000, 2010) | Vocal staging, proxemic interaction in recorded song |
+| **Serge Lacasse** (2000, 2010) | Vocal staging, proxemic interaction in recorded song (composite framework: Hall proxemics theory + Lacasse vocal staging + Moore recorded song hermeneutics) |
 | **William Moylan** (2014) | Recording analysis, timbral balance, spatial imaging |
 | **Pat Pattison** (Berklee) | Prosody, phrase weight, stable/unstable systems |
 | **Franco Fabbri** (1982) | Genre theory — 5 rules of genre membership |

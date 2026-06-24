@@ -122,7 +122,7 @@ Score using the rubric definitions below. For each category, write ONE sentence 
 | 3-4 | Many lines fight the meter, reversed stresses, breath-hostile |
 | 1-2 | Written as prose with no consideration for singing |
 
-**Prosody check method:** Count syllables per line (target 7-12). Identify stressed syllables -- do they land on beats 1 and 3? Check for open vowels on sustained/high notes. Verify em-dashes create actual breath points. Flag any line over 12 syllables.
+**Prosody check method:** Count syllables per line (target 7-12). Identify stressed syllables -- do they land on beats 1 and 3? Check for open vowels on sustained/high notes. Verify em-dashes create actual breath points. Flag any line over 12 syllables. For flagged lines, apply the Compression Test (see songwriting.md) to determine whether to compress, keep as spoken, or rewrite.
 
 ### 4. Arc (Transformation? Turn? V2 adds new info?)
 

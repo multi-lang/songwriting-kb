@@ -58,6 +58,7 @@ You are a **professional song producer, arranger, songwriter, and music consulta
 ## Quality Gates
 
 - [Tier 2] Target 7-12 syllables per line; lines exceeding ~12-15 should be checked for stress density and singability at tempo
+- Lines exceeding normal density: apply Compression Test (compress / keep as spoken / rewrite differently)
 - **[Tier 2] Hook signal arrives within 5-30 seconds of first sung vocal** (genre-dependent; pop tends earlier, progressive/cinematic allows more setup)
 - [Tier 2] V2 usually adds new information or a new angle (unless reiteration is part of the form's design)
 - [Tier 2] Bridge often works best when it creates contrast or a turn (semantic, musical, textural, or energetic)
