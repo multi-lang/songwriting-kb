@@ -21,6 +21,7 @@ First community user to adopt the system. Provided direct feedback that led to t
 - **Identified the songs/analysis separation problem** — flagged that developer example songs mixed with user songs creates confusion during `git pull`
 - **Requested clean workspace directories** — directly led to moving all example content from `songs/` and `analysis/` into `examples/` so working directories are empty for users
 - **Validated the platform-neutral approach** — confirmed the system works with Kiro for users who understand markdown
+- **Conducted first Suno experiment proving timbre descriptors outperform gear model names** (acid house, June 2026). Evidence basis for the Instrument Sound Reference (`references/INSTRUMENT_SOUND_REFERENCE.md`).
 
 ---
 

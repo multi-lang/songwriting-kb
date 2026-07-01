@@ -72,7 +72,7 @@ songwriting-kb/
 ├── experiments/
 │   └── suno/                  Suno experiment logs (version-dated prompt tests)
 ├── docs/                      Architecture plans, implementation docs
-├── references/                7 companion docs (critique, template, style/genre, tags, voice, 2 blueprints)
+├── references/                8 companion docs (critique, template, style/genre, tags, voice, instrument sound, 2 blueprints)
 ├── examples/
 │   ├── songs/                 Developer's example songs (concept albums, standalones)
 │   ├── albums/                Album configuration examples
@@ -214,6 +214,8 @@ The critic's **Suno Optimization Assessment** evaluates whether the Style Prompt
 - **5-8 tags maximum** — past 10, signals conflict and Suno defaults to generic
 
 Full reference: `references/SUNO_STYLE_GENRE_REFERENCE.md` (600+ lines covering key-emotion mapping, BPM ranges, 30+ instrument significations, genre conventions, and Suno prompt science)
+
+**Instrument Sound Reference:** For converting gear/model names to Suno-actionable sound descriptors, see `references/INSTRUMENT_SOUND_REFERENCE.md`. Describes what instruments SOUND like (not what they ARE) with 3 compression levels for character budget management. [Tier 3]
 
 ### 5 Formatting Modes
 | Mode | Use Case |

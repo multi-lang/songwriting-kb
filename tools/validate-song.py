@@ -325,6 +325,79 @@ def check_artist_references(style_prompt, lyrics_text=None):
         return "PASS", found
 
 
+def check_gear_names(style_prompt, lyrics_text=None):
+    """Check for gear/model name references in Style Prompt, Production Direction,
+    and Vocal Direction.
+
+    Gear names should be converted to sound descriptors before final output.
+    Returns WARN (not FAIL) since detection may have false positives.
+    """
+    # Collect all text segments to scan
+    segments = []
+
+    # (a) Style Prompt text
+    style_text = get_style_prompt_without_exclusions(style_prompt)
+    if style_text:
+        segments.append(style_text)
+
+    # (b) Production Direction and Vocal Direction from lyrics
+    if lyrics_text:
+        prod_matches = re.findall(
+            r"\[Production Direction:\s*(.*?)\]", lyrics_text, re.IGNORECASE
+        )
+        for m in prod_matches:
+            segments.append(m.strip())
+
+        vocal_matches = re.findall(
+            r"\[Vocal Direction:\s*(.*?)\]", lyrics_text, re.IGNORECASE
+        )
+        for m in vocal_matches:
+            segments.append(m.strip())
+
+    combined_text = "\n".join(segments)
+    if not combined_text:
+        return "PASS", []
+
+    found = []
+
+    # Common gear/model names to detect
+    gear_patterns = [
+        r"\bTB-303\b",
+        r"\bTR-909\b",
+        r"\bTR-808\b",
+        r"\bKorg\s*M1\b",
+        r"\bMoog\b",
+        r"\bMinimoog\b",
+        r"\bJuno\b",
+        r"\bDX7\b",
+        r"\bProphet\b",
+        r"\bOberheim\b",
+        r"\bFairlight\b",
+        r"\bTelecaster\b",
+        r"\bStratocaster\b",
+        r"\bLes\s*Paul\b",
+        r"\bGibson\b",
+        r"\bFender\b",
+        r"\bMarshall\b",
+        r"\bVox\b",
+        r"\bHammond\b",
+        r"\bWurlitzer\b",
+        r"\bRhodes\b",
+        r"\bSteinway\b",
+    ]
+
+    for pattern in gear_patterns:
+        matches = re.findall(pattern, combined_text, re.IGNORECASE)
+        for match in matches:
+            if match not in found:
+                found.append(match)
+
+    if found:
+        return "WARN", found
+    else:
+        return "PASS", found
+
+
 def validate_file(filepath):
     """Run all validation checks on a file."""
     style_prompt, lyrics_text, error = parse_song_file(filepath)
@@ -509,6 +582,27 @@ def validate_file(filepath):
             "detail": "skipped (no style prompt)",
         })
 
+    # 9. Gear name check
+    if style_prompt is not None:
+        status, found = check_gear_names(style_prompt, lyrics_text)
+        if not found:
+            detail = "no gear names"
+        else:
+            detail = f"found: {', '.join(found[:3])}. Suno responds better to sound descriptions. See references/INSTRUMENT_SOUND_REFERENCE.md"
+        checks.append({
+            "name": "Gear Names",
+            "status": status,
+            "detail": detail,
+        })
+        if status == "WARN":
+            warnings += 1
+    else:
+        checks.append({
+            "name": "Gear Names",
+            "status": "PASS",
+            "detail": "skipped (no style prompt)",
+        })
+
     # Determine overall result
     if failures > 0:
         result = "FAIL"
@@ -563,6 +657,8 @@ def format_text_output(results):
                 output_lines.append(f"  Section Tag Isolation: {check['status']} ({detail})")
             elif name == "Artist References":
                 output_lines.append(f"  Artist References: {check['status']} ({detail})")
+            elif name == "Gear Names":
+                output_lines.append(f"  Gear Names: {check['status']} ({detail})")
             else:
                 output_lines.append(f"  {name}: {detail} {status_str}")
 

@@ -172,6 +172,8 @@ When evaluating a song's BPM:
 
 ## 4. INSTRUMENT-GENRE CONVENTIONS (Tagg Applied)
 
+> For detailed sound-descriptor vocabulary with character-budget-aware compression levels, see `references/INSTRUMENT_SOUND_REFERENCE.md`. When building Style Prompts, use SOUND descriptors ('squelching acid bass') rather than gear names ('Roland TB-303').
+
 ### 4.1 Instrument Signification — What Sounds MEAN
 
 Every instrument carries cultural connotation independent of melody. Choosing the wrong instrument for the emotional content creates subconscious dissonance:

@@ -39,3 +39,7 @@ Once an experiment is concluded and meets the promotion criteria:
 - Update the relevant `core/methodology/` file with the new guidance
 - Add or update the entry in `references/SUNO_STYLE_GENRE_REFERENCE.md` (Suno Version Status table)
 - Note the retest date (Suno updates frequently - claims expire)
+
+## Evidence Impact
+
+The first experiment using this framework (21machines, acid-instrument-specificity-ladder, June 2026) produced the evidence basis for `references/INSTRUMENT_SOUND_REFERENCE.md` -- demonstrating that timbre/scene descriptors outperform gear model names in Suno v5.5.

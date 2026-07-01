@@ -285,6 +285,14 @@ Rules:
 | "Like Billie Eilish" | "Dark minimal pop, whispered close-mic vocals, heavy sub bass, sparse production, intimate bedroom aesthetic, 2019 lo-fi pop" |
 | "Wardruna vibes" | "Nordic folk, ancient instrumentation, throat singing textures, ritualistic percussion, vast reverb, pre-Christian atmosphere" |
 
+**Instrument Naming -- Sound Descriptors:** [Tier 3] When listing instruments in the Style Prompt, use sound descriptors rather than gear/model names. Suno responds to timbre descriptions, not equipment identifiers.
+
+- Use **compressed-level** descriptors (~35 chars each) as default
+- Use **minimum-level** (~20 chars each) when budget is tight
+- Budget: at compressed level, 3-4 instruments fit comfortably in a Style Prompt
+- Example: "squelching acid bass, warm analog pad, crisp electronic drums" instead of "TB-303, Juno-106, TR-909"
+- Full vocabulary: `references/INSTRUMENT_SOUND_REFERENCE.md`
+
 ### Step 21 -- Write Exclusions
 
 ```

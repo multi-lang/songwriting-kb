@@ -175,6 +175,26 @@ If any artist or band name appears in the Style Prompt, Production Direction, or
 
 **Why this matters:** Suno does not understand "make it sound like [Artist]." It DOES understand specific production descriptors, era references, genre combinations, and vocal delivery characteristics. Converting artist references to descriptive language produces dramatically better renders.
 
+### Step 9b -- Gear Name Conversion [Tier 3]
+
+If any gear or model name appears in the Style Prompt, Production Direction, or Vocal Direction (e.g., "TB-303", "Juno-106", "Telecaster"), convert it to a sound descriptor. Suno does not recognize equipment model numbers -- it responds to timbre descriptions.
+
+**Conversion method:** Describe what the gear SOUNDS like using the compressed-level descriptors from `references/INSTRUMENT_SOUND_REFERENCE.md`. Optionally retain the gear name as a parenthetical suffix for future-proofing.
+
+| Gear Reference | Converted To |
+|---|---|
+| "Roland TB-303 acid bassline" | "squelching resonant acid bass (TB-303)" |
+| "Juno-106 pad" | "warm analog pad, lush detuned chorus (Juno)" |
+| "Fender Rhodes" | "warm electric piano, soft bell-like attack (Rhodes)" |
+| "Marshall stack" | "crunchy overdriven British tube amp" |
+| "TR-808 drums" | "deep booming kick, crisp electronic snare" |
+
+**Why this matters:** The same principle as Artist Reference Conversion -- Suno needs actionable sound descriptors, not brand names. Gear model numbers are meaningless to the model; timbre descriptions give it specific production targets.
+
+**Evidence:** Confirmed for acid house (21machines, June 2026). Replication experiments pending for other genres.
+
+**Character budget:** Use compressed-level descriptors (~35 chars each) as the default. Switch to minimum-level (~20 chars) when the Style Prompt is near 1000 characters.
+
 ### Step 10 -- Verify Suno Compatibility
 
 Final checklist:

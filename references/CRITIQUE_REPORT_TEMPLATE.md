@@ -135,6 +135,7 @@ Slider recommendation: Weirdness X% / Style Influence X% / Audio Influence X%
 | Tag count 5-8 (not >10) | ✅/❌ | [actual count] |
 | No contradictory tags | ✅/❌ | [flag any conflicts] |
 | No artist names in Style/Production Direction | ✅/❌ | [list any unconverted references] |
+| No gear/model names (converted to sound descriptors) | ✅/❌ | [list any unconverted gear names] |
 | BPM/tempo specified | ✅/❌ | |
 | Per-section tags ≤3 per section | ✅/❌ | [flag any over-tagged sections] |
 ```

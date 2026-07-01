@@ -322,7 +322,7 @@ For each dimension, assess CORRECT / SUBOPTIMAL / WRONG:
 | 1 | **Genre** | Fabbri (5 rules) | Does this genre SIGNIFY what the lyrics express? |
 | 2 | **Key** | Eerola, Friberg & Bresin (cue hierarchy) | Mode is #1 emotional cue. Does key character match dominant emotion? |
 | 3 | **BPM** | Genre + emotion mapping | Correct for BOTH genre conventions AND emotional pacing? |
-| 4 | **Instruments** | Tagg (musemes) | Does each instrument carry the correct cultural connotation? |
+| 4 | **Instruments** | Tagg (musemes) | Does each instrument carry the correct cultural connotation? Described as SOUNDS, not gear names? Character budget efficient? |
 | 5 | **Vocal style** | Moore (persona) + Fabbri (behavioral) | Delivery matches genre AND serves the lyric arc? |
 | 6 | **Era/Production** | Suno era-anchoring | Would a specific sonic period improve specificity? Era separated from instrumentation? |
 | 7 | **Space/Mood** | Tagg + Lacasse | Atmospheric descriptors aligned, non-contradictory, <=3 total? |
@@ -343,6 +343,7 @@ Binary pass/fail checks:
 - Named `()` layers declared in Style Prompt?
 - Exclusions in dedicated Exclude field (not in Style or Lyrics)?
 - No artist names present in Style Prompt or Production Direction? (converted to descriptive production language)
+- No gear/model names present in Style Prompt or Production Direction? (converted to sound descriptors) [Tier 3]
 
 ### 5d. Overall Verdict
 
