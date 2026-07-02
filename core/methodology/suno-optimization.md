@@ -423,6 +423,24 @@ Only adjectives and delivery descriptors go after the pipe. Instrument-specific 
 
 ---
 
+## Inline Performance Notation (User-Tested)
+
+> [Tier 3: Community heuristic -- user-tested July 2026 on Suno v5.5]
+
+Only ONE inline formatting symbol reliably affects vocal delivery:
+
+| Symbol | Status | Use? |
+|---|---|---|
+| `ALL CAPS` | CONFIRMED -- louder/more forceful delivery | **YES** |
+| `~` (tilde) | Inconsistent -- unreliable across renders | NO |
+| `-` (mid-word dash) | Word separator only -- does NOT stretch syllables | NO (misleading) |
+| `" "` (quotes) | No effect observed | NO |
+| `...` (ellipsis) | Marginal -- reinforces existing sustain only | NO (not a reliable control) |
+
+**Rule:** Use ALL CAPS for emphasis. For all other delivery changes, use section tags (`[whisper]`, `[spoken word]`, etc.) or pipe notation (`[verse | vulnerable vocals, breathy]`). Do not rely on tilde, dash, quotes, or ellipsis for performance control.
+
+---
+
 ## Creative Sliders -- Detailed Guidance
 
 The three creative sliders are set in the Suno UI, not in text fields. They interact with each other and with the Style Prompt.

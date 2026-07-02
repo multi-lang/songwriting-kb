@@ -304,24 +304,26 @@ Full reference: `references/SUNO_TAGS_REFERENCE.md` → "Parenthetical Layers" s
 
 > [Tier 3: Community heuristic]
 > Credit: Omnisona (Suno AI God Mode Manual v3.0, March 2026)
+> User-tested on Suno v5.5 (July 2026)
 
 Inline text formatting that affects vocal delivery:
 
-| Symbol | Effect |
-|---|---|
-| `( )` | Sung as secondary vocal layer |
-| `[ ]` | Structural tag -- NOT sung |
-| `~` | Vocal vibrato / wavering |
-| `-` (mid-word) | Syllable stretch / melisma |
-| `ALL CAPS` | Emphasis -- louder delivery |
-| `" "` | Slightly different vocal color (quoting) |
-| `...` | Trailing off / vocal fade |
+| Symbol | Claimed Effect | Tested Status (v5.5) | Recommendation |
+|---|---|---|---|
+| `( )` | Sung as secondary vocal layer | CONFIRMED | Use freely |
+| `[ ]` | Structural tag -- NOT sung | CONFIRMED | Use freely |
+| `ALL CAPS` | Emphasis -- louder delivery | **CONFIRMED WORKING** | **RECOMMENDED** |
+| `~` | Vocal vibrato / wavering | NOT RELIABLE | NOT RECOMMENDED |
+| `-` (mid-word) | Syllable stretch / melisma | WORD SEPARATOR only | Do not use for melisma |
+| `" "` | Different vocal color (quoting) | NO EFFECT observed | DOES NOT WORK |
+| `...` | Trailing off / vocal fade | MARGINAL | Reinforces existing behavior only |
 
 **CRITICAL:** Parentheses `()` are SUNG/PERFORMED -- never put production instructions inside parentheses.
 
-**Note:** Effects of `~`, `-`, ALL CAPS, quotation marks, and ellipsis are community-observed patterns. Results vary by Suno version and are not guaranteed.
+**WARNING:** Only ALL CAPS is confirmed working for inline delivery control. Other symbols (~, -, quotes, ellipsis) are unreliable or non-functional on v5.5. Use section tags and pipe notation for delivery changes instead.
 
 Full reference: `references/SUNO_TAGS_REFERENCE.md` → "Performance Notation Symbols" section.
+Experiment log: `experiments/suno/2026-07-02-performance-notation-symbols.yml`
 
 ### 12.6 Rules: 4-8 lines/section, no end punctuation, tags on own line, 5000 char limit
 

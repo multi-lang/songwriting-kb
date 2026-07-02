@@ -107,7 +107,7 @@ Text in parentheses = secondary vocal layer. Suno treats it differently from mai
 
 **Key rule:** Named layers (`X layer: text`) require the Style Prompt to declare: e.g., "low-register AI voice layered during system sections." Without this, Suno may just sing parenthetical content normally.
 
-**Performance Notation:** Inline symbols (~, -, ALL CAPS, ..., quotes) affect vocal delivery inside lyrics. See `references/SUNO_TAGS_REFERENCE.md` -> Performance Notation.
+**Performance Notation:** Only ALL CAPS is confirmed working for inline delivery control (louder/more forceful). Other inline symbols (~, -, quotes, ellipsis) are unreliable or non-functional on v5.5 -- do not use them in production. Use section tags and pipe notation for delivery changes instead. See `references/SUNO_TAGS_REFERENCE.md` -> Performance Notation.
 
 **Full reference:** `references/SUNO_TAGS_REFERENCE.md` → "Parenthetical Layers" section.
 

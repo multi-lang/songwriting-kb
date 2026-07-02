@@ -725,22 +725,25 @@ Common exclusions by genre:
 
 > [Tier 3: Community heuristic]
 > Credit: Omnisona (Suno AI God Mode Manual v3.0, March 2026)
+> User-tested on Suno v5.5 (July 2026) -- see `experiments/suno/2026-07-02-performance-notation-symbols.yml`
 
 Certain characters inside lyrics affect vocal delivery in Suno. These are NOT tags -- they are inline text formatting that shapes how the AI sings.
 
-| Symbol | What Suno Does | Example |
-|---|---|---|
-| `( )` | SUNG/PERFORMED as secondary vocal layer (backup, response, whisper) -- see PARENTHETICAL LAYERS section above for full details | `(I was always here)` |
-| `[ ]` | Structural/production tag -- NOT sung -- see SECTION TAGS section above for full details | `[Verse 1]` |
-| `~` | Adds vocal vibrato or wavering delivery | `I'm still waiting~` |
-| `-` (mid-word) | Syllable stretch / melisma -- extends the note | `Fa-a-all from grace` |
-| `ALL CAPS` | Emphasis -- louder, more forceful delivery | `I said NEVER again` |
-| `" "` (quotation marks) | Slightly different vocal color -- as if quoting someone | `She said "don't look back"` |
-| `...` (long ellipsis) | Trailing off -- vocal fades or hesitates | `Maybe I should just...` |
+| Symbol | Claimed Effect | Tested Status (v5.5) | Recommendation |
+|---|---|---|---|
+| `( )` | SUNG/PERFORMED as secondary vocal layer | CONFIRMED | Use freely -- see PARENTHETICAL LAYERS section |
+| `[ ]` | Structural/production tag -- NOT sung | CONFIRMED | Use freely -- see SECTION TAGS section |
+| `ALL CAPS` | Emphasis -- louder, more forceful delivery | **CONFIRMED WORKING** | **RECOMMENDED** -- only reliable inline notation |
+| `~` | Vocal vibrato or wavering delivery | NOT RELIABLE -- inconsistent results, works sometimes on slower material | NOT RECOMMENDED for production |
+| `-` (mid-word) | Syllable stretch / melisma | DOES NOT STRETCH -- treats each hyphenated section as a new word (separator, not stretcher) | WORD SEPARATOR only -- do not use for melisma |
+| `" "` (quotation marks) | Different vocal color (quoting) | NO EFFECT -- no noticeable delivery change observed | DOES NOT WORK |
+| `...` (long ellipsis) | Trailing off / vocal fade | MARGINAL -- sustains only where Suno would already sustain naturally | Reinforces existing behavior only -- not a reliable control |
 
 **CRITICAL:** Parentheses `()` are SUNG/PERFORMED -- never put production instructions inside parentheses. Use square brackets `[]` for production/structural directions.
 
-**Note:** Effects of `~`, `-`, ALL CAPS, quotation marks, and ellipsis are community-observed patterns. Results vary by Suno version and are not guaranteed. The `()` and `[]` behaviors are well-established; see the PARENTHETICAL LAYERS and SECTION TAGS sections above for comprehensive documentation.
+**WARNING (July 2026 testing):** Of the 5 inline formatting symbols from the God Mode Manual (`~`, `-`, ALL CAPS, `" "`, `...`), only **ALL CAPS** reliably produces the claimed effect. The others either do not work, produce unintended results, or only marginally reinforce behavior Suno would produce anyway. Use ALL CAPS for emphasis; rely on section tags and pipe notation for other delivery changes.
+
+**Testing details:** All 5 symbols tested on Suno v5.5 renders of "The One Who Stays" (dark cinematic hip hop, 80 BPM, D minor). Full experiment log: `experiments/suno/2026-07-02-performance-notation-symbols.yml`
 
 ---
 
